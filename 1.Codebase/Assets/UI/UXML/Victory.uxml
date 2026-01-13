@@ -1,0 +1,87 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Style src="project://database/Assets/UI/USS/MenuStyles.uss" />
+
+    <ui:VisualElement name="root" class="victory-root">
+        <ui:VisualElement class="victory-overlay">
+
+            <!-- Widescreen Layout Container -->
+            <ui:VisualElement class="result-widescreen-container">
+
+                <!-- Left Side: Commander Portrait -->
+                <ui:VisualElement class="commander-section victory">
+                    <ui:VisualElement name="commander-portrait" class="commander-portrait happy" />
+                    <ui:Label name="commander-name" text="FLEET ADMIRAL GLORIA" class="commander-name" />
+                    <ui:Label name="commander-dialogue" text="Outstanding work, pilot! Hong Kong is safe thanks to you!" class="commander-dialogue victory" />
+                </ui:VisualElement>
+
+                <!-- Right Side: Mission Results -->
+                <ui:VisualElement class="result-content-section victory">
+
+                    <!-- Header -->
+                    <ui:VisualElement class="result-header">
+                        <ui:VisualElement class="icon-laurel-crown" />
+                        <ui:VisualElement class="icon-victory" />
+                        <ui:VisualElement class="result-title-group">
+                            <ui:Label text="MISSION ACCOMPLISHED" class="victory-title-wide" />
+                            <ui:Label name="mission-name" text="Defend Hong Kong" class="victory-subtitle-wide" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="icon-trophy" />
+                    </ui:VisualElement>
+
+                    <!-- Rank Display -->
+                    <ui:VisualElement class="rating-section victory">
+                        <ui:VisualElement class="rating-box victory">
+                            <ui:Label text="RANK" class="rating-label" />
+                            <ui:Label name="rank-grade" text="S" class="rank-grade-wide victory" />
+                            <ui:Label name="stars" text="★★★" class="stars-wide victory" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <!-- Stats Grid -->
+                    <ui:VisualElement class="stats-grid-wide">
+                        <ui:VisualElement class="stat-item-wide">
+                            <ui:Label text="KILLS" class="stat-item-label" />
+                            <ui:Label name="kills-value" text="0" class="stat-item-value" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="stat-item-wide">
+                            <ui:Label text="FLIGHT TIME" class="stat-item-label" />
+                            <ui:Label name="time-value" text="0:00" class="stat-item-value" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="stat-item-wide">
+                            <ui:Label text="ACCURACY" class="stat-item-label" />
+                            <ui:Label name="accuracy-value" text="0%" class="stat-item-value" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="stat-item-wide">
+                            <ui:Label text="TIME" class="stat-item-label" />
+                            <ui:Label name="completion-time" text="05:32" class="stat-item-value" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <!-- Rewards -->
+                    <ui:VisualElement class="rewards-section-wide">
+                        <ui:Label text="REWARDS" class="rewards-title-wide" />
+                        <ui:VisualElement class="reward-item">
+                            <ui:Label text="Experience" class="reward-label" />
+                            <ui:Label name="xp-reward" text="+500 XP" class="reward-value-wide" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <!-- Buttons -->
+                    <ui:VisualElement class="result-buttons-wide">
+                        <ui:Button name="continue-button" class="result-button-wide primary victory menu-button-with-icon">
+                            <ui:VisualElement class="button-icon icon-continue" />
+                            <ui:Label text="CONTINUE" class="button-text" />
+                        </ui:Button>
+                        <ui:Button name="menu-button" class="result-button-wide menu-button-with-icon">
+                            <ui:VisualElement class="button-icon icon-main-menu" />
+                            <ui:Label text="MAIN MENU" class="button-text" />
+                        </ui:Button>
+                    </ui:VisualElement>
+
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

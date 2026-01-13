@@ -1,0 +1,22 @@
+newmtl PartMaterial(Clone)
+Kd 1 1 1
+map_Kd texture..Su-273d_export.png
+illum 2
+
+newmtl PartTransparentZWrite(Clone)
+Kd 1 1 1
+Tr 0.6
+d 0.4
+map_Kd texture..Su-273d_export.png
+illum 2
+
+newmtl DoNothingMaterial(Clone)
+illum 2
+
+newmtl PartTransparent(Clone)
+Kd 1 1 1
+Tr 0.6
+d 0.4
+map_Kd texture..Su-273d_export.png
+illum 2
+

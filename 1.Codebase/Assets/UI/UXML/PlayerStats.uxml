@@ -1,0 +1,726 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Style src="project://database/Assets/UI/USS/MenuStyles.uss" />
+    
+    <ui:VisualElement name="root" class="stats-root">
+        <ui:VisualElement name="overlay" class="stats-overlay">
+            
+            <!-- Header -->
+            <ui:VisualElement class="stats-header">
+                <ui:Button name="back-button" text="← BACK" class="back-nav-button" />
+                <ui:Label text="PILOT PROFILE" class="page-title" />
+                <ui:VisualElement class="header-spacer" />
+            </ui:VisualElement>
+            
+            <!-- Main Section Tabs -->
+            <ui:VisualElement class="main-section-tabs">
+                <ui:Button name="main-tab-stats" text="STATS" class="main-section-tab main-section-tab-active" />
+                <ui:Button name="main-tab-badges" text="BADGES" class="main-section-tab" />
+            </ui:VisualElement>
+
+            <!-- STATS SECTION -->
+            <ui:VisualElement name="section-stats" class="stats-content">
+
+                <!-- Profile Card (Left) -->
+                <ui:VisualElement class="profile-card">
+                    <ui:VisualElement class="profile-avatar" />
+                    <ui:Label name="callsign" text="PHOENIX LEAD" class="profile-callsign" />
+                    <ui:Label name="rank" text="Second Lieutenant" class="profile-rank" />
+                    
+                    <ui:VisualElement class="profile-level">
+                        <ui:Label text="RANK PROGRESS" class="level-label" />
+                        <ui:VisualElement class="xp-bar-container">
+                            <ui:VisualElement name="xp-bar" class="xp-bar" style="width: 0%;" />
+                        </ui:VisualElement>
+                        <ui:Label name="xp-text" text="0 / 1,000 XP" class="xp-text" />
+                    </ui:VisualElement>
+                    
+                    <ui:Button name="edit-callsign-button" text="EDIT CALLSIGN" class="edit-callsign-button" />
+                </ui:VisualElement>
+                
+                <!-- Combat Stats (Center) -->
+                <ui:VisualElement class="stats-grid-panel">
+                    <ui:Label text="COMBAT RECORD" class="stats-section-title" />
+                    
+                    <ui:VisualElement class="stats-grid-2col">
+                        
+                        <ui:VisualElement class="stat-box highlight">
+                            <ui:Label text="TOTAL KILLS" class="stat-box-label" />
+                            <ui:Label name="total-kills" text="0" class="stat-box-value large" />
+                            <ui:Label text="enemies shot down" class="stat-box-sub" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="stat-box highlight-gold">
+                            <ui:Label text="VICTORIES" class="stat-box-label" />
+                            <ui:Label name="total-wins" text="0" class="stat-box-value large" />
+                            <ui:Label text="missions won" class="stat-box-sub" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="stat-box">
+                            <ui:Label text="TOTAL FLIGHT TIME" class="stat-box-label" />
+                            <ui:Label name="flight-time" text="0h 0m" class="stat-box-value" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="stat-box">
+                            <ui:Label text="MISSILES FIRED" class="stat-box-label" />
+                            <ui:Label name="missiles-fired" text="0" class="stat-box-value" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="stat-box">
+                            <ui:Label text="ACCURACY" class="stat-box-label" />
+                            <ui:Label name="accuracy" text="0%" class="stat-box-value" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="stat-box">
+                            <ui:Label text="K/D RATIO" class="stat-box-label" />
+                            <ui:Label name="kd-ratio" text="0.0" class="stat-box-value" />
+                        </ui:VisualElement>
+                        
+                    </ui:VisualElement>
+                    
+                    <!-- Aircraft Statistics with Tabs -->
+                    <ui:VisualElement class="aircraft-stats-section">
+                        <ui:Label text="AIRCRAFT STATISTICS" class="stats-section-title" style="margin-top: 30px;" />
+
+                        <!-- Aircraft Tabs -->
+                        <ui:VisualElement class="aircraft-tabs-container">
+                            <ui:Button name="tab-f15" text="F-15C" class="aircraft-tab aircraft-tab-active" />
+                            <ui:Button name="tab-su27" text="Su-27" class="aircraft-tab" />
+                            <ui:Button name="tab-mig29" text="MiG-29" class="aircraft-tab" />
+                            <ui:Button name="tab-fa18e" text="F/A-18E" class="aircraft-tab" />
+                            <ui:Button name="tab-hawk200" text="Hawk 200" class="aircraft-tab" />
+                            <ui:Button name="tab-mig21" text="MiG-21" class="aircraft-tab" />
+                            <ui:Button name="tab-tornado" text="Tornado" class="aircraft-tab" />
+                            <ui:Button name="tab-rafale" text="Rafale" class="aircraft-tab" />
+                            <ui:Button name="tab-typhoon" text="Typhoon" class="aircraft-tab" />
+                        </ui:VisualElement>
+
+                        <!-- F-15C Stats Panel -->
+                        <ui:VisualElement name="panel-f15" class="aircraft-stats-card aircraft-panel-visible">
+                            <ui:VisualElement class="aircraft-stat-header">
+                                <ui:VisualElement class="aircraft-icon f15" />
+                                <ui:Label text="F-15C Eagle" class="aircraft-stat-title" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="aircraft-stat-details">
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Kills" class="detail-label" />
+                                    <ui:Label name="f15-kills" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Flight Time" class="detail-label" />
+                                    <ui:Label name="f15-time" text="0h 0m" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Sorties" class="detail-label" />
+                                    <ui:Label name="f15-sorties" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- SU-27 Stats Panel -->
+                        <ui:VisualElement name="panel-su27" class="aircraft-stats-card">
+                            <ui:VisualElement class="aircraft-stat-header">
+                                <ui:VisualElement class="aircraft-icon su27" />
+                                <ui:Label text="Su-27 Flanker" class="aircraft-stat-title" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="aircraft-stat-details">
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Kills" class="detail-label" />
+                                    <ui:Label name="su27-kills" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Flight Time" class="detail-label" />
+                                    <ui:Label name="su27-time" text="0h 0m" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Sorties" class="detail-label" />
+                                    <ui:Label name="su27-sorties" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- MiG-29 Stats Panel -->
+                        <ui:VisualElement name="panel-mig29" class="aircraft-stats-card">
+                            <ui:VisualElement class="aircraft-stat-header">
+                                <ui:VisualElement class="aircraft-icon mig29" />
+                                <ui:Label text="MiG-29 Fulcrum" class="aircraft-stat-title" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="aircraft-stat-details">
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Kills" class="detail-label" />
+                                    <ui:Label name="mig29-kills" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Flight Time" class="detail-label" />
+                                    <ui:Label name="mig29-time" text="0h 0m" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Sorties" class="detail-label" />
+                                    <ui:Label name="mig29-sorties" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- F/A-18E Stats Panel -->
+                        <ui:VisualElement name="panel-fa18e" class="aircraft-stats-card">
+                            <ui:VisualElement class="aircraft-stat-header">
+                                <ui:VisualElement class="aircraft-icon fa18e" />
+                                <ui:Label text="F/A-18E Super Hornet" class="aircraft-stat-title" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="aircraft-stat-details">
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Kills" class="detail-label" />
+                                    <ui:Label name="fa18e-kills" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Flight Time" class="detail-label" />
+                                    <ui:Label name="fa18e-time" text="0h 0m" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Sorties" class="detail-label" />
+                                    <ui:Label name="fa18e-sorties" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- Hawk 200 Stats Panel -->
+                        <ui:VisualElement name="panel-hawk200" class="aircraft-stats-card">
+                            <ui:VisualElement class="aircraft-stat-header">
+                                <ui:VisualElement class="aircraft-icon hawk200" />
+                                <ui:Label text="Hawk 200" class="aircraft-stat-title" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="aircraft-stat-details">
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Kills" class="detail-label" />
+                                    <ui:Label name="hawk200-kills" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Flight Time" class="detail-label" />
+                                    <ui:Label name="hawk200-time" text="0h 0m" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Sorties" class="detail-label" />
+                                    <ui:Label name="hawk200-sorties" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- MiG-21 Stats Panel -->
+                        <ui:VisualElement name="panel-mig21" class="aircraft-stats-card">
+                            <ui:VisualElement class="aircraft-stat-header">
+                                <ui:VisualElement class="aircraft-icon mig21" />
+                                <ui:Label text="MiG-21 Fishbed" class="aircraft-stat-title" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="aircraft-stat-details">
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Kills" class="detail-label" />
+                                    <ui:Label name="mig21-kills" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Flight Time" class="detail-label" />
+                                    <ui:Label name="mig21-time" text="0h 0m" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Sorties" class="detail-label" />
+                                    <ui:Label name="mig21-sorties" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- Tornado Stats Panel -->
+                        <ui:VisualElement name="panel-tornado" class="aircraft-stats-card">
+                            <ui:VisualElement class="aircraft-stat-header">
+                                <ui:VisualElement class="aircraft-icon tornado" />
+                                <ui:Label text="Panavia Tornado" class="aircraft-stat-title" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="aircraft-stat-details">
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Kills" class="detail-label" />
+                                    <ui:Label name="tornado-kills" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Flight Time" class="detail-label" />
+                                    <ui:Label name="tornado-time" text="0h 0m" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Sorties" class="detail-label" />
+                                    <ui:Label name="tornado-sorties" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- Rafale Stats Panel -->
+                        <ui:VisualElement name="panel-rafale" class="aircraft-stats-card">
+                            <ui:VisualElement class="aircraft-stat-header">
+                                <ui:VisualElement class="aircraft-icon rafale" />
+                                <ui:Label text="Dassault Rafale" class="aircraft-stat-title" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="aircraft-stat-details">
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Kills" class="detail-label" />
+                                    <ui:Label name="rafale-kills" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Flight Time" class="detail-label" />
+                                    <ui:Label name="rafale-time" text="0h 0m" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Sorties" class="detail-label" />
+                                    <ui:Label name="rafale-sorties" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- Typhoon Stats Panel -->
+                        <ui:VisualElement name="panel-typhoon" class="aircraft-stats-card">
+                            <ui:VisualElement class="aircraft-stat-header">
+                                <ui:VisualElement class="aircraft-icon typhoon" />
+                                <ui:Label text="Eurofighter Typhoon" class="aircraft-stat-title" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="aircraft-stat-details">
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Kills" class="detail-label" />
+                                    <ui:Label name="typhoon-kills" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Flight Time" class="detail-label" />
+                                    <ui:Label name="typhoon-time" text="0h 0m" class="detail-value" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="stat-detail">
+                                    <ui:Label text="Sorties" class="detail-label" />
+                                    <ui:Label name="typhoon-sorties" text="0" class="detail-value" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                
+                <!-- Achievements (Right) -->
+                <ui:VisualElement class="achievements-panel">
+                    <ui:Label text="ACHIEVEMENTS" class="stats-section-title" />
+                    
+                    <ui:ScrollView class="achievements-scroll">
+                        
+                        <ui:VisualElement name="ach-first-blood" class="achievement-item locked">
+                            <ui:VisualElement class="achievement-icon">
+                                <ui:Label text="🎖️" class="achievement-emoji" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="achievement-info">
+                                <ui:Label text="First Blood" class="achievement-name" />
+                                <ui:Label text="Score your first aerial kill" class="achievement-desc" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement name="ach-ace" class="achievement-item locked">
+                            <ui:VisualElement class="achievement-icon">
+                                <ui:Label text="🏆" class="achievement-emoji" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="achievement-info">
+                                <ui:Label text="Ace Pilot" class="achievement-name" />
+                                <ui:Label text="Shoot down 5 enemies" class="achievement-desc" />
+                                <ui:VisualElement class="achievement-progress">
+                                    <ui:VisualElement name="ach-ace-bar" class="progress-bar" style="width: 0%;" />
+                                </ui:VisualElement>
+                                <ui:Label name="ach-ace-text" text="0 / 5" class="progress-text" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement name="ach-double-ace" class="achievement-item locked">
+                            <ui:VisualElement class="achievement-icon">
+                                <ui:Label text="🎖️" class="achievement-emoji" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="achievement-info">
+                                <ui:Label text="Double Ace" class="achievement-name" />
+                                <ui:Label text="Shoot down 10 enemies" class="achievement-desc" />
+                                <ui:VisualElement class="achievement-progress">
+                                    <ui:VisualElement name="ach-double-ace-bar" class="progress-bar" style="width: 0%;" />
+                                </ui:VisualElement>
+                                <ui:Label name="ach-double-ace-text" text="0 / 10" class="progress-text" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement name="ach-veteran" class="achievement-item locked">
+                            <ui:VisualElement class="achievement-icon">
+                                <ui:Label text="⚔️" class="achievement-emoji" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="achievement-info">
+                                <ui:Label text="Veteran Pilot" class="achievement-name" />
+                                <ui:Label text="Shoot down 50 enemies" class="achievement-desc" />
+                                <ui:VisualElement class="achievement-progress">
+                                    <ui:VisualElement name="ach-veteran-bar" class="progress-bar" style="width: 0%;" />
+                                </ui:VisualElement>
+                                <ui:Label name="ach-veteran-text" text="0 / 50" class="progress-text" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement name="ach-victor" class="achievement-item locked">
+                            <ui:VisualElement class="achievement-icon">
+                                <ui:Label text="⭐" class="achievement-emoji" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="achievement-info">
+                                <ui:Label text="Victorious" class="achievement-name" />
+                                <ui:Label text="Win your first mission" class="achievement-desc" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement name="ach-topgun" class="achievement-item locked">
+                            <ui:VisualElement class="achievement-icon">
+                                <ui:Label text="🔒" class="achievement-emoji" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="achievement-info">
+                                <ui:Label text="Top Gun" class="achievement-name" />
+                                <ui:Label text="Reach 100 total kills" class="achievement-desc" />
+                                <ui:VisualElement class="achievement-progress">
+                                    <ui:VisualElement name="ach-topgun-bar" class="progress-bar" style="width: 0%;" />
+                                </ui:VisualElement>
+                                <ui:Label name="ach-topgun-text" text="0 / 100" class="progress-text" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement name="ach-centurion" class="achievement-item locked">
+                            <ui:VisualElement class="achievement-icon">
+                                <ui:Label text="🔒" class="achievement-emoji" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="achievement-info">
+                                <ui:Label text="Centurion" class="achievement-name" />
+                                <ui:Label text="Win 10 missions" class="achievement-desc" />
+                                <ui:VisualElement class="achievement-progress">
+                                    <ui:VisualElement name="ach-centurion-bar" class="progress-bar" style="width: 0%;" />
+                                </ui:VisualElement>
+                                <ui:Label name="ach-centurion-text" text="0 / 10" class="progress-text" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        
+                    </ui:ScrollView>
+                    
+                    <ui:Label name="achievement-count" text="0 / 7 Achievements Unlocked" class="achievement-count" />
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+
+            <!-- BADGES SECTION (Hidden by default) -->
+            <ui:VisualElement name="section-badges" class="badges-content" style="display: none;">
+
+                <ui:Label text="PILOT BADGES" class="badges-section-title" />
+                <ui:Label text="Earn badges by completing specific challenges. Locked badges show progress towards unlocking." class="badges-description" />
+
+                <ui:ScrollView class="badges-scroll">
+                    <ui:VisualElement class="badges-grid">
+
+                        <!-- KILL MILESTONE BADGES -->
+                        <ui:Label text="COMBAT MILESTONES" class="badge-category-title" />
+
+                        <ui:VisualElement class="badge-row">
+                            <ui:VisualElement name="badge-first-kill" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="First Blood" class="badge-name" />
+                                <ui:Label text="1 Kill" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-5-kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Ace Pilot" class="badge-name" />
+                                <ui:Label text="5 Kills" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-10-kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Double Ace" class="badge-name" />
+                                <ui:Label text="10 Kills" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-25-kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Hunter" class="badge-name" />
+                                <ui:Label text="25 Kills" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-50-kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Veteran" class="badge-name" />
+                                <ui:Label text="50 Kills" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-100-kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Top Gun" class="badge-name" />
+                                <ui:Label text="100 Kills" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-250-kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Sky Terror" class="badge-name" />
+                                <ui:Label text="250 Kills" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-500-kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Air Supremacy" class="badge-name" />
+                                <ui:Label text="500 Kills" class="badge-req" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- VICTORY BADGES -->
+                        <ui:Label text="VICTORY MILESTONES" class="badge-category-title" />
+
+                        <ui:VisualElement class="badge-row">
+                            <ui:VisualElement name="badge-first-win" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Victorious" class="badge-name" />
+                                <ui:Label text="1 Win" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-5-wins" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Proven Pilot" class="badge-name" />
+                                <ui:Label text="5 Wins" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-10-wins" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Centurion" class="badge-name" />
+                                <ui:Label text="10 Wins" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-25-wins" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="War Hero" class="badge-name" />
+                                <ui:Label text="25 Wins" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-50-wins" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Legend" class="badge-name" />
+                                <ui:Label text="50 Wins" class="badge-req" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- FLIGHT TIME BADGES -->
+                        <ui:Label text="FLIGHT TIME MILESTONES" class="badge-category-title" />
+
+                        <ui:VisualElement class="badge-row">
+                            <ui:VisualElement name="badge-1hr-flight" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Airborne" class="badge-name" />
+                                <ui:Label text="1 Hour Flight" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-5hr-flight" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Sky Dweller" class="badge-name" />
+                                <ui:Label text="5 Hours Flight" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-10hr-flight" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Iron Wings" class="badge-name" />
+                                <ui:Label text="10 Hours Flight" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-24hr-flight" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Marathon Pilot" class="badge-name" />
+                                <ui:Label text="24 Hours Flight" class="badge-req" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- SORTIE BADGES -->
+                        <ui:Label text="SORTIE MILESTONES" class="badge-category-title" />
+
+                        <ui:VisualElement class="badge-row">
+                            <ui:VisualElement name="badge-10-sorties" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Frequent Flyer" class="badge-name" />
+                                <ui:Label text="10 Sorties" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-25-sorties" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Dedicated" class="badge-name" />
+                                <ui:Label text="25 Sorties" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-50-sorties" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Combat Ready" class="badge-name" />
+                                <ui:Label text="50 Sorties" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-100-sorties" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder" />
+                                <ui:Label text="Tireless Warrior" class="badge-name" />
+                                <ui:Label text="100 Sorties" class="badge-req" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- AIRCRAFT FIRST FLIGHT BADGES -->
+                        <ui:Label text="FIRST FLIGHT BADGES" class="badge-category-title" />
+
+                        <ui:VisualElement class="badge-row">
+                            <ui:VisualElement name="badge-flew-f15" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge f15" />
+                                <ui:Label text="Eagle Driver" class="badge-name" />
+                                <ui:Label text="Fly F-15C" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-flew-su27" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge su27" />
+                                <ui:Label text="Flanker Ace" class="badge-name" />
+                                <ui:Label text="Fly Su-27" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-flew-mig29" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge mig29" />
+                                <ui:Label text="Fulcrum Master" class="badge-name" />
+                                <ui:Label text="Fly MiG-29" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-flew-fa18e" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge fa18e" />
+                                <ui:Label text="Hornet Pilot" class="badge-name" />
+                                <ui:Label text="Fly F/A-18E" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-flew-hawk200" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge hawk200" />
+                                <ui:Label text="Hawk Handler" class="badge-name" />
+                                <ui:Label text="Fly Hawk 200" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-flew-mig21" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge mig21" />
+                                <ui:Label text="Fishbed Flyer" class="badge-name" />
+                                <ui:Label text="Fly MiG-21" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-flew-tornado" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge tornado" />
+                                <ui:Label text="Storm Chaser" class="badge-name" />
+                                <ui:Label text="Fly Tornado" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-flew-rafale" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge rafale" />
+                                <ui:Label text="Rafale Rider" class="badge-name" />
+                                <ui:Label text="Fly Rafale" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-flew-typhoon" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge typhoon" />
+                                <ui:Label text="Typhoon Tamer" class="badge-name" />
+                                <ui:Label text="Fly Typhoon" class="badge-req" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- AIRCRAFT KILL BADGES -->
+                        <ui:Label text="AIRCRAFT KILL BADGES" class="badge-category-title" />
+
+                        <ui:VisualElement class="badge-row">
+                            <ui:VisualElement name="badge-f15-10kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge f15" />
+                                <ui:Label text="Eagle Sharpshooter" class="badge-name" />
+                                <ui:Label text="10 Kills in F-15C" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-su27-10kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge su27" />
+                                <ui:Label text="Flanker Elite" class="badge-name" />
+                                <ui:Label text="10 Kills in Su-27" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-mig29-10kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge mig29" />
+                                <ui:Label text="Fulcrum Fury" class="badge-name" />
+                                <ui:Label text="10 Kills in MiG-29" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-fa18e-10kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge fa18e" />
+                                <ui:Label text="Hornet's Sting" class="badge-name" />
+                                <ui:Label text="10 Kills in F/A-18E" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-hawk200-10kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge hawk200" />
+                                <ui:Label text="Hawk Strike" class="badge-name" />
+                                <ui:Label text="10 Kills in Hawk" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-mig21-10kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge mig21" />
+                                <ui:Label text="Fishbed Fury" class="badge-name" />
+                                <ui:Label text="10 Kills in MiG-21" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-tornado-10kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge tornado" />
+                                <ui:Label text="Storm Bringer" class="badge-name" />
+                                <ui:Label text="10 Kills in Tornado" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-rafale-10kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge rafale" />
+                                <ui:Label text="Rafale Rampage" class="badge-name" />
+                                <ui:Label text="10 Kills in Rafale" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-typhoon-10kills" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder aircraft-badge typhoon" />
+                                <ui:Label text="Typhoon Terror" class="badge-name" />
+                                <ui:Label text="10 Kills in Typhoon" class="badge-req" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- SPECIAL BADGES -->
+                        <ui:Label text="SPECIAL BADGES" class="badge-category-title" />
+
+                        <ui:VisualElement class="badge-row">
+                            <ui:VisualElement name="badge-all-aircraft" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder special" />
+                                <ui:Label text="Fleet Commander" class="badge-name" />
+                                <ui:Label text="Fly All 9 Aircraft" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-rank-5" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder special" />
+                                <ui:Label text="Rising Star" class="badge-name" />
+                                <ui:Label text="Reach Rank 5" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-rank-10" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder special" />
+                                <ui:Label text="Elite Pilot" class="badge-name" />
+                                <ui:Label text="Reach Rank 10" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-missiles-100" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder special" />
+                                <ui:Label text="Missile Master" class="badge-name" />
+                                <ui:Label text="Fire 100 Missiles" class="badge-req" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="badge-missiles-500" class="badge-item locked">
+                                <ui:VisualElement class="badge-image-placeholder special" />
+                                <ui:Label text="Arsenal" class="badge-name" />
+                                <ui:Label text="Fire 500 Missiles" class="badge-req" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                    </ui:VisualElement>
+                </ui:ScrollView>
+
+                <ui:Label name="badge-count" text="0 / 44 Badges Unlocked" class="badge-total-count" />
+
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

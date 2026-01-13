@@ -1,0 +1,80 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Style src="project://database/Assets/UI/USS/MenuStyles.uss" />
+
+    <ui:VisualElement name="root" class="gameover-root">
+        <ui:VisualElement class="gameover-overlay">
+
+            <!-- Widescreen Layout Container -->
+            <ui:VisualElement class="result-widescreen-container">
+
+                <!-- Left Side: Commander Portrait -->
+                <ui:VisualElement class="commander-section">
+                    <ui:VisualElement name="commander-portrait" class="commander-portrait angry" />
+                    <ui:Label name="commander-name" text="FLEET ADMIRAL GLORIA" class="commander-name" />
+                    <ui:Label name="commander-dialogue" text="You've failed the mission, pilot. Hong Kong needed you..." class="commander-dialogue" />
+                </ui:VisualElement>
+
+                <!-- Right Side: Mission Results -->
+                <ui:VisualElement class="result-content-section">
+
+                    <!-- Header -->
+                    <ui:VisualElement class="result-header">
+                        <ui:VisualElement class="icon-skull" />
+                        <ui:VisualElement class="icon-gameover" />
+                        <ui:VisualElement class="result-title-group">
+                            <ui:Label text="MISSION FAILED" class="gameover-title-wide" />
+                            <ui:Label text="KILLED IN ACTION" class="gameover-subtitle-wide" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="icon-skull" />
+                    </ui:VisualElement>
+
+                    <!-- Death Info -->
+                    <ui:VisualElement class="death-info-wide">
+                        <ui:Label name="death-reason" text="Shot down by enemy missile" class="death-reason" />
+                        <ui:Label name="death-location" text="Over Hong Kong airspace" class="death-location" />
+                    </ui:VisualElement>
+
+                    <!-- Battle Rating -->
+                    <ui:VisualElement class="rating-section">
+                        <ui:VisualElement class="rating-box">
+                            <ui:Label text="BATTLE RATING" class="rating-label" />
+                            <ui:Label name="rank-grade" text="C" class="rank-grade-wide" />
+                            <ui:Label name="stars" text="☆☆☆" class="stars-wide" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <!-- Stats Grid -->
+                    <ui:VisualElement class="stats-grid-wide">
+                        <ui:VisualElement class="stat-item-wide">
+                            <ui:Label text="KILLS" class="stat-item-label" />
+                            <ui:Label name="kills-value" text="0" class="stat-item-value" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="stat-item-wide">
+                            <ui:Label text="FLIGHT TIME" class="stat-item-label" />
+                            <ui:Label name="time-value" text="0:00" class="stat-item-value" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="stat-item-wide">
+                            <ui:Label text="ACCURACY" class="stat-item-label" />
+                            <ui:Label name="accuracy-value" text="0%" class="stat-item-value" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <!-- Buttons -->
+                    <ui:VisualElement class="result-buttons-wide">
+                        <ui:Button name="retry-button" class="result-button-wide primary menu-button-with-icon">
+                            <ui:VisualElement class="button-icon icon-restart" />
+                            <ui:Label text="RETRY MISSION" class="button-text" />
+                        </ui:Button>
+                        <ui:Button name="menu-button" class="result-button-wide menu-button-with-icon">
+                            <ui:VisualElement class="button-icon icon-main-menu" />
+                            <ui:Label text="MAIN MENU" class="button-text" />
+                        </ui:Button>
+                    </ui:VisualElement>
+
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,92 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Style src="project://database/Assets/UI/USS/MenuStyles.uss" />
+
+    <ui:VisualElement name="root" class="story-root">
+        <!-- Dark background base -->
+        <ui:VisualElement class="story-base-bg" />
+
+        <!-- Cinematic Letterbox Bars -->
+        <ui:VisualElement class="story-letterbox-top" />
+        <ui:VisualElement class="story-letterbox-bottom" />
+
+        <!-- Top Bar: Page Indicator & Chapter Info -->
+        <ui:VisualElement class="story-top-bar">
+            <ui:VisualElement class="story-chapter-info">
+                <ui:Label text="PROLOGUE" class="story-chapter-label" />
+            </ui:VisualElement>
+            <ui:VisualElement class="story-progress-container">
+                <ui:VisualElement name="progress-bar" class="story-progress-bar">
+                    <ui:VisualElement name="progress-fill" class="story-progress-fill" />
+                </ui:VisualElement>
+                <ui:Label name="page-number" text="1 / 30" class="page-number-label" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Main Split Layout Container -->
+        <ui:VisualElement class="story-split-container">
+
+            <!-- Left Side: Image Display -->
+            <ui:VisualElement class="story-image-section">
+                <ui:VisualElement class="story-image-frame">
+                    <ui:VisualElement class="story-image-border">
+                        <ui:VisualElement name="story-background" class="story-image" />
+                    </ui:VisualElement>
+                    <!-- Decorative corners -->
+                    <ui:VisualElement class="image-corner image-corner-tl" />
+                    <ui:VisualElement class="image-corner image-corner-tr" />
+                    <ui:VisualElement class="image-corner image-corner-bl" />
+                    <ui:VisualElement class="image-corner image-corner-br" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <!-- Right Side: Text Content -->
+            <ui:VisualElement class="story-text-section">
+                <!-- Title with decorative elements -->
+                <ui:VisualElement class="story-title-container">
+                    <ui:VisualElement class="story-title-decoration-left" />
+                    <ui:Label name="story-title" text="HONG KONG, 2097" class="story-title" />
+                </ui:VisualElement>
+
+                <!-- Text Content -->
+                <ui:VisualElement class="story-text-container">
+                    <ui:Label name="story-text" text="Story text goes here..." class="story-text" />
+                </ui:VisualElement>
+
+                <!-- Scroll indicator -->
+                <ui:VisualElement class="story-scroll-hint">
+                    <ui:Label text="Scroll for more" class="scroll-hint-text" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <!-- Navigation Controls -->
+        <ui:VisualElement class="story-navigation">
+            <ui:Button name="prev-button" class="story-nav-button prev-button">
+                <ui:Label text="PREVIOUS" class="nav-button-text" />
+            </ui:Button>
+
+            <ui:VisualElement class="story-nav-center">
+                <ui:Button name="skip-button" text="SKIP INTRO" class="story-nav-button skip-button" />
+            </ui:VisualElement>
+
+            <ui:Button name="next-button" class="story-nav-button next-button">
+                <ui:Label text="NEXT" class="nav-button-text" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <!-- Continue prompt (shown on last page) -->
+        <ui:VisualElement name="continue-prompt" class="continue-prompt">
+            <ui:Label text="Press SPACE or click to start your mission" class="continue-hint" />
+            <ui:VisualElement class="never-show-again-container">
+                <ui:Toggle name="never-show-again-toggle" label="Never show story intro again" class="never-show-toggle" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Keyboard hints -->
+        <ui:VisualElement class="story-keyboard-hints">
+            <ui:Label text="[Arrow Keys] Navigate  |  [ESC] Skip" class="keyboard-hint-text" />
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

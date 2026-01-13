@@ -1,0 +1,331 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Style src="project://database/Assets/UI/USS/MenuStyles.uss" />
+    
+    <ui:VisualElement name="root" class="settings-root">
+        <ui:VisualElement name="overlay" class="settings-overlay">
+            
+            <ui:VisualElement name="settings-panel" class="settings-panel">
+                
+                <!-- Header -->
+                <ui:VisualElement class="settings-header">
+                    <ui:Label text="SETTINGS" class="settings-title" />
+                    <ui:Button name="close-button" text="X" class="close-button" />
+                </ui:VisualElement>
+                
+                <!-- Tab Navigation -->
+                <ui:VisualElement class="tab-container">
+                    <ui:Button name="tab-audio" text="AUDIO" class="tab-button tab-active" />
+                    <ui:Button name="tab-graphics" text="GRAPHICS" class="tab-button" />
+                    <ui:Button name="tab-controls" text="CONTROLS" class="tab-button" />
+                    <ui:Button name="tab-gameplay" text="GAMEPLAY" class="tab-button" />
+                </ui:VisualElement>
+                
+                <!-- Content Area -->
+                <ui:VisualElement class="settings-content">
+                    <ui:ScrollView class="settings-scroll">
+                        
+                        <!-- AUDIO TAB -->
+                        <ui:VisualElement name="audio-content" class="tab-content tab-visible">
+                            
+                            <ui:VisualElement class="settings-section">
+                                <ui:Label text="Volume Settings" class="section-title" />
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Master Volume" class="settings-label" />
+                                    <ui:Slider name="master-volume" low-value="0" high-value="1" value="0.9" class="settings-slider" />
+                                </ui:VisualElement>
+
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Music Volume" class="settings-label" />
+                                    <ui:Slider name="music-volume" low-value="0" high-value="1" value="0.9" class="settings-slider" />
+                                </ui:VisualElement>
+
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="SFX Volume" class="settings-label" />
+                                    <ui:Slider name="sfx-volume" low-value="0" high-value="1" value="0.9" class="settings-slider" />
+                                </ui:VisualElement>
+
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Voice Volume" class="settings-label" />
+                                    <ui:Slider name="voice-volume" low-value="0" high-value="1" value="0.9" class="settings-slider" />
+                                </ui:VisualElement>
+
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Engine Volume" class="settings-label" />
+                                    <ui:Slider name="engine-volume" low-value="0" high-value="1" value="0.9" class="settings-slider" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            
+                            <ui:VisualElement class="settings-section">
+                                <ui:Label text="Audio Options" class="section-title" />
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Mute All" class="settings-label" />
+                                    <ui:Toggle name="mute-all" class="settings-toggle" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Radio Chatter" class="settings-label" />
+                                    <ui:Toggle name="radio-chatter" value="true" class="settings-toggle" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            
+                        </ui:VisualElement>
+                        
+                        <!-- GRAPHICS TAB -->
+                        <ui:VisualElement name="graphics-content" class="tab-content">
+                            
+                            <ui:VisualElement class="settings-section">
+                                <ui:Label text="Display" class="section-title" />
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Resolution" class="settings-label" />
+                                    <ui:DropdownField name="resolution" class="settings-dropdown" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Display Mode" class="settings-label" />
+                                    <ui:DropdownField name="display-mode" choices="Fullscreen,Borderless,Windowed" class="settings-dropdown" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="VSync" class="settings-label" />
+                                    <ui:Toggle name="vsync" value="true" class="settings-toggle" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Target FPS" class="settings-label" />
+                                    <ui:DropdownField name="target-fps" choices="30,60,120,144,Unlimited" class="settings-dropdown" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            
+                            <ui:VisualElement class="settings-section">
+                                <ui:Label text="Quality" class="section-title" />
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Quality Preset" class="settings-label" />
+                                    <ui:DropdownField name="quality-preset" choices="Very Low,Low,Medium,High,Very High,Ultra" class="settings-dropdown" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Anti-Aliasing" class="settings-label" />
+                                    <ui:DropdownField name="anti-aliasing" choices="Off,FXAA,SMAA,TAA" class="settings-dropdown" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Shadow Quality" class="settings-label" />
+                                    <ui:DropdownField name="shadow-quality" choices="Off,Low,Medium,High,Ultra" class="settings-dropdown" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Texture Quality" class="settings-label" />
+                                    <ui:DropdownField name="texture-quality" choices="Low,Medium,High,Ultra" class="settings-dropdown" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="View Distance" class="settings-label" />
+                                    <ui:Slider name="view-distance" low-value="500" high-value="5000" value="5000" class="settings-slider" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            
+                            <ui:VisualElement class="settings-section">
+                                <ui:Label text="Effects" class="section-title" />
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Motion Blur" class="settings-label" />
+                                    <ui:Toggle name="motion-blur" class="settings-toggle" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Bloom" class="settings-label" />
+                                    <ui:Toggle name="bloom" value="true" class="settings-toggle" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Ambient Occlusion" class="settings-label" />
+                                    <ui:Toggle name="ambient-occlusion" value="true" class="settings-toggle" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="G-Force Effects" class="settings-label" />
+                                    <ui:Toggle name="gforce-effects" value="true" class="settings-toggle" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            
+                        </ui:VisualElement>
+                        
+                        <!-- CONTROLS TAB -->
+                        <ui:VisualElement name="controls-content" class="tab-content">
+                            
+                            <ui:VisualElement class="settings-section">
+                                <ui:Label text="Flight Controls" class="section-title" />
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Mouse Sensitivity" class="settings-label" />
+                                    <ui:Slider name="mouse-sensitivity" low-value="0.1" high-value="5" value="1" class="settings-slider" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Invert Y-Axis" class="settings-label" />
+                                    <ui:Toggle name="invert-y" class="settings-toggle" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Invert X-Axis" class="settings-label" />
+                                    <ui:Toggle name="invert-x" class="settings-toggle" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Flight Assist" class="settings-label" />
+                                    <ui:Toggle name="flight-assist" value="true" class="settings-toggle" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            
+                            <ui:VisualElement class="settings-section">
+                                <ui:Label text="Controller" class="section-title" />
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Controller Enabled" class="settings-label" />
+                                    <ui:Toggle name="controller-enabled" class="settings-toggle" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Stick Deadzone" class="settings-label" />
+                                    <ui:Slider name="stick-deadzone" low-value="0" high-value="0.5" value="0.1" class="settings-slider" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Vibration" class="settings-label" />
+                                    <ui:Toggle name="vibration" value="true" class="settings-toggle" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            
+                        </ui:VisualElement>
+                        
+                        <!-- GAMEPLAY TAB -->
+                        <ui:VisualElement name="gameplay-content" class="tab-content">
+                            
+                            <ui:VisualElement class="settings-section">
+                                <ui:Label text="Camera" class="section-title" />
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Camera View" class="settings-label" />
+                                    <ui:DropdownField name="camera-view" choices="Chase,Cockpit,Cinematic" class="settings-dropdown" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Camera Shake" class="settings-label" />
+                                    <ui:Toggle name="camera-shake" value="true" class="settings-toggle" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            
+                            <ui:VisualElement class="settings-section">
+                                <ui:Label text="Difficulty" class="section-title" />
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Difficulty Level" class="settings-label" />
+                                    <ui:DropdownField name="difficulty" choices="Easy,Normal,Hard,Ace" class="settings-dropdown" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Max Waves" class="settings-label" />
+                                    <ui:Slider name="max-waves" low-value="0" high-value="10" value="0" class="settings-slider" />
+                                    <ui:Label name="max-waves-value" text="All" class="settings-value" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Auto-Aim Assist" class="settings-label" />
+                                    <ui:Toggle name="auto-aim" value="true" class="settings-toggle" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Unlimited Ammo" class="settings-label" />
+                                    <ui:Toggle name="unlimited-ammo" class="settings-toggle" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            
+                            <ui:VisualElement class="settings-section">
+                                <ui:Label text="HUD Options" class="section-title" />
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Show HUD" class="settings-label" />
+                                    <ui:Toggle name="show-hud" value="true" class="settings-toggle" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Show Minimap" class="settings-label" />
+                                    <ui:Toggle name="show-minimap" value="true" class="settings-toggle" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Show Waypoints" class="settings-label" />
+                                    <ui:Toggle name="show-waypoints" value="true" class="settings-toggle" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="HUD Opacity" class="settings-label" />
+                                    <ui:Slider name="hud-opacity" low-value="0.3" high-value="1" value="0.9" class="settings-slider" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="settings-section">
+                                <ui:Label text="Radar Settings" class="section-title" />
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Show Enemies on Radar" class="settings-label" />
+                                    <ui:Toggle name="radar-show-enemies" value="true" class="settings-toggle" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Show Missiles on Radar" class="settings-label" />
+                                    <ui:Toggle name="radar-show-missiles" value="true" class="settings-toggle" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Radar Marker Size" class="settings-label" />
+                                    <ui:Slider name="radar-marker-size" low-value="0.5" high-value="2" value="1" class="settings-slider" />
+                                    <ui:Label name="radar-marker-size-value" text="1.0x" class="settings-value" />
+                                </ui:VisualElement>
+                                
+                                <ui:VisualElement class="settings-row">
+                                    <ui:Label text="Radar Range (m)" class="settings-label" />
+                                    <ui:Slider name="radar-range" low-value="1000" high-value="8000" value="4000" class="settings-slider" />
+                                    <ui:Label name="radar-range-value" text="4000m" class="settings-value" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+
+                            
+                            <ui:VisualElement class="settings-section save-data-section">
+                                <ui:Label text="Save Data" class="section-title" />
+                                
+                                <ui:Label text="Export or import your game progress as a JSON file." class="settings-description" />
+                                
+                                <ui:VisualElement class="settings-row save-buttons-row">
+                                    <ui:Button name="export-save-button" text="📤 EXPORT SAVE" class="save-data-button" />
+                                    <ui:Button name="import-save-button" text="📥 IMPORT SAVE" class="save-data-button" />
+                                </ui:VisualElement>
+                                
+                                <ui:Label name="save-path-label" text="" class="save-path-label" />
+                                
+                                <ui:VisualElement class="settings-row danger-zone">
+                                    <ui:Label text="Danger Zone" class="danger-label" />
+                                    <ui:Button name="reset-progress-button" text="🗑️ RESET ALL PROGRESS" class="danger-button" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            
+                        </ui:VisualElement>
+                        
+                    </ui:ScrollView>
+                </ui:VisualElement>
+                
+                <!-- Footer -->
+                <ui:VisualElement class="settings-footer">
+                    <ui:Button name="reset-button" text="RESET DEFAULTS" class="footer-button" />
+                    <ui:Button name="apply-button" text="APPLY" class="footer-button apply-button" />
+                </ui:VisualElement>
+                
+            </ui:VisualElement>
+            
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

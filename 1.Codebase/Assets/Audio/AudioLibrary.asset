@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93a1916ee7d2bea4ea33f57b4d35d98c, type: 3}
+  m_Name: AudioLibrary
+  m_EditorClassIdentifier: Assembly-CSharp::AudioLibrary
+  menuMusic: {fileID: 8300000, guid: 9df874507272db04cb215bb8ef7e7710, type: 3}
+  gameMusic: {fileID: 8300000, guid: 82fa3b0af3460984f92d07395841bef6, type: 3}
+  victoryMusic: {fileID: 8300000, guid: 02cb075233cc558488da0b8257c9432c, type: 3}
+  defeatMusic: {fileID: 8300000, guid: 1653fd3d137dc6a48b0b5bf151efc06d, type: 3}
+  buttonClick: {fileID: 8300000, guid: 8e8f9de005be5604eb0a492e2a054d4e, type: 3}
+  buttonHover: {fileID: 8300000, guid: d2d2399973aa5194e89cca9b26451f6c, type: 3}
+  menuOpen: {fileID: 8300000, guid: 7b6824b0052210440b239b8a1f8ba532, type: 3}
+  menuClose: {fileID: 8300000, guid: 58272476d13059d47b4c8a1651c2cf39, type: 3}
+  notification: {fileID: 8300000, guid: 8bcdf1ac21f32754880525dcf2dd30b1, type: 3}
+  missileLock: {fileID: 8300000, guid: a22dac53c20f1594f8deceea8afe71d1, type: 3}
+  missileFire: {fileID: 8300000, guid: 2968ed69c59928447be75176308ceb9b, type: 3}
+  missileIncoming: {fileID: 8300000, guid: db0cfbb1b23d4b942948f7145da93363, type: 3}
+  cannonFire: {fileID: 8300000, guid: 519f14de0f6dceb46bd7582a76ad09a7, type: 3}
+  hit: {fileID: 8300000, guid: 77e390c19e5ca41428d663eb1850236c, type: 3}
+  explosion: {fileID: 8300000, guid: 4fba0f211f825c041901b22a1714bb09, type: 3}
+  flareSound: {fileID: 8300000, guid: 045c0d5a70e5ff641b95ba22170ce868, type: 3}
+  chaffSound: {fileID: 8300000, guid: cda96c46bdfc9f743916ccc5cec9abf5, type: 3}
+  engineLoop: {fileID: 8300000, guid: c5ba3eec9effe444495a435774da1ec4, type: 3}
+  afterburner: {fileID: 8300000, guid: d8e159020617a424e9112b559d7baa3f, type: 3}
+  engineStart: {fileID: 8300000, guid: 417b475e4c7d1ad42a9d66a8d427c4b1, type: 3}
+  engineShutdown: {fileID: 8300000, guid: a1010c0be51d8f546b5744e8db81efed, type: 3}
+  stallWarning: {fileID: 8300000, guid: 38a1feba934ee3a4ebebee4078261871, type: 3}
+  stallHorn: {fileID: 8300000, guid: 7b980bffd08c0c64fa0df6568c169df3, type: 3}
+  pullUpWarning: {fileID: 8300000, guid: a15a8866aa4af6b47a2663a09f4fc079, type: 3}
+  boundaryWarning: {fileID: 8300000, guid: 12e7457f0b8951f439a5773100406610, type: 3}
+  lowHealthWarning: {fileID: 8300000, guid: 08723397cf027594c80750df222aa0aa, type: 3}
+  fireAlarm: {fileID: 8300000, guid: b096ca3de63d7d245b148592851d11ef, type: 3}
+  breathingHeavy: {fileID: 8300000, guid: ae91f1c5a30b0704bbbbeecee0277d9e, type: 3}
+  heartbeat: {fileID: 8300000, guid: ae91f1c5a30b0704bbbbeecee0277d9e, type: 3}
+  glocSound: {fileID: 8300000, guid: ae91f1c5a30b0704bbbbeecee0277d9e, type: 3}
+  foxTwo: {fileID: 8300000, guid: 6dc7b1396f030f941982e2b3cdd06051, type: 3}
+  splash: {fileID: 8300000, guid: 3a5a9af590c4e934fa4c783a2a3a1a29, type: 3}
+  enemyDown: {fileID: 8300000, guid: 0155715133b2fc44ebe5657c4893c5cc, type: 3}
+  rtb: {fileID: 8300000, guid: d2b8120fb1fbe5f43a1c8cbf1f930a33, type: 3}
+  bingoFuel: {fileID: 8300000, guid: 7baecd53e1755eb4b8da4401a29f27a3, type: 3}
+  missileLaunchVoice: {fileID: 8300000, guid: c3944abf49843944b915e2e395b6e09f, type: 3}
+  chaffFlareVoice: {fileID: 8300000, guid: 7c7c79e0651ff4c48a1817e6fa111781, type: 3}
+  rainLoop: {fileID: 8300000, guid: 3bbce922f089cf04a9c85761d8f79e49, type: 3}
+  windLoop: {fileID: 8300000, guid: 57e9f2f00df26604e94b402d8c7ed0a5, type: 3}
+  thunder: {fileID: 8300000, guid: 85638b9bfebfaaf4abf92ba344ad44d1, type: 3}
+  sonicBoom: {fileID: 8300000, guid: 48edff6873c3b8f438b3d7de8b365d5d, type: 3}
+  fireLoop: {fileID: 8300000, guid: b096ca3de63d7d245b148592851d11ef, type: 3}
+  metalStress: {fileID: 8300000, guid: 8eed3d348b2bd164badff2f24f4b57ef, type: 3}
+  warningBeep: {fileID: 8300000, guid: 80bebc4bcb942c04abaed339ba09081b, type: 3}
+  killConfirm: {fileID: 8300000, guid: 0cb847f1525dd6342b2337dcc0729149, type: 3}
+  doubleKill: {fileID: 8300000, guid: e56dcc67f76470a448f71c26aa01d0ad, type: 3}
+  tripleKill: {fileID: 8300000, guid: dc3d15e3563619d40a938c48a071788b, type: 3}
+  enemyEliminated: {fileID: 8300000, guid: 0cb847f1525dd6342b2337dcc0729149, type: 3}
+  underAttack: {fileID: 8300000, guid: db0cfbb1b23d4b942948f7145da93363, type: 3}
+  weHit: {fileID: 8300000, guid: 85841770d98022d4ea07762392b410ca, type: 3}
+  mayday: {fileID: 0}
+  watchYourSix: {fileID: 0}
+  targetLocked: {fileID: 8300000, guid: 00b52bc4b0d6ef04f985c83520659742, type: 3}
+  airSupport: {fileID: 0}
+  goodWork: {fileID: 0}
+  gameStart: {fileID: 8300000, guid: 9c8c0b11eb68737479cc4eee601b3bd4, type: 3}
+  gameOver: {fileID: 8300000, guid: 85841770d98022d4ea07762392b410ca, type: 3}
+  missionAccomplished: {fileID: 8300000, guid: 52cb9be0f078ba44eac02497806d5b68, type: 3}
+  objectiveSecured: {fileID: 0}
+  radioCheck: {fileID: 0}
+  radioStatic: {fileID: 0}
+  explosion2: {fileID: 8300000, guid: 75d50ea0fd1acaf4a8b3c2692cf614fc, type: 3}
+  minigun: {fileID: 8300000, guid: 23f902422cacc6f4aa05eedbd062fd47, type: 3}
+  loadingSound1: {fileID: 8300000, guid: 79bca9d7ff82e4e46afcccf3ac13df85, type: 3}
+  loadingSound2: {fileID: 8300000, guid: 964489e902f860a4c82f2516451400b4, type: 3}

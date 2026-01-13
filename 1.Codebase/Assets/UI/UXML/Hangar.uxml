@@ -1,0 +1,162 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Style src="project://database/Assets/UI/USS/MenuStyles.uss" />
+
+    <ui:VisualElement name="root" class="hangar-root">
+        <ui:VisualElement name="overlay" class="hangar-overlay">
+
+            <!-- Header -->
+            <ui:VisualElement class="hangar-header">
+                <ui:Button name="back-button" text="&lt; BACK" class="back-nav-button" />
+                <ui:Label text="AIRCRAFT HANGAR" class="page-title" />
+                <ui:Button name="launch-button" text="LAUNCH" class="launch-button" />
+            </ui:VisualElement>
+
+            <!-- Tab Navigation -->
+            <ui:VisualElement class="hangar-tabs">
+                <ui:Button name="tab-f15" text="F-15C" class="hangar-tab active" />
+                <ui:Button name="tab-su27" text="Su-27" class="hangar-tab" />
+                <ui:Button name="tab-mig29" text="MiG-29" class="hangar-tab" />
+                <ui:Button name="tab-fa18e" text="F/A-18E" class="hangar-tab" />
+                <ui:Button name="tab-hawk200" text="Hawk 200" class="hangar-tab" />
+                <ui:Button name="tab-mig21" text="MiG-21" class="hangar-tab" />
+                <ui:Button name="tab-tornado" text="Tornado" class="hangar-tab" />
+                <ui:Button name="tab-rafale" text="Rafale" class="hangar-tab" />
+                <ui:Button name="tab-typhoon" text="Typhoon" class="hangar-tab" />
+            </ui:VisualElement>
+
+            <!-- Tab Content Container -->
+            <ui:VisualElement class="hangar-content">
+
+                <!-- AIRCRAFT TAB CONTENT -->
+                <ui:VisualElement name="content-aircraft" class="tab-content" style="display: flex;">
+                    <ui:VisualElement class="hangar-main">
+
+                        <!-- Left Panel - Aircraft Display -->
+                        <ui:VisualElement class="aircraft-display-panel">
+                            <ui:VisualElement class="aircraft-showcase">
+                                <!-- 3D Model Preview Container -->
+                                <ui:VisualElement name="model-preview-container" class="model-preview-container">
+                                    <ui:VisualElement name="aircraft-3d-preview" class="aircraft-3d-preview" />
+                                    <ui:VisualElement class="preview-hints-container">
+                                        <ui:Label text="Drag to rotate | Scroll to zoom" class="hangar-hint-text" />
+                                        <ui:Label text="Click FULLSCREEN for larger view" class="rotate-hint-sub" />
+                                    </ui:VisualElement>
+                                    <!-- Fullscreen Toggle Button -->
+                                    <ui:Button name="fullscreen-button" text="FULLSCREEN" tooltip="View in fullscreen" class="fullscreen-toggle-button" />
+                                </ui:VisualElement>
+                                <ui:VisualElement name="aircraft-image" class="aircraft-image-large" style="display: none;" />
+                                <ui:VisualElement class="aircraft-badge">
+                                    <ui:Label text="CURRENTLY SELECTED" class="badge-text" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="aircraft-info">
+                                <ui:VisualElement class="aircraft-name-row">
+                                    <ui:Label name="aircraft-name" text="F-15C EAGLE" class="aircraft-name-large" />
+                                    <ui:Label name="default-indicator" text="" class="default-indicator" />
+                                </ui:VisualElement>
+                                <ui:Label name="aircraft-role" text="Air Superiority Fighter" class="aircraft-role" />
+                                <ui:Label name="aircraft-origin" text="United States - McDonnell Douglas" class="aircraft-origin" />
+                                <ui:Button name="set-default-button" text="SET AS DEFAULT" class="set-default-button" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <!-- Right Panel - Stats & Description -->
+                        <ui:VisualElement class="aircraft-details-panel">
+                            <ui:ScrollView class="details-scroll">
+
+                            <!-- Performance Stats -->
+                            <ui:VisualElement class="stats-section">
+                                <ui:Label text="PERFORMANCE" class="section-title" />
+
+                                <ui:VisualElement class="stat-row">
+                                    <ui:Label text="SPEED" class="stat-label" />
+                                    <ui:VisualElement class="stat-bar-bg">
+                                        <ui:VisualElement name="speed-bar" class="stat-bar-fill" style="width: 90%;" />
+                                    </ui:VisualElement>
+                                    <ui:Label name="speed-value" text="Mach 2.5" class="stat-value" />
+                                </ui:VisualElement>
+
+                                <ui:VisualElement class="stat-row">
+                                    <ui:Label text="MOBILITY" class="stat-label" />
+                                    <ui:VisualElement class="stat-bar-bg">
+                                        <ui:VisualElement name="mobility-bar" class="stat-bar-fill" style="width: 80%;" />
+                                    </ui:VisualElement>
+                                    <ui:Label name="mobility-value" text="9G" class="stat-value" />
+                                </ui:VisualElement>
+
+                                <ui:VisualElement class="stat-row">
+                                    <ui:Label text="ARMOR" class="stat-label" />
+                                    <ui:VisualElement class="stat-bar-bg">
+                                        <ui:VisualElement name="armor-bar" class="stat-bar-fill" style="width: 65%;" />
+                                    </ui:VisualElement>
+                                    <ui:Label name="armor-value" text="Medium" class="stat-value" />
+                                </ui:VisualElement>
+
+                                <ui:VisualElement class="stat-row">
+                                    <ui:Label text="FIREPOWER" class="stat-label" />
+                                    <ui:VisualElement class="stat-bar-bg">
+                                        <ui:VisualElement name="firepower-bar" class="stat-bar-fill" style="width: 95%;" />
+                                    </ui:VisualElement>
+                                    <ui:Label name="firepower-value" text="Excellent" class="stat-value" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+
+                            <!-- Armament -->
+                            <ui:VisualElement class="armament-section">
+                                <ui:Label text="ARMAMENT" class="section-title" />
+
+                                <ui:VisualElement class="weapon-row">
+                                    <ui:VisualElement class="weapon-icon cannon-icon" />
+                                    <ui:VisualElement class="weapon-info">
+                                        <ui:Label text="M61A1 VULCAN" class="weapon-name" />
+                                        <ui:Label text="20mm Rotary Cannon - 940 rounds" class="weapon-desc" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+
+                                <ui:VisualElement class="weapon-row">
+                                    <ui:VisualElement class="weapon-icon missile-icon" />
+                                    <ui:VisualElement class="weapon-info">
+                                        <ui:Label text="AIM-9X SIDEWINDER" class="weapon-name" />
+                                        <ui:Label text="IR-guided AAM - x4" class="weapon-desc" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+
+                                <ui:VisualElement class="weapon-row">
+                                    <ui:VisualElement class="weapon-icon missile-icon" />
+                                    <ui:VisualElement class="weapon-info">
+                                        <ui:Label text="AIM-120C AMRAAM" class="weapon-name" />
+                                        <ui:Label text="Radar-guided AAM - x4" class="weapon-desc" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+
+                            <!-- Description -->
+                            <ui:VisualElement class="description-section">
+                                <ui:Label text="ABOUT" class="section-title" />
+                                <ui:Label name="aircraft-description" class="aircraft-description" text="The F-15C Eagle is an all-weather tactical fighter designed to gain and maintain air superiority in aerial combat. It is considered among the most successful modern fighters with over 100 victories and no losses in aerial combat." />
+                            </ui:VisualElement>
+
+                            </ui:ScrollView>
+                        </ui:VisualElement>
+
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <!-- Fullscreen Model Preview Overlay -->
+        <ui:VisualElement name="fullscreen-overlay" class="fullscreen-overlay" style="display: none;">
+            <ui:VisualElement name="fullscreen-preview-container" class="fullscreen-preview-container">
+                <ui:VisualElement name="fullscreen-3d-preview" class="fullscreen-3d-preview" />
+            </ui:VisualElement>
+            <ui:VisualElement class="fullscreen-controls">
+                <ui:Label text="Drag to rotate | Scroll to zoom | ESC to close" class="fullscreen-hint" />
+                <ui:Button name="close-fullscreen-button" text="CLOSE" class="close-fullscreen-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

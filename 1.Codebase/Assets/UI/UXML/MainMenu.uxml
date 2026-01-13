@@ -1,0 +1,368 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Style src="project://database/Assets/UI/USS/MenuStyles.uss" />
+
+    <ui:VisualElement name="root" class="main-menu-root">
+
+        <!-- Animated Flying Jets Background Layer -->
+        <ui:VisualElement class="flying-jets-container">
+            <!-- Jets flying LEFT to RIGHT (at different heights and speeds) -->
+            <ui:VisualElement class="flying-jet jet-ltr jet-ltr-1" />
+            <ui:VisualElement class="flying-jet jet-ltr jet-ltr-2" />
+            <ui:VisualElement class="flying-jet jet-ltr jet-ltr-3" />
+            <ui:VisualElement class="flying-jet jet-ltr jet-ltr-4" />
+            <ui:VisualElement class="flying-jet jet-ltr jet-ltr-5" />
+
+            <!-- Jets flying RIGHT to LEFT (at different heights and speeds) -->
+            <ui:VisualElement class="flying-jet jet-rtl jet-rtl-1" />
+            <ui:VisualElement class="flying-jet jet-rtl jet-rtl-2" />
+            <ui:VisualElement class="flying-jet jet-rtl jet-rtl-3" />
+            <ui:VisualElement class="flying-jet jet-rtl jet-rtl-4" />
+            <ui:VisualElement class="flying-jet jet-rtl jet-rtl-5" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="container" class="main-menu-container">
+            
+            <!-- Left Panel with Buttons -->
+            <ui:VisualElement name="left-panel" class="menu-left-panel">
+                
+                <!-- Game Logo Placeholder (replace with actual logo image) -->
+                <ui:VisualElement name="game-logo-placeholder" class="game-logo-placeholder">
+                    <ui:Label text="[ GAME LOGO HERE ]" class="logo-placeholder-text" />
+                    <ui:Label text="Replace this with your game logo image" class="logo-instruction-text" />
+                </ui:VisualElement>
+                
+                <!-- Game Title -->
+                <ui:VisualElement class="title-container-with-icons">
+                    <ui:VisualElement class="icon-jet-fighter title-icon-left" />
+                    <ui:VisualElement class="icon-title-plane title-icon-left" />
+                    <ui:VisualElement class="title-text-group">
+                        <ui:Label name="game-title" text="AIR SUPERIORITY" class="game-title" />
+                        <ui:Label name="game-subtitle" text="HONG KONG" class="game-subtitle" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="icon-title-plane title-icon-right" />
+                    <ui:VisualElement class="icon-jet-fighter title-icon-right" />
+                </ui:VisualElement>
+                
+                <!-- Menu Buttons -->
+                <ui:VisualElement name="buttons-container" class="menu-buttons-container">
+
+                    <ui:Button name="new-game-button" class="menu-button primary-button menu-button-with-icon">
+                        <ui:VisualElement class="button-icon icon-new-game" />
+                        <ui:Label text="START GAME" class="button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="profile-button" class="menu-button menu-button-with-icon">
+                        <ui:VisualElement class="button-icon icon-pilot" />
+                        <ui:Label text="PILOT PROFILE" class="button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="settings-button" class="menu-button menu-button-with-icon">
+                        <ui:VisualElement class="button-icon icon-settings" />
+                        <ui:Label text="SETTINGS" class="button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="how-to-play-button" class="menu-button menu-button-with-icon">
+                        <ui:VisualElement class="button-icon icon-how-to-play" />
+                        <ui:Label text="HOW TO PLAY" class="button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="credits-button" class="menu-button menu-button-with-icon">
+                        <ui:VisualElement class="button-icon icon-credits" />
+                        <ui:Label text="CREDITS" class="button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="exit-button" class="menu-button exit-button menu-button-with-icon">
+                        <ui:VisualElement class="button-icon icon-exit" />
+                        <ui:Label text="EXIT GAME" class="button-text" />
+                    </ui:Button>
+
+                </ui:VisualElement>
+                
+            </ui:VisualElement>
+            
+            <!-- Right Panel (shows background) -->
+            <ui:VisualElement name="right-panel" class="menu-right-panel" />
+            
+        </ui:VisualElement>
+        
+        <!-- Social Links -->
+        <ui:VisualElement name="social-links" class="social-links-container">
+            <ui:Button name="github-button" text="📂 GitHub" class="social-button github-button" />
+            <ui:Button name="youtube-button" text="▶️ YouTube" class="social-button youtube-button" />
+        </ui:VisualElement>
+        
+        <!-- Credits Panel (hidden by default) - Full Screen with Multi-Page Layout -->
+        <ui:VisualElement name="credits-panel" class="credits-panel-fullscreen">
+            <ui:VisualElement class="credits-content-fullscreen">
+
+                <!-- Game Logo -->
+                <ui:VisualElement class="credits-logo-container">
+                    <ui:Label text="ARTIFICIAL SMILES: GUARDIAN 1" class="credits-game-title" />
+                    <ui:Label text="HONG KONG" class="credits-game-subtitle" />
+                </ui:VisualElement>
+
+                <!-- Credits Tab Navigation -->
+                <ui:VisualElement class="credits-tab-container">
+                    <ui:Button name="credits-tab-general" text="GENERAL" class="credits-tab-button credits-tab-active" />
+                    <ui:Button name="credits-tab-aircraft" text="AIRCRAFT" class="credits-tab-button" />
+                    <ui:Button name="credits-tab-audio" text="AUDIO" class="credits-tab-button" />
+                </ui:VisualElement>
+
+                <!-- GENERAL CREDITS PAGE -->
+                <ui:VisualElement name="credits-page-general" class="credits-page credits-page-visible">
+                    <ui:ScrollView class="credits-scroll">
+                        <ui:VisualElement class="credits-grid">
+
+                            <!-- Left Column -->
+                            <ui:VisualElement class="credits-column">
+                                <ui:Label text="DEVELOPMENT" class="credits-section" />
+                                <ui:Label text="Game Design &amp; Programming" class="credits-role" />
+                                <ui:Label text="dun4law" class="credits-name" />
+
+                                <ui:Label text="ART &amp; 3D MODELS" class="credits-section" />
+                                <ui:Label text="F-15C, Su-27, MiG-29 Models" class="credits-role" />
+                                <ui:Label text="dun4law (Original)" class="credits-name" />
+                                <ui:Label text="Particle Effects" class="credits-role" />
+                                <ui:Label text="100 Best Effect Pack" class="credits-name" />
+                                <ui:Label text="UI Icons" class="credits-role" />
+                                <ui:Label text="game-icons.net" class="credits-name" />
+                            </ui:VisualElement>
+
+                            <!-- Center Column -->
+                            <ui:VisualElement class="credits-column">
+                                <ui:Label text="ACADEMIC PROJECT" class="credits-section" />
+                                <ui:Label text="This game was built for the" class="credits-role" />
+                                <ui:Label text="2025-2026 Programming for 3D" class="credits-name" />
+                                <ui:Label text="Module Assignment" class="credits-name" />
+                                <ui:Label text="Submission Date" class="credits-role" />
+                                <ui:Label text="January 15, 2026" class="credits-name" />
+
+                                <ui:Label text="THANKS" class="credits-section" />
+                                <ui:Label text="Thank you for playing!" class="credits-role" />
+                                <ui:Label text="Thanks to the module convenor" class="credits-role" />
+                                <ui:Label text="and all who supported this project" class="credits-role" />
+
+                                <ui:Label text="ENGINE &amp; TOOLS" class="credits-section" />
+                                <ui:Label text="Unity 6000.4.0b3 • UI Toolkit" class="credits-role" />
+                                <ui:Label text="Input System Package" class="credits-role" />
+
+                                <ui:Label text="UNITY PACKAGES" class="credits-section" />
+                                <ui:Label text="Thanks to these Unity packages:" class="credits-role" />
+                                <ui:Label text="Input System" class="credits-name" />
+                                <ui:Label text="Timeline" class="credits-name" />
+                                <ui:Label text="AI Navigation" class="credits-name" />
+                                <ui:Label text="AI Inference" class="credits-name" />
+                                <ui:Label text="2D Sprite &amp; Enhancers" class="credits-name" />
+                            </ui:VisualElement>
+
+                            <!-- Right Column -->
+                            <ui:VisualElement class="credits-column">
+                                <ui:Label text="SPECIAL THANKS" class="credits-section" />
+                                <ui:Label text="All Testers &amp; Players" class="credits-name" />
+                                <ui:Label text="Open Source Community" class="credits-name" />
+
+                                <ui:Label text="INSPIRATION" class="credits-section" />
+                                <ui:Label text="Inspired by Ace Combat 7 and War Thunder" class="credits-inspiration" />
+                                <ui:Label text="Thank you for the inspiration" class="credits-inspiration" />
+
+                                <ui:Label text="ICON CREDITS" class="credits-section" />
+                                <ui:Label text="Icons made by Lorc" class="credits-role" />
+                                <ui:Label text="Icons made by Delapouite" class="credits-role" />
+                                <ui:Label text="Icons made by Sbed" class="credits-role" />
+                                <ui:Label text="game-icons.net" class="credits-name" />
+                                <ui:Label text="CC BY 3.0 License" class="credits-name" />
+                            </ui:VisualElement>
+
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                </ui:VisualElement>
+
+                <!-- AIRCRAFT CREDITS PAGE -->
+                <ui:VisualElement name="credits-page-aircraft" class="credits-page">
+                    <ui:ScrollView class="credits-scroll">
+                        <ui:VisualElement class="credits-grid">
+
+                            <!-- Left Column - Sketchfab Models -->
+                            <ui:VisualElement class="credits-column">
+                                <ui:Label text="SKETCHFAB MODELS" class="credits-section" />
+                                <ui:Label text="by KojfDiscord" class="credits-role" />
+                                <ui:Label text="CC BY 4.0 License" class="credits-name" />
+
+                                <ui:Label text="F/A-18E Super Hornet" class="credits-subsection" />
+                                <ui:Label text="War Thunder - Line of Contact" class="credits-role" />
+                                <ui:Label text="sketchfab.com" class="credits-name" />
+
+                                <ui:Label text="MiG-21bis Fishbed" class="credits-subsection" />
+                                <ui:Label text="War Thunder - Custom" class="credits-role" />
+                                <ui:Label text="sketchfab.com" class="credits-name" />
+
+                                <ui:Label text="Hawk 200" class="credits-subsection" />
+                                <ui:Label text="War Thunder - Spearhead" class="credits-role" />
+                                <ui:Label text="sketchfab.com" class="credits-name" />
+                            </ui:VisualElement>
+
+                            <!-- Center Column - More Sketchfab Models -->
+                            <ui:VisualElement class="credits-column">
+                                <ui:Label text="SKETCHFAB MODELS" class="credits-section" />
+                                <ui:Label text="by KojfDiscord" class="credits-role" />
+                                <ui:Label text="CC BY 4.0 License" class="credits-name" />
+
+                                <ui:Label text="Dassault Rafale M F3-R" class="credits-subsection" />
+                                <ui:Label text="War Thunder - Line Of Contact" class="credits-role" />
+                                <ui:Label text="sketchfab.com" class="credits-name" />
+
+                                <ui:Label text="Panavia Tornado GR.4" class="credits-subsection" />
+                                <ui:Label text="War Thunder - Custom Payload" class="credits-role" />
+                                <ui:Label text="sketchfab.com" class="credits-name" />
+
+                                <ui:Label text="Eurofighter Typhoon" class="credits-subsection" />
+                                <ui:Label text="War Thunder - Line Of Contact" class="credits-role" />
+                                <ui:Label text="sketchfab.com" class="credits-name" />
+                            </ui:VisualElement>
+
+                            <!-- Right Column - Other Sources -->
+                            <ui:VisualElement class="credits-column">
+                                <ui:Label text="ORIGINAL MODELS" class="credits-section" />
+                                <ui:Label text="Created by dun4law" class="credits-role" />
+
+                                <ui:Label text="F-15C Eagle" class="credits-subsection" />
+                                <ui:Label text="Original 3D Model" class="credits-name" />
+
+                                <ui:Label text="Su-27 Flanker" class="credits-subsection" />
+                                <ui:Label text="Original 3D Model" class="credits-name" />
+
+                                <ui:Label text="MiG-29 Fulcrum" class="credits-subsection" />
+                                <ui:Label text="Original 3D Model" class="credits-name" />
+
+                                <ui:Label text="LICENSE INFO" class="credits-section" />
+                                <ui:Label text="Sketchfab models are used under" class="credits-role" />
+                                <ui:Label text="Creative Commons Attribution 4.0" class="credits-name" />
+                                <ui:Label text="creativecommons.org/licenses/by/4.0" class="credits-role" />
+                            </ui:VisualElement>
+
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                </ui:VisualElement>
+
+                <!-- AUDIO CREDITS PAGE -->
+                <ui:VisualElement name="credits-page-audio" class="credits-page">
+                    <ui:ScrollView class="credits-scroll">
+                        <ui:VisualElement class="credits-grid">
+
+                            <!-- Left Column - SoundBible -->
+                            <ui:VisualElement class="credits-column">
+                                <ui:Label text="SOUNDBIBLE.COM" class="credits-section" />
+                                <ui:Label text="Public Domain / Attribution" class="credits-role" />
+
+                                <ui:Label text="Ambient &amp; Weather" class="credits-subsection" />
+                                <ui:Label text="Heartbeat.wav" class="credits-name" />
+                                <ui:Label text="Thunder.mp3" class="credits-name" />
+                                <ui:Label text="RainLoop.mp3" class="credits-name" />
+
+                                <ui:Label text="Engine Sounds" class="credits-subsection" />
+                                <ui:Label text="EngineStart.mp3" class="credits-name" />
+                                <ui:Label text="EngineShutdown.mp3" class="credits-name" />
+                                <ui:Label text="Afterburner.mp3" class="credits-name" />
+
+                                <ui:Label text="Warning Sounds" class="credits-subsection" />
+                                <ui:Label text="StallHorn.mp3" class="credits-name" />
+                                <ui:Label text="PullUpWarning.mp3" class="credits-name" />
+                                <ui:Label text="BoundaryWarning.mp3" class="credits-name" />
+                                <ui:Label text="WarningBeep.mp3" class="credits-name" />
+
+                                <ui:Label text="Combat Sounds" class="credits-subsection" />
+                                <ui:Label text="GlocSound.wav" class="credits-name" />
+                                <ui:Label text="FireLoop.mp3" class="credits-name" />
+                                <ui:Label text="MetalStress.wav" class="credits-name" />
+                                <ui:Label text="KillConfirm.wav" class="credits-name" />
+                            </ui:VisualElement>
+
+                            <!-- Center Column - OpenGameArt -->
+                            <ui:VisualElement class="credits-column">
+                                <ui:Label text="OPENGAMEART.ORG" class="credits-section" />
+                                <ui:Label text="CC-BY-SA 4.0 License" class="credits-role" />
+
+                                <ui:Label text="Radio Soldier Pack" class="credits-subsection" />
+                                <ui:Label text="by VoiceBosch" class="credits-role" />
+                                <ui:Label text="EnemyDown.wav" class="credits-name" />
+                                <ui:Label text="Splash.wav" class="credits-name" />
+                                <ui:Label text="RTB.wav" class="credits-name" />
+                                <ui:Label text="MissileLaunchVoice.wav" class="credits-name" />
+                                <ui:Label text="ChaffFlareVoice.wav" class="credits-name" />
+                                <ui:Label text="FoxTwo.wav" class="credits-name" />
+                                <ui:Label text="GoodWork.wav" class="credits-name" />
+                                <ui:Label text="MissionAccomplished.wav" class="credits-name" />
+                                <ui:Label text="UnderAttack.wav" class="credits-name" />
+                                <ui:Label text="AirSupport.wav" class="credits-name" />
+                                <ui:Label text="WatchYourSix.wav" class="credits-name" />
+                                <ui:Label text="ObjectiveSecured.wav" class="credits-name" />
+
+                                <ui:Label text="Warlord Pack" class="credits-subsection" />
+                                <ui:Label text="by VoiceBosch" class="credits-role" />
+                                <ui:Label text="TargetLocked.wav" class="credits-name" />
+                                <ui:Label text="DoubleKill.wav" class="credits-name" />
+                                <ui:Label text="TripleKill.wav" class="credits-name" />
+                                <ui:Label text="EnemyEliminated.wav" class="credits-name" />
+                            </ui:VisualElement>
+
+                            <!-- Right Column - Freesound & Attribution -->
+                            <ui:VisualElement class="credits-column">
+                                <ui:Label text="FREESOUND.ORG" class="credits-section" />
+                                <ui:Label text="Various CC Licenses" class="credits-role" />
+
+                                <ui:Label text="UI Sounds" class="credits-subsection" />
+                                <ui:Label text="ButtonHover.wav" class="credits-name" />
+                                <ui:Label text="MenuOpen.wav" class="credits-name" />
+                                <ui:Label text="MenuClose.ogg" class="credits-name" />
+                                <ui:Label text="by GameDevC (CC BY 4.0)" class="credits-role" />
+
+                                <ui:Label text="Combat Sounds" class="credits-subsection" />
+                                <ui:Label text="MissileLock.mp3" class="credits-name" />
+                                <ui:Label text="FlareSound.wav" class="credits-name" />
+                                <ui:Label text="ChaffSound.wav" class="credits-name" />
+                                <ui:Label text="by Robinhood76 (CC BY-NC 4.0)" class="credits-role" />
+
+                                <ui:Label text="REQUIRED ATTRIBUTION" class="credits-section" />
+                                <ui:Label text="Voice sounds by VoiceBosch" class="credits-role" />
+                                <ui:Label text="from OpenGameArt.org (CC-BY-SA 4.0)" class="credits-name" />
+                                <ui:Label text="Sound effects from" class="credits-role" />
+                                <ui:Label text="SoundBible.com and Freesound.org" class="credits-name" />
+                            </ui:VisualElement>
+
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                </ui:VisualElement>
+
+                <!-- Footer -->
+                <ui:VisualElement class="credits-footer">
+                    <ui:Label text="© 2026 All Rights Reserved" class="credits-copyright" />
+                    <ui:VisualElement class="credits-made-in-image" />
+                </ui:VisualElement>
+
+                <ui:Button name="credits-close-button" text="← BACK TO MENU" class="credits-back-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- New Badges Popup (hidden by default) -->
+        <ui:VisualElement name="new-badges-popup" class="new-badges-popup">
+            <ui:VisualElement class="new-badges-dialog">
+                <ui:Label text="NEW BADGES UNLOCKED!" class="new-badges-title" />
+                <ui:Label name="new-badges-subtitle" text="You earned 3 new badges!" class="new-badges-subtitle" />
+
+                <ui:ScrollView class="new-badges-scroll">
+                    <ui:VisualElement name="new-badges-container" class="new-badges-container">
+                        <!-- Badges will be dynamically added here -->
+                    </ui:VisualElement>
+                </ui:ScrollView>
+
+                <ui:VisualElement class="new-badges-buttons">
+                    <ui:Button name="badges-close-button" text="CLOSE" class="badges-popup-button badges-close-btn" />
+                    <ui:Button name="badges-view-all-button" text="VIEW ALL BADGES" class="badges-popup-button badges-view-btn" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:Label text="v1.0" class="version-label" />
+
+    </ui:VisualElement>
+</ui:UXML>

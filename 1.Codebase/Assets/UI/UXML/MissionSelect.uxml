@@ -1,0 +1,122 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Style src="project://database/Assets/UI/USS/MenuStyles.uss" />
+    
+    <ui:VisualElement name="root" class="mission-select-root">
+        <ui:VisualElement name="overlay" class="mission-overlay">
+            
+            <!-- Header -->
+            <ui:VisualElement class="mission-header">
+                <ui:Button name="back-button" text="← BACK" class="back-nav-button" />
+                <ui:Label text="SELECT MISSION" class="page-title" />
+                <ui:VisualElement class="header-spacer" />
+            </ui:VisualElement>
+            
+            <!-- Content Area -->
+            <ui:VisualElement class="mission-content">
+                
+                <!-- Mission List (Left) -->
+                <ui:VisualElement class="mission-list-panel">
+                    <ui:Label text="CAMPAIGN" class="panel-subtitle" />
+                    <ui:ScrollView class="mission-scroll">
+                        
+                        <ui:Button name="mission-1" class="mission-item mission-unlocked">
+                            <ui:VisualElement class="mission-item-content">
+                                <ui:Label text="01" class="mission-number" />
+                                <ui:VisualElement class="mission-info">
+                                    <ui:Label text="First Contact" class="mission-name" />
+                                    <ui:Label text="Intercept enemy recon aircraft" class="mission-desc" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="mission-stars">
+                                    <ui:Label text="★★★" class="stars-earned" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:Button>
+                        
+                        <ui:Button name="mission-2" class="mission-item mission-unlocked">
+                            <ui:VisualElement class="mission-item-content">
+                                <ui:Label text="02" class="mission-number" />
+                                <ui:VisualElement class="mission-info">
+                                    <ui:Label text="Harbor Defense" class="mission-name" />
+                                    <ui:Label text="Protect Victoria Harbor from attack" class="mission-desc" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="mission-stars">
+                                    <ui:Label text="★★☆" class="stars-earned" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:Button>
+                        
+                        <ui:Button name="mission-3" class="mission-item mission-unlocked">
+                            <ui:VisualElement class="mission-item-content">
+                                <ui:Label text="03" class="mission-number" />
+                                <ui:VisualElement class="mission-info">
+                                    <ui:Label text="Night Raid" class="mission-name" />
+                                    <ui:Label text="Strike enemy supply depot under cover of darkness" class="mission-desc" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="mission-stars">
+                                    <ui:Label text="☆☆☆" class="stars-empty" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:Button>
+                        
+                        <ui:Button name="mission-4" class="mission-item mission-locked">
+                            <ui:VisualElement class="mission-item-content">
+                                <ui:Label text="04" class="mission-number" />
+                                <ui:VisualElement class="mission-info">
+                                    <ui:Label text="???" class="mission-name" />
+                                    <ui:Label text="Complete previous mission to unlock" class="mission-desc" />
+                                </ui:VisualElement>
+                                <ui:Label text="🔒" class="mission-lock-icon" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        
+                        <ui:Button name="mission-5" class="mission-item mission-locked">
+                            <ui:VisualElement class="mission-item-content">
+                                <ui:Label text="05" class="mission-number" />
+                                <ui:VisualElement class="mission-info">
+                                    <ui:Label text="???" class="mission-name" />
+                                    <ui:Label text="Complete previous mission to unlock" class="mission-desc" />
+                                </ui:VisualElement>
+                                <ui:Label text="🔒" class="mission-lock-icon" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        
+                    </ui:ScrollView>
+                </ui:VisualElement>
+                
+                <!-- Mission Details (Right) -->
+                <ui:VisualElement class="mission-details-panel">
+                    <ui:VisualElement name="mission-preview" class="mission-preview-image" />
+                    
+                    <ui:Label name="detail-title" text="First Contact" class="detail-title" />
+                    <ui:Label name="detail-description" text="Enemy reconnaissance aircraft have been detected approaching Hong Kong airspace. Scramble immediately and intercept before they can gather intelligence on our positions." class="detail-description" />
+                    
+                    <ui:VisualElement class="detail-stats">
+                        <ui:VisualElement class="stat-row">
+                            <ui:Label text="Difficulty:" class="stat-label" />
+                            <ui:Label name="detail-difficulty" text="★★☆☆☆" class="stat-value difficulty-easy" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="stat-row">
+                            <ui:Label text="Best Time:" class="stat-label" />
+                            <ui:Label name="detail-best-time" text="04:32" class="stat-value" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="stat-row">
+                            <ui:Label text="High Score:" class="stat-label" />
+                            <ui:Label name="detail-high-score" text="125,000" class="stat-value" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    
+                    <ui:VisualElement class="detail-objectives">
+                        <ui:Label text="OBJECTIVES" class="objectives-title" />
+                        <ui:Label text="• Intercept all enemy aircraft" class="objective-item" />
+                        <ui:Label text="• Prevent enemy from reaching the harbor" class="objective-item" />
+                        <ui:Label text="• Return to base safely" class="objective-item" />
+                    </ui:VisualElement>
+                    
+                    <ui:Button name="start-mission-button" text="START MISSION" class="start-mission-button" />
+                </ui:VisualElement>
+                
+            </ui:VisualElement>
+            
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

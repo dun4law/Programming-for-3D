@@ -1,0 +1,4912 @@
+:root {
+    -unity-font: url("project://database/Assets/UI/Fonts/Ticketing.ttf?fileID=12800000&guid=5dbf1a3e43bce6545ba6af77d8e786fd&type=3#Ticketing");
+    --primary-color: rgb(0, 180, 255);
+    --secondary-color: rgb(0, 150, 230);
+    --accent-color: rgb(0, 200, 255);
+    --bg-color: rgba(0, 0, 0, 0.85);
+    --panel-bg: rgba(10, 20, 40, 0.9);
+    --text-color: rgb(100, 220, 255);
+    --text-white: rgb(255, 255, 255);
+    --hover-color: rgb(80, 200, 255);
+    --disabled-color: rgb(128, 128, 128);
+    --border-color: rgb(0, 180, 255);
+    -unity-font-definition: url("project://database/Assets/UI/Fonts/Ticketing.ttf?fileID=12800000&guid=5dbf1a3e43bce6545ba6af77d8e786fd&type=3#Ticketing");
+}
+
+.flying-jets-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.flying-jet {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: resource("UI/Icons/flying-jet-new");
+    -unity-background-scale-mode: scale-to-fit;
+    opacity: 0.15;
+}
+
+.jet-ltr {
+    rotate: 90deg;
+}
+
+.jet-ltr-1 {
+    top: 12%;
+    left: -100px;
+    width: 60px;
+    height: 60px;
+    opacity: 0.12;
+    transition-property: translate;
+    transition-duration: 18s;
+    transition-timing-function: linear;
+}
+
+.jet-ltr-2 {
+    top: 35%;
+    left: -100px;
+    width: 90px;
+    height: 90px;
+    opacity: 0.18;
+    transition-property: translate;
+    transition-duration: 14s;
+    transition-timing-function: linear;
+}
+
+.jet-ltr-3 {
+    top: 58%;
+    left: -100px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.1;
+    transition-property: translate;
+    transition-duration: 22s;
+    transition-timing-function: linear;
+}
+
+.jet-ltr-4 {
+    top: 78%;
+    left: -100px;
+    width: 70px;
+    height: 70px;
+    opacity: 0.14;
+    transition-property: translate;
+    transition-duration: 16s;
+    transition-timing-function: linear;
+}
+
+.jet-ltr-5 {
+    top: 45%;
+    left: -100px;
+    width: 75px;
+    height: 75px;
+    opacity: 0.16;
+    transition-property: translate;
+    transition-duration: 19s;
+    transition-timing-function: linear;
+}
+
+.jet-rtl {
+    rotate: -90deg;
+}
+
+.jet-rtl-1 {
+    top: 8%;
+    right: -100px;
+    left: auto;
+    width: 70px;
+    height: 70px;
+    opacity: 0.13;
+    transition-property: translate;
+    transition-duration: 20s;
+    transition-timing-function: linear;
+}
+
+.jet-rtl-2 {
+    top: 28%;
+    right: -100px;
+    left: auto;
+    width: 55px;
+    height: 55px;
+    opacity: 0.11;
+    transition-property: translate;
+    transition-duration: 24s;
+    transition-timing-function: linear;
+}
+
+.jet-rtl-3 {
+    top: 52%;
+    right: -100px;
+    left: auto;
+    width: 85px;
+    height: 85px;
+    opacity: 0.16;
+    transition-property: translate;
+    transition-duration: 15s;
+    transition-timing-function: linear;
+}
+
+.jet-rtl-4 {
+    top: 72%;
+    right: -100px;
+    left: auto;
+    width: 65px;
+    height: 65px;
+    opacity: 0.12;
+    transition-property: translate;
+    transition-duration: 19s;
+    transition-timing-function: linear;
+}
+
+.jet-rtl-5 {
+    top: 40%;
+    right: -100px;
+    left: auto;
+    width: 80px;
+    height: 80px;
+    opacity: 0.15;
+    transition-property: translate;
+    transition-duration: 17s;
+    transition-timing-function: linear;
+}
+
+.jet-ltr.flying {
+    translate: 2200px 0;
+}
+
+.jet-rtl.flying {
+    translate: -2200px 0;
+}
+
+.jet-diagonal-1.flying {
+    translate: 2200px 1000px;
+}
+
+.jet-diagonal-2.flying {
+    translate: 2200px -1000px;
+}
+
+.jet-diagonal-3.flying {
+    translate: -2200px 1000px;
+}
+
+.jet-diagonal-4.flying {
+    translate: -2200px -1000px;
+}
+
+.main-menu-root {
+    flex-grow: 1;
+    background-color: rgb(5, 15, 30);
+    background-image: resource("StartupLogos/bg");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.main-menu-container {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-left-panel {
+    flex-grow: 1;
+    background-color: transparent;
+    padding: 20px 30px;
+    justify-content: flex-start;
+    align-items: center;
+    border-right-width: 0;
+}
+
+.game-logo-placeholder {
+    width: 450px;
+    height: 240px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border-width: 0;
+    justify-content: center;
+    align-items: center;
+    background-image: url("project://database/Assets/Resources/GameLogo.png?fileID=2800000&guid=a29d8a1406f8ddf4c8b0f2df9ca6915f&type=3#GameLogo");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.logo-placeholder-text {
+    display: none;
+}
+
+.logo-instruction-text {
+    display: none;
+}
+
+.menu-right-panel {
+    display: none;
+}
+
+.game-title {
+    display: none;
+}
+
+.game-subtitle {
+    display: none;
+}
+
+.menu-buttons-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    width: 350px;
+    margin-top: 5px;
+}
+
+.never-show-again-container {
+    margin-top: 15px;
+    padding: 15px 25px;
+    background-color: rgba(10, 20, 40, 0.7);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.never-show-toggle {
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.never-show-toggle .unity-toggle__checkmark {
+    border-color: var(--primary-color);
+    background-color: rgba(10, 30, 60, 0.8);
+    width: 28px;
+    height: 28px;
+}
+
+.never-show-toggle:checked .unity-toggle__checkmark {
+    background-color: var(--primary-color);
+}
+
+.menu-button {
+    height: 58px;
+    margin: 5px 0;
+    padding: 0 30px;
+    background-color: rgba(10, 30, 60, 0.85);
+    border-width: 2px;
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-size: 26px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    transition-duration: 0.2s;
+}
+
+.menu-button:hover {
+    background-color: rgba(0, 180, 255, 0.35);
+    border-color: var(--hover-color);
+    scale: 1.02;
+}
+
+.menu-button:active {
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+}
+
+.menu-button:disabled {
+    background-color: rgba(80, 80, 80, 0.3);
+    border-color: var(--disabled-color);
+    color: var(--disabled-color);
+    opacity: 0.5;
+}
+
+.primary-button {
+    background-color: rgba(0, 180, 255, 0.3);
+    border-width: 3px;
+    height: 66px;
+    font-size: 30px;
+}
+
+.primary-button:hover {
+    background-color: rgba(0, 180, 255, 0.5);
+}
+
+.exit-button {
+    margin-top: 30px;
+    background-color: rgba(180, 50, 50, 0.2);
+    border-color: rgb(200, 80, 80);
+    color: rgb(255, 150, 150);
+}
+
+.exit-button:hover {
+    background-color: rgba(200, 50, 50, 0.4);
+    border-color: rgb(255, 100, 100);
+    color: rgb(255, 200, 200);
+}
+
+.version-label {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: 56px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.pause-menu-root {
+    display: none;
+    flex-grow: 1;
+    background-image: resource("StartupLogos/game paused");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.pause-overlay {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.pause-panel {
+    width: 400px;
+    background-color: var(--panel-bg);
+    border-width: 3px;
+    border-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 30px;
+    align-items: stretch;
+}
+
+.pause-title {
+    font-size: 36px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+.pause-hint {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    -unity-text-align: middle-center;
+    margin-top: 20px;
+}
+
+.settings-root {
+    display: none;
+    flex-grow: 1;
+    background-image: resource("StartupLogos/settiing ui");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.settings-overlay {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.settings-panel {
+    width: 100%;
+    height: 100%;
+    background-color: var(--panel-bg);
+    border-width: 0;
+    border-color: var(--primary-color);
+    border-radius: 0;
+    flex-direction: column;
+}
+
+.settings-header {
+    padding: 20px;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--border-color);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings-title {
+    font-size: 32px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+}
+
+.close-button {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(200, 50, 50, 0.3);
+    border-width: 2px;
+    border-color: rgb(200, 80, 80);
+    border-radius: 20px;
+    color: rgb(255, 150, 150);
+    font-size: 24px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.close-button:hover {
+    background-color: rgba(200, 50, 50, 0.6);
+}
+
+.tab-container {
+    flex-direction: row;
+    padding: 10px 20px;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(255, 200, 0, 0.3);
+}
+
+.tab-button {
+    flex-grow: 1;
+    height: 45px;
+    margin: 0 5px;
+    background-color: rgba(60, 60, 60, 0.5);
+    border-width: 2px;
+    border-color: rgba(255, 200, 0, 0.3);
+    border-radius: 5px 5px 0 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    transition-duration: 0.15s;
+}
+
+.tab-button:hover {
+    background-color: rgba(100, 100, 100, 0.5);
+    color: var(--text-white);
+}
+
+.tab-button.tab-active {
+    background-color: rgba(0, 180, 255, 0.2);
+    border-color: var(--primary-color);
+    border-bottom-width: 0;
+    color: var(--primary-color);
+}
+
+.settings-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.settings-scroll {
+    flex-grow: 1;
+}
+
+.tab-content.tab-visible {
+    display: flex;
+}
+
+.settings-section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 20px;
+    color: var(--accent-color);
+    -unity-font-style: bold;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 165, 0, 0.4);
+}
+
+.settings-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+    margin: 8px 0;
+    padding: 5px 10px;
+    background-color: rgba(10, 30, 60, 0.5);
+    border-radius: 5px;
+}
+
+.settings-label {
+    font-size: 16px;
+    color: var(--text-white);
+    flex-shrink: 0;
+    min-width: 200px;
+}
+
+.settings-description {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 2px;
+}
+
+.settings-slider {
+    width: 200px;
+}
+
+.settings-slider .unity-base-slider__dragger {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.settings-slider .unity-base-slider__tracker {
+    background-color: rgba(255, 200, 0, 0.3);
+    border-radius: 3px;
+    height: 6px;
+}
+
+.settings-slider .unity-base-slider__drag-container {
+    min-height: 20px;
+}
+
+.settings-dropdown {
+    width: 200px;
+    background-color: rgba(60, 60, 60, 0.8);
+    border-width: 2px;
+    border-color: var(--border-color);
+    border-radius: 5px;
+    color: var(--text-white);
+}
+
+.settings-dropdown .unity-base-popup-field__text {
+    color: var(--text-white);
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.settings-dropdown .unity-base-popup-field__arrow {
+    -unity-background-image-tint-color: var(--primary-color);
+}
+
+.settings-toggle {
+    flex-direction: row-reverse;
+}
+
+.settings-toggle .unity-toggle__checkmark {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(60, 60, 60, 0.8);
+    border-width: 2px;
+    border-color: var(--border-color);
+    border-radius: 5px;
+    -unity-background-image-tint-color: var(--primary-color);
+}
+
+.settings-toggle:checked .unity-toggle__checkmark {
+    background-color: var(--primary-color);
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+}
+
+.settings-footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 15px 20px;
+    border-top-width: 2px;
+    border-top-color: rgba(255, 200, 0, 0.3);
+}
+
+.footer-button {
+    height: 45px;
+    min-width: 120px;
+    margin-left: 15px;
+    padding: 0 25px;
+    background-color: rgba(0, 180, 255, 0.15);
+    border-width: 2px;
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-size: 16px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    transition-duration: 0.15s;
+}
+
+.footer-button:hover {
+    background-color: rgba(0, 180, 255, 0.35);
+    scale: 1.02;
+}
+
+.apply-button {
+    background-color: rgba(50, 180, 50, 0.2);
+    border-color: rgb(100, 200, 100);
+    color: rgb(150, 255, 150);
+}
+
+.apply-button:hover {
+    background-color: rgba(50, 180, 50, 0.4);
+}
+
+.startup-root {
+    flex-grow: 1;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.startup-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.startup-logo {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.startup-text {
+    font-size: 28px;
+    color: var(--text-white);
+    -unity-text-align: middle-center;
+    margin-bottom: 20px;
+}
+
+.startup-subtext {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    -unity-text-align: middle-center;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+.fade-in {
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.fade-out {
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.unity-scroller--vertical {
+    width: 12px;
+}
+
+.unity-scroller--vertical .unity-base-slider__dragger {
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    min-height: 30px;
+}
+
+.unity-scroller--vertical .unity-base-slider__tracker {
+    background-color: rgba(60, 60, 60, 0.5);
+    border-radius: 6px;
+}
+
+.credits-panel-fullscreen {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(5, 15, 30);
+    background-image: resource("StartupLogos/bg");
+    -unity-background-scale-mode: scale-and-crop;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.credits-panel-fullscreen.visible {
+    display: flex;
+}
+
+.credits-content-fullscreen {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 10, 25, 0.85);
+    padding: 40px 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.credits-logo-container {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.credits-game-title {
+    font-size: 56px;
+    color: rgb(0, 200, 255);
+    -unity-font-style: bold;
+    letter-spacing: 8px;
+    text-shadow: 0 0 20px rgba(0, 200, 255, 0.5);
+}
+
+.credits-game-subtitle {
+    font-size: 32px;
+    color: rgb(255, 200, 0);
+    -unity-font-style: bold;
+    letter-spacing: 12px;
+    margin-top: -5px;
+}
+
+.credits-grid {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    flex-grow: 1;
+    padding: 20px 0;
+}
+
+.credits-column {
+    flex-grow: 1;
+    align-items: center;
+    padding: 0 30px;
+    max-width: 350px;
+}
+
+.credits-section {
+    font-size: 18px;
+    color: rgb(255, 200, 0);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 200, 0, 0.3);
+}
+
+.credits-role {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    -unity-text-align: middle-center;
+    margin-top: 6px;
+}
+
+.credits-name {
+    font-size: 16px;
+    color: rgb(100, 220, 255);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 3px;
+}
+
+.credits-inspiration {
+    font-size: 18px;
+    color: rgb(150, 230, 255);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.credits-footer {
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.credits-copyright {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    -unity-text-align: middle-center;
+}
+
+.credits-made-in {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    -unity-text-align: middle-center;
+    margin-top: 5px;
+}
+
+.credits-back-button {
+    height: 50px;
+    min-width: 200px;
+    background-color: rgba(0, 180, 255, 0.2);
+    border-width: 2px;
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-size: 18px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    -unity-font-definition: url("project://database/Assets/UI/Fonts/Ticketing.otf?fileID=12800000&guid=4a37cd31b63e5f94c9675d57d5057e30&type=3#Ticketing");
+}
+
+.credits-back-button:hover {
+    background-color: rgba(0, 180, 255, 0.4);
+    scale: 1.02;
+}
+
+/* Credits Tab Navigation */
+.credits-tab-container {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.credits-tab-button {
+    height: 45px;
+    min-width: 150px;
+    margin: 0 10px;
+    padding: 0 30px;
+    background-color: rgba(40, 60, 80, 0.6);
+    border-width: 2px;
+    border-color: rgba(0, 180, 255, 0.3);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    transition-duration: 0.2s;
+}
+
+.credits-tab-button:hover {
+    background-color: rgba(0, 100, 150, 0.5);
+    border-color: rgba(0, 180, 255, 0.6);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.credits-tab-button.credits-tab-active {
+    background-color: rgba(0, 180, 255, 0.3);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Credits Pages */
+.credits-page {
+    display: none;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.credits-page.credits-page-visible {
+    display: flex;
+}
+
+.credits-scroll {
+    flex-grow: 1;
+    width: 100%;
+}
+
+/* Credits Subsection styling */
+.credits-subsection {
+    font-size: 15px;
+    color: rgb(150, 200, 255);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-top: 18px;
+    margin-bottom: 6px;
+}
+
+.credits-panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.credits-panel.visible {
+    display: flex;
+}
+
+.credits-content {
+    width: 500px;
+    max-height: 80%;
+    background-color: var(--panel-bg);
+    border-width: 3px;
+    border-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.credits-title {
+    font-size: 28px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 25px;
+}
+
+.credits-text {
+    font-size: 16px;
+    color: var(--text-white);
+    -unity-text-align: middle-center;
+    margin: 10px 0;
+    white-space: normal;
+}
+
+.credits-close-button {
+    height: 45px;
+    margin-top: 25px;
+    background-color: rgba(0, 180, 255, 0.2);
+    border-width: 2px;
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-size: 18px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.credits-close-button:hover {
+    background-color: rgba(0, 180, 255, 0.4);
+}
+
+.credits-scroll {
+    flex-grow: 1;
+    max-height: 400px;
+    margin-bottom: 20px;
+}
+
+.credits-section {
+    font-size: 24px;
+    color: rgb(255, 200, 0);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 200, 0, 0.3);
+}
+
+.credits-role {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    -unity-text-align: middle-center;
+    margin-top: 8px;
+}
+
+.credits-name {
+    font-size: 22px;
+    color: rgb(100, 220, 255);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 5px;
+}
+
+.hangar-root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(5, 15, 30);
+    background-image: resource("StartupLogos/bg");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.hangar-overlay {
+    flex-grow: 1;
+    background-color: rgba(0, 10, 25, 0.85);
+    padding: 20px;
+    flex-direction: column;
+}
+
+.hangar-header {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.back-nav-button {
+    min-width: 120px;
+    height: 40px;
+    background-color: rgba(0, 180, 255, 0.15);
+    border-width: 2px;
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-size: 16px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.back-nav-button:hover {
+    background-color: rgba(0, 180, 255, 0.35);
+}
+
+.launch-button {
+    min-width: 280px;
+    height: 80px;
+    background-color: rgba(0, 200, 255, 0.3);
+    border-width: 4px;
+    border-color: rgba(120, 235, 255, 0.9);
+    border-radius: 10px;
+    color: rgba(220, 250, 255, 1);
+    font-size: 28px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 4px;
+    transition-duration: 0.15s;
+}
+
+.launch-button:hover {
+    background-color: rgba(0, 220, 255, 0.5);
+    border-color: rgb(200, 255, 255);
+    scale: 1.05;
+}
+
+.page-title {
+    flex-grow: 1;
+    font-size: 32px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 3px;
+}
+
+.header-spacer {
+    min-width: 100px;
+}
+
+/* Tab Navigation */
+.hangar-tabs {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+.hangar-tab {
+    min-width: 140px;
+    height: 45px;
+    margin: 0 5px;
+    background-color: rgba(40, 60, 80, 0.4);
+    border-width: 2px;
+    border-color: rgba(0, 180, 255, 0.3);
+    border-radius: 8px 8px 0 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 2px;
+    transition-duration: 0.2s;
+}
+
+.hangar-tab:hover {
+    background-color: rgba(0, 180, 255, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(0, 180, 255, 0.5);
+}
+
+.hangar-tab.active {
+    background-color: rgba(0, 180, 255, 0.4);
+    border-color: rgba(120, 235, 255, 0.9);
+    border-bottom-width: 0;
+    color: rgba(235, 250, 255, 1);
+    font-size: 15px;
+}
+
+/* Tab Content */
+.hangar-content {
+    flex-grow: 1;
+    background-color: rgba(0, 20, 40, 0.3);
+    border-width: 2px;
+    border-color: rgba(0, 180, 255, 0.3);
+    border-radius: 0 0 10px 10px;
+    margin: 0 20px;
+    padding: 15px;
+}
+
+.tab-content {
+    display: none;
+    flex-grow: 1;
+}
+
+.tab-content.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Placeholder pages for upcoming features */
+.tab-placeholder {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.placeholder-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 180, 255, 0.15);
+    border-radius: 60px;
+    border-width: 3px;
+    border-color: rgba(0, 180, 255, 0.4);
+}
+
+.loadout-icon {
+    background-image: resource("Hangar/Icons/icon_loadout");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.paint-icon {
+    background-image: resource("Hangar/Icons/icon_paint");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.placeholder-title {
+    font-size: 28px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.placeholder-desc {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    -unity-text-align: middle-center;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.placeholder-features {
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 20px 30px;
+    background-color: rgba(0, 40, 80, 0.3);
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgba(0, 180, 255, 0.2);
+}
+
+.feature-item {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 8px 0;
+}
+
+.placeholder-badge {
+    font-size: 18px;
+    color: rgba(255, 200, 100, 0.9);
+    -unity-font-style: bold;
+    letter-spacing: 4px;
+    padding: 12px 30px;
+    background-color: rgba(255, 180, 50, 0.15);
+    border-width: 2px;
+    border-color: rgba(255, 180, 50, 0.5);
+    border-radius: 25px;
+}
+
+.hangar-main {
+    flex-grow: 1;
+    flex-direction: row;
+    padding: 0 20px;
+}
+
+.aircraft-display-panel {
+    width: 45%;
+    padding: 20px;
+    align-items: center;
+}
+
+.aircraft-showcase {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 40, 80, 0.4);
+    border-width: 2px;
+    border-color: rgba(0, 180, 255, 0.3);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.aircraft-image-large {
+    width: 280px;
+    height: 200px;
+    background-color: rgba(0, 100, 180, 0.2);
+    background-image: resource("Hangar/f15_showcase");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.model-preview-container {
+    width: 100%;
+    height: 380px;
+    background-color: rgb(15, 25, 40);
+    background-image: resource("Hangar/hangar_bg");
+    -unity-background-scale-mode: scale-and-crop;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-width: 2px;
+    border-color: rgba(0, 150, 255, 0.3);
+    position: relative; /* Ensure children can position absolutely */
+}
+
+/* Ensure the fullscreen button is positioned correctly */
+.fullscreen-toggle-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 50, 100, 0.6);
+    border-width: 1px;
+    border-color: rgba(0, 180, 255, 0.5);
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: white;
+    font-size: 14px;
+    -unity-font-style: bold;
+    cursor: link;
+}
+
+.fullscreen-toggle-button:hover {
+    background-color: rgba(0, 100, 200, 0.8);
+    border-color: rgba(0, 220, 255, 1);
+}
+
+.aircraft-3d-preview {
+    width: 100%;
+    height: 360px;
+    background-color: transparent;
+}
+
+.rotate-hint {
+    position: absolute;
+    bottom: 8px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 4px 8px;
+    border-radius: 4px;
+    -unity-text-align: middle-center;
+}
+
+/* Preview Hints Container - Big visible instructions */
+.preview-hints-container {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgba(0, 20, 40, 0.85);
+    border-radius: 8px;
+    margin: 0 20px;
+}
+
+.rotate-hint-main {
+    font-size: 22px;
+    color: rgba(0, 220, 255, 1);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    display: none; /* Hide old hints if any remain */
+}
+
+.hangar-hint-text {
+    font-size: 30px;
+    color: rgba(0, 220, 255, 1);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.fullscreen-hint {
+    font-size: 36px;
+    color: rgba(0, 220, 255, 1);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+
+.rotate-hint-sub {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    -unity-text-align: middle-center;
+    margin-top: 5px;
+}
+
+.aircraft-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 200, 255, 0.9);
+    padding: 6px 14px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgba(120, 235, 255, 0.9);
+}
+
+.badge-text {
+    font-size: 12px;
+    color: rgb(0, 18, 32);
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}
+
+.aircraft-info {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.aircraft-name-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.aircraft-name-large {
+    font-size: 36px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.aircraft-name-row .aircraft-name-large {
+    margin-bottom: 0;
+}
+
+.aircraft-name-row .default-indicator {
+    margin-left: 15px;
+}
+
+.aircraft-role {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.aircraft-origin {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.default-aircraft-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    min-height: 36px;
+}
+
+.default-indicator {
+    font-size: 14px;
+    color: #00ff88;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+    padding: 6px 12px;
+    background-color: rgba(0, 255, 136, 0.15);
+    border-radius: 4px;
+}
+
+.set-default-button {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 100, 200, 0.4);
+    border-width: 2px;
+    border-color: rgba(0, 200, 255, 0.6);
+    border-radius: 6px;
+    margin-top: 15px;
+    padding: 12px 30px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    transition-duration: 0.2s;
+    align-self: center;
+}
+
+.set-default-button:hover {
+    background-color: rgba(0, 150, 255, 0.5);
+    border-color: rgba(0, 220, 255, 0.8);
+    color: white;
+}
+
+.set-default-button:active {
+    background-color: rgba(0, 200, 255, 0.6);
+}
+
+.aircraft-details-panel {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: rgba(0, 20, 40, 0.5);
+    border-radius: 10px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.details-scroll {
+    flex-grow: 1;
+}
+
+.stats-section {
+    margin-bottom: 25px;
+}
+
+.stat-row {
+    flex-direction: row;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.stat-label {
+    width: 120px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    -unity-font-style: bold;
+}
+
+.stat-bar-bg {
+    flex-grow: 1;
+    height: 14px;
+    background-color: rgba(40, 60, 80, 0.8);
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: rgba(0, 180, 255, 0.25);
+    margin: 0 15px;
+}
+
+.stat-bar-fill {
+    height: 100%;
+    background-color: rgba(0, 210, 255, 0.9);
+    border-radius: 6px;
+}
+
+.stat-value {
+    width: 80px;
+    font-size: 16px;
+    color: rgba(220, 245, 255, 1);
+    -unity-text-align: middle-right;
+}
+
+.armament-section {
+    margin-bottom: 25px;
+}
+
+.weapon-row {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: rgba(0, 40, 80, 0.3);
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgba(0, 180, 255, 0.2);
+}
+
+.weapon-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.weapon-icon.cannon-m61 {
+    background-color: rgba(255, 150, 50, 0.1);
+    background-image: resource("Hangar/Icons/icon_m61");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.weapon-icon.missile-aim9 {
+    background-color: rgba(100, 150, 255, 0.1);
+    background-image: resource("Hangar/Icons/icon_aim9");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.weapon-icon.missile-aim120 {
+    background-color: rgba(100, 150, 255, 0.1);
+    background-image: resource("Hangar/Icons/icon_aim120");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+/* Russian weapon icons with red accents */
+.weapon-icon.cannon-gsh30 {
+    background-color: rgba(255, 100, 100, 0.1);
+    background-image: resource("Hangar/Icons/icon_gsh30");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.weapon-icon.missile-r73 {
+    background-color: rgba(255, 100, 100, 0.1);
+    background-image: resource("Hangar/Icons/icon_r73");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.weapon-icon.missile-r27 {
+    background-color: rgba(255, 100, 100, 0.1);
+    background-image: resource("Hangar/Icons/icon_r27");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.weapon-icon.missile-r77 {
+    background-color: rgba(255, 100, 100, 0.1);
+    background-image: resource("Hangar/Icons/icon_r77");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.weapon-info {
+    flex-grow: 1;
+}
+
+.weapon-name {
+    font-size: 18px;
+    color: rgba(235, 250, 255, 1);
+    -unity-font-style: bold;
+}
+
+.weapon-desc {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 2px;
+}
+
+.description-section {
+    flex-grow: 1;
+}
+
+.aircraft-description {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    white-space: normal;
+}
+
+.aircraft-selection-bar {
+    padding: 20px;
+    background-color: rgba(0, 20, 40, 0.7);
+    border-top-width: 2px;
+    border-top-color: rgba(0, 180, 255, 0.3);
+    margin-top: 20px;
+}
+
+.selection-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.selection-title {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 1px;
+}
+
+.coming-soon-hint {
+    font-size: 12px;
+    color: rgba(255, 200, 100, 0.8);
+    -unity-font-style: italic;
+}
+
+.aircraft-slots {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.aircraft-slot {
+    width: 140px;
+    height: 120px;
+    margin-right: 15px;
+    background-color: rgba(0, 40, 80, 0.4);
+    border-width: 2px;
+    border-color: rgba(0, 180, 255, 0.3);
+    border-radius: 8px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.aircraft-slot.selected {
+    border-color: var(--primary-color);
+    background-color: rgba(0, 180, 255, 0.15);
+}
+
+.aircraft-slot.locked {
+    opacity: 0.5;
+}
+
+.slot-thumb {
+    width: 80px;
+    height: 50px;
+    background-color: rgba(0, 100, 180, 0.3);
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.slot-thumb.f15 {
+    background-image: resource("Hangar/f15_showcase");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.slot-thumb.su27 {
+    background-image: resource("Hangar/su27_showcase");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.slot-thumb.mig29 {
+    background-image: resource("Hangar/mig29_showcase");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.slot-thumb.fa18e {
+    background-image: resource("Hangar/fa18e_showcase");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.slot-thumb.hawk200 {
+    background-image: resource("Hangar/hawk200_showcase");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.slot-thumb.mig21 {
+    background-image: resource("Hangar/mig21_showcase");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.slot-thumb.tornado {
+    background-image: resource("Hangar/tornado_showcase");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.slot-thumb.rafale {
+    background-image: resource("Hangar/rafale_showcase");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.slot-thumb.typhoon {
+    background-image: resource("Hangar/typhoon_showcase");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.slot-thumb.placeholder {
+    background-color: rgba(80, 80, 80, 0.3);
+}
+
+.slot-name {
+    font-size: 14px;
+    color: var(--text-white);
+    -unity-font-style: bold;
+    margin-bottom: 4px;
+}
+
+.slot-status {
+    font-size: 10px;
+}
+
+.slot-status.unlocked {
+    color: rgb(100, 255, 150);
+}
+
+.slot-status.locked {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.lock-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.lock-icon {
+    font-size: 30px;
+}
+
+.stats-root {
+    flex-grow: 1;
+    background-color: rgb(5, 15, 30);
+    background-image: resource("StartupLogos/bg");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.stats-overlay {
+    flex-grow: 1;
+    background-color: rgba(0, 10, 25, 0.85);
+    padding: 20px;
+    flex-direction: column;
+}
+
+.stats-header {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.stats-header .back-nav-button {
+    min-width: 140px;
+    height: 48px;
+    font-size: 20px;
+}
+
+.stats-header .page-title {
+    font-size: 40px;
+}
+
+.stats-content {
+    flex-grow: 1;
+    flex-direction: row;
+    padding: 0 20px;
+}
+
+.profile-card {
+    width: 250px;
+    background-color: rgba(0, 30, 60, 0.7);
+    border-width: 2px;
+    border-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 25px;
+    align-items: center;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 80, 150, 0.5);
+    background-image: resource("player_avatar");
+    -unity-background-scale-mode: scale-to-fit;
+    border-width: 3px;
+    border-color: var(--primary-color);
+    border-radius: 50px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-icon {
+    font-size: 48px;
+}
+
+.profile-callsign {
+    font-size: 36px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.profile-rank {
+    font-size: 20px;
+    color: rgba(255, 200, 100, 0.9);
+    margin-bottom: 20px;
+}
+
+.profile-level {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 180, 255, 0.3);
+}
+
+.level-label {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.xp-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(40, 60, 80, 0.8);
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.xp-bar {
+    height: 100%;
+    background-color: rgb(100, 200, 255);
+    border-radius: 5px;
+}
+
+.xp-text {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    -unity-text-align: middle-center;
+}
+
+.edit-callsign-button {
+    margin-top: 20px;
+    height: 44px;
+    background-color: rgba(0, 180, 255, 0.15);
+    border-width: 1px;
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-size: 16px;
+    -unity-font-style: bold;
+}
+
+.edit-callsign-button:hover {
+    background-color: rgba(0, 180, 255, 0.3);
+}
+
+.stats-grid-panel {
+    flex-grow: 1;
+    padding: 0 30px;
+}
+
+.stats-section-title {
+    font-size: 24px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 180, 255, 0.3);
+}
+
+.stats-grid-2col {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.aircraft-stats-section {
+    margin-top: 20px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.stat-box {
+    width: 48%;
+    margin: 1%;
+    padding: 10px;
+    background-color: rgba(0, 30, 60, 0.5);
+    border-width: 1px;
+    border-color: rgba(0, 180, 255, 0.3);
+    border-radius: 8px;
+    align-items: center;
+}
+
+.stat-box.highlight {
+    border-color: var(--primary-color);
+    background-color: rgba(0, 180, 255, 0.1);
+}
+
+.stat-box.highlight-gold {
+    border-color: rgb(255, 200, 50);
+    background-color: rgba(255, 200, 50, 0.1);
+}
+
+.stat-box-label {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.stat-box-value {
+    font-size: 28px;
+    color: var(--text-white);
+    -unity-font-style: bold;
+}
+
+.stat-box-value.large {
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+.stat-box-sub {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 5px;
+}
+
+.aircraft-stat-header {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 180, 255, 0.2);
+}
+
+.aircraft-icon {
+    width: 60px;
+    height: 40px;
+    background-color: rgba(0, 100, 180, 0.3);
+    border-radius: 5px;
+    margin-right: 15px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.aircraft-icon.f15 {
+    background-image: resource("Hangar/f15_showcase");
+}
+
+.aircraft-icon.su27 {
+    background-image: resource("Hangar/su27_showcase");
+}
+
+.aircraft-icon.mig29 {
+    background-image: resource("Hangar/mig29_showcase");
+}
+
+.aircraft-icon.fa18e {
+    background-image: resource("Hangar/fa18e_showcase");
+}
+
+.aircraft-icon.hawk200 {
+    background-image: resource("Hangar/hawk200_showcase");
+}
+
+.aircraft-icon.mig21 {
+    background-image: resource("Hangar/mig21_showcase");
+}
+
+.aircraft-icon.tornado {
+    background-image: resource("Hangar/tornado_showcase");
+}
+
+.aircraft-icon.rafale {
+    background-image: resource("Hangar/rafale_showcase");
+}
+
+.aircraft-icon.typhoon {
+    background-image: resource("Hangar/typhoon_showcase");
+}
+
+/* Aircraft Stats Section */
+.aircraft-stats-section {
+    margin-top: 10px;
+}
+
+/* Aircraft Tabs Container */
+.aircraft-tabs-container {
+    flex-direction: row;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: rgba(0, 30, 60, 0.5);
+    border-radius: 8px;
+}
+
+/* Aircraft Tab Button */
+.aircraft-tab {
+    flex-grow: 1;
+    padding: 12px 18px;
+    margin: 0 3px;
+    background-color: rgba(0, 40, 80, 0.4);
+    border-width: 1px;
+    border-color: rgba(0, 180, 255, 0.2);
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    transition-duration: 0.2s;
+}
+
+.aircraft-tab:hover {
+    background-color: rgba(0, 100, 180, 0.5);
+    border-color: rgba(0, 180, 255, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.aircraft-tab-active {
+    background-color: rgba(0, 120, 200, 0.6);
+    border-color: rgba(0, 200, 255, 0.8);
+    color: rgb(255, 255, 255);
+}
+
+/* Aircraft Stats Card - Hidden by default */
+.aircraft-stats-card {
+    background-color: rgba(0, 40, 80, 0.4);
+    border-width: 2px;
+    border-color: rgba(0, 180, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+}
+
+/* Visible panel */
+.aircraft-panel-visible {
+    display: flex;
+}
+
+.aircraft-stat-title {
+    font-size: 28px;
+    color: var(--text-white);
+    -unity-font-style: bold;
+}
+
+.aircraft-stat-details {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.stat-detail {
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.detail-label {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 5px;
+}
+
+.detail-value {
+    font-size: 32px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+}
+
+.achievements-panel {
+    width: 300px;
+    background-color: rgba(0, 30, 60, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.achievements-scroll {
+    flex-grow: 1;
+    max-height: 400px;
+}
+
+.achievement-item {
+    flex-direction: row;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 40, 80, 0.4);
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: rgba(0, 180, 255, 0.2);
+}
+
+.achievement-item.unlocked {
+    border-color: rgb(100, 200, 100);
+    background-color: rgba(100, 200, 100, 0.1);
+}
+
+.achievement-item.locked {
+    opacity: 0.6;
+}
+
+.achievement-icon {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.achievement-emoji {
+    font-size: 24px;
+}
+
+.achievement-info {
+    flex-grow: 1;
+}
+
+.achievement-name {
+    font-size: 18px;
+    color: var(--text-white);
+    -unity-font-style: bold;
+    margin-bottom: 3px;
+}
+
+.achievement-desc {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    white-space: normal;
+}
+
+.achievement-progress {
+    height: 6px;
+    background-color: rgba(40, 60, 80, 0.8);
+    border-radius: 3px;
+    margin-top: 8px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.progress-text {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 4px;
+}
+
+.achievement-count {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    -unity-text-align: middle-center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 180, 255, 0.2);
+}
+
+/* Main Section Tabs for Profile Page */
+.main-section-tabs {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.main-section-tab {
+    font-size: 24px;
+    padding: 16px 52px;
+    margin: 0 10px;
+    background-color: rgba(0, 40, 80, 0.4);
+    border-width: 2px;
+    border-color: rgba(0, 180, 255, 0.3);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+}
+
+.main-section-tab:hover {
+    background-color: rgba(0, 80, 140, 0.5);
+    border-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+.main-section-tab-active {
+    background-color: rgba(0, 120, 200, 0.4);
+    border-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+/* Badges Section Styles */
+.badges-content {
+    flex-grow: 1;
+    padding: 0 40px;
+}
+
+.badges-section-title {
+    font-size: 34px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+    letter-spacing: 3px;
+    -unity-text-align: middle-center;
+    margin-bottom: 10px;
+}
+
+.badges-description {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    -unity-text-align: middle-center;
+    margin-bottom: 25px;
+}
+
+.badges-scroll {
+    flex-grow: 1;
+}
+
+.badges-grid {
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.badge-category-title {
+    font-size: 20px;
+    color: var(--accent-color);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 180, 255, 0.3);
+}
+
+.badge-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.badge-item {
+    width: 180px;
+    height: 240px;
+    background-color: rgba(0, 40, 80, 0.5);
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: rgba(0, 180, 255, 0.2);
+    margin: 5px;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge-item:hover {
+    background-color: rgba(0, 60, 100, 0.6);
+    border-color: rgba(0, 180, 255, 0.5);
+}
+
+.badge-item.unlocked {
+    border-color: rgb(100, 200, 100);
+    background-color: rgba(100, 200, 100, 0.15);
+}
+
+.badge-item.unlocked .badge-image-placeholder {
+    background-color: rgb(80, 160, 80);
+    border-color: rgb(100, 200, 100);
+}
+
+.badge-item.locked {
+    opacity: 0.5;
+}
+
+.badge-item.locked .badge-image-placeholder {
+    background-color: rgba(60, 80, 100, 0.5);
+}
+
+.badge-image-placeholder {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 100, 180, 0.4);
+    border-radius: 60px;
+    border-width: 2px;
+    border-color: rgba(0, 180, 255, 0.4);
+    margin-bottom: 10px;
+}
+
+.badge-image-placeholder.aircraft-badge {
+    position: relative;
+    top: auto;
+    right: auto;
+    border-radius: 8px;
+    background-color: transparent;
+    border-width: 2px;
+}
+
+.badge-image-placeholder.special {
+    background-color: rgba(200, 150, 50, 0.4);
+    border-color: rgba(255, 200, 100, 0.5);
+}
+
+/* Combat Milestone Badges */
+#badge-first-kill .badge-image-placeholder { background-image: resource("Badges/badge_combat_1"); }
+#badge-5-kills .badge-image-placeholder { background-image: resource("Badges/badge_combat_2"); }
+#badge-10-kills .badge-image-placeholder { background-image: resource("Badges/badge_combat_3"); }
+#badge-25-kills .badge-image-placeholder { background-image: resource("Badges/badge_combat_4"); }
+#badge-50-kills .badge-image-placeholder { background-image: resource("Badges/badge_combat_5"); }
+#badge-100-kills .badge-image-placeholder { background-image: resource("Badges/badge_combat_6"); }
+#badge-250-kills .badge-image-placeholder { background-image: resource("Badges/badge_combat_7"); }
+#badge-500-kills .badge-image-placeholder { background-image: resource("Badges/badge_combat_8"); }
+
+/* Victory Milestone Badges */
+#badge-first-win .badge-image-placeholder { background-image: resource("Badges/badge_victory_1"); }
+#badge-5-wins .badge-image-placeholder { background-image: resource("Badges/badge_victory_2"); }
+#badge-10-wins .badge-image-placeholder { background-image: resource("Badges/badge_victory_3"); }
+#badge-25-wins .badge-image-placeholder { background-image: resource("Badges/badge_victory_4"); }
+#badge-50-wins .badge-image-placeholder { background-image: resource("Badges/badge_victory_5"); }
+
+/* Flight Time Badges */
+#badge-1hr-flight .badge-image-placeholder { background-image: resource("Badges/badge_flight_1"); }
+#badge-5hr-flight .badge-image-placeholder { background-image: resource("Badges/badge_flight_2"); }
+#badge-10hr-flight .badge-image-placeholder { background-image: resource("Badges/badge_flight_3"); }
+#badge-24hr-flight .badge-image-placeholder { background-image: resource("Badges/badge_flight_4"); }
+
+/* Sortie Badges */
+#badge-10-sorties .badge-image-placeholder { background-image: resource("Badges/badge_sortie_1"); }
+#badge-25-sorties .badge-image-placeholder { background-image: resource("Badges/badge_sortie_2"); }
+#badge-50-sorties .badge-image-placeholder { background-image: resource("Badges/badge_sortie_3"); }
+#badge-100-sorties .badge-image-placeholder { background-image: resource("Badges/badge_sortie_4"); }
+
+/* First Flight Badges */
+#badge-flew-f15 .badge-image-placeholder { background-image: resource("Badges/badge_flew_f15"); }
+#badge-flew-su27 .badge-image-placeholder { background-image: resource("Badges/badge_flew_su27"); }
+#badge-flew-mig29 .badge-image-placeholder { background-image: resource("Badges/badge_flew_mig29"); }
+#badge-flew-fa18e .badge-image-placeholder { background-image: resource("Badges/badge_flew_fa18e"); }
+#badge-flew-hawk200 .badge-image-placeholder { background-image: resource("Badges/badge_flew_hawk200"); }
+#badge-flew-mig21 .badge-image-placeholder { background-image: resource("Badges/badge_flew_mig21"); }
+#badge-flew-tornado .badge-image-placeholder { background-image: resource("Badges/badge_flew_tornado"); }
+#badge-flew-rafale .badge-image-placeholder { background-image: resource("Badges/badge_flew_rafale"); }
+#badge-flew-typhoon .badge-image-placeholder { background-image: resource("Badges/badge_flew_typhoon"); }
+
+/* Aircraft Kill Badges */
+#badge-f15-10kills .badge-image-placeholder { background-image: resource("Badges/badge_kill_f15"); }
+#badge-su27-10kills .badge-image-placeholder { background-image: resource("Badges/badge_kill_su27"); }
+#badge-mig29-10kills .badge-image-placeholder { background-image: resource("Badges/badge_kill_mig29"); }
+#badge-fa18e-10kills .badge-image-placeholder { background-image: resource("Badges/badge_kill_fa18e"); }
+#badge-hawk200-10kills .badge-image-placeholder { background-image: resource("Badges/badge_kill_hawk200"); }
+#badge-mig21-10kills .badge-image-placeholder { background-image: resource("Badges/badge_kill_mig21"); }
+#badge-tornado-10kills .badge-image-placeholder { background-image: resource("Badges/badge_kill_tornado"); }
+#badge-rafale-10kills .badge-image-placeholder { background-image: resource("Badges/badge_kill_rafale"); }
+#badge-typhoon-10kills .badge-image-placeholder { background-image: resource("Badges/badge_kill_typhoon"); }
+
+/* Special Badges */
+#badge-all-aircraft .badge-image-placeholder { background-image: resource("Badges/badge_special_1"); }
+#badge-rank-5 .badge-image-placeholder { background-image: resource("Badges/badge_special_2"); }
+#badge-rank-10 .badge-image-placeholder { background-image: resource("Badges/badge_special_3"); }
+#badge-missiles-100 .badge-image-placeholder { background-image: resource("Badges/badge_special_4"); }
+#badge-missiles-500 .badge-image-placeholder { background-image: resource("Badges/badge_special_5"); }
+
+.badge-image-placeholder {
+    background-color: transparent !important;
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.badge-name {
+    font-size: 16px;
+    color: var(--text-white);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 4px;
+    white-space: normal;
+}
+
+.badge-req {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.badge-total-count {
+    font-size: 20px;
+    color: var(--primary-color);
+    -unity-text-align: middle-center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 180, 255, 0.3);
+}
+
+/* New Badges Popup Styles */
+.new-badges-popup {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.new-badges-popup.visible {
+    display: flex;
+}
+
+.new-badges-dialog {
+    width: 600px;
+    max-height: 80%;
+    background-color: rgba(10, 30, 60, 0.98);
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: rgb(100, 200, 100);
+    padding: 30px;
+    align-items: center;
+}
+
+.new-badges-title {
+    font-size: 32px;
+    color: rgb(100, 200, 100);
+    -unity-font-style: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    -unity-text-align: middle-center;
+}
+
+.new-badges-subtitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 25px;
+    -unity-text-align: middle-center;
+}
+
+.new-badges-scroll {
+    width: 100%;
+    max-height: 350px;
+    margin-bottom: 25px;
+}
+
+.new-badges-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.new-badge-item {
+    width: 140px;
+    height: 160px;
+    background-color: rgba(100, 200, 100, 0.15);
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: rgb(100, 200, 100);
+    margin: 8px;
+    padding: 12px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.new-badge-image {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(100, 200, 100, 0.3);
+    border-radius: 35px;
+    border-width: 2px;
+    border-color: rgb(100, 200, 100);
+    margin-bottom: 10px;
+}
+
+.new-badge-name {
+    font-size: 13px;
+    color: var(--text-white);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 5px;
+    white-space: normal;
+}
+
+.new-badge-desc {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.new-badges-buttons {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.badges-popup-button {
+    font-size: 16px;
+    padding: 12px 30px;
+    margin: 0 10px;
+    border-radius: 8px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}
+
+.badges-close-btn {
+    background-color: rgba(80, 80, 80, 0.8);
+    border-width: 2px;
+    border-color: rgba(150, 150, 150, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.badges-close-btn:hover {
+    background-color: rgba(100, 100, 100, 0.9);
+    border-color: rgba(180, 180, 180, 0.7);
+    color: var(--text-white);
+}
+
+.badges-view-btn {
+    background-color: rgba(100, 200, 100, 0.3);
+    border-width: 2px;
+    border-color: rgb(100, 200, 100);
+    color: rgb(100, 200, 100);
+}
+
+.badges-view-btn:hover {
+    background-color: rgba(100, 200, 100, 0.5);
+    color: var(--text-white);
+}
+
+.mission-select-root {
+    flex-grow: 1;
+    background-color: rgb(5, 15, 30);
+    background-image: resource("StartupLogos/bg");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.mission-select-overlay {
+    flex-grow: 1;
+    background-color: rgba(0, 10, 25, 0.85);
+    padding: 20px;
+    flex-direction: column;
+}
+
+.mission-header {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.mission-content {
+    flex-grow: 1;
+    flex-direction: row;
+    padding: 0 20px;
+}
+
+.mission-list-panel {
+    width: 400px;
+    background-color: rgba(0, 30, 60, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.mission-list-title {
+    font-size: 18px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.mission-list-scroll {
+    flex-grow: 1;
+}
+
+.mission-item {
+    flex-direction: row;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 40, 80, 0.4);
+    border-width: 2px;
+    border-color: transparent;
+    border-radius: 8px;
+}
+
+.mission-item:hover {
+    background-color: rgba(0, 60, 100, 0.5);
+}
+
+.mission-item.selected {
+    border-color: var(--primary-color);
+    background-color: rgba(0, 180, 255, 0.15);
+}
+
+.mission-item.locked {
+    opacity: 0.4;
+}
+
+.mission-number {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 100, 180, 0.4);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.mission-number-text {
+    font-size: 18px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+}
+
+.mission-info {
+    flex-grow: 1;
+}
+
+.mission-name {
+    font-size: 16px;
+    color: var(--text-white);
+    -unity-font-style: bold;
+    margin-bottom: 4px;
+}
+
+.mission-desc {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mission-stars {
+    justify-content: center;
+    align-items: center;
+}
+
+.stars-text {
+    font-size: 16px;
+    color: rgb(255, 200, 50);
+}
+
+.mission-detail-panel {
+    flex-grow: 1;
+    margin-left: 20px;
+    background-color: rgba(0, 25, 50, 0.6);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.detail-header {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 180, 255, 0.3);
+}
+
+.detail-title {
+    font-size: 28px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+    margin-bottom: 8px;
+}
+
+.detail-subtitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.detail-description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    white-space: normal;
+    margin-bottom: 25px;
+}
+
+.objectives-section {
+    margin-bottom: 25px;
+}
+
+.objectives-title {
+    font-size: 16px;
+    color: var(--accent-color);
+    -unity-font-style: bold;
+    margin-bottom: 12px;
+}
+
+.objectives-list {
+    padding-left: 10px;
+}
+
+.objective-item {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 6px 0;
+}
+
+.mission-footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 180, 255, 0.3);
+}
+
+.start-mission-button {
+    height: 50px;
+    min-width: 180px;
+    background-color: rgba(0, 180, 255, 0.3);
+    border-width: 3px;
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-size: 18px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.start-mission-button:hover {
+    background-color: rgba(0, 180, 255, 0.5);
+    scale: 1.02;
+}
+
+.gameover-root {
+    flex-grow: 1;
+    background-color: rgb(5, 10, 20);
+    background-image: resource("StartupLogos/bg");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.gameover-overlay {
+    flex-grow: 1;
+    background-color: rgba(20, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+.gameover-panel {
+    width: 550px;
+    background-color: var(--panel-bg);
+    border-width: 3px;
+    border-color: rgb(220, 50, 50);
+    border-radius: 12px;
+    padding: 40px;
+    align-items: center;
+}
+
+.gameover-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: rgb(220, 50, 50);
+}
+
+.gameover-title {
+    font-size: 56px;
+    color: rgb(255, 60, 60);
+    -unity-font-style: bold;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.gameover-subtitle {
+    font-size: 20px;
+    color: rgba(255, 150, 150, 0.9);
+    letter-spacing: 4px;
+    margin-bottom: 35px;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(220, 50, 50, 0.5);
+    padding-bottom: 10px;
+    width: 100%;
+    -unity-text-align: middle-center;
+}
+
+.death-info {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(60, 10, 10, 0.4);
+    border-left-width: 4px;
+    border-left-color: rgb(220, 50, 50);
+    border-radius: 4px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.death-reason {
+    font-size: 18px;
+    color: rgb(255, 200, 200);
+    margin-bottom: 5px;
+    -unity-font-style: bold;
+}
+
+.death-location {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mission-stats-box {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 20, 40, 0.6);
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.stats-title {
+    font-size: 16px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+    margin-bottom: 15px;
+    -unity-text-align: middle-center;
+    letter-spacing: 2px;
+}
+
+.stat-line {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 15px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 255, 255, 0.05);
+}
+
+.stat-line:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.stat-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.stat-value {
+    font-size: 16px;
+    color: var(--text-white);
+    -unity-font-style: bold;
+}
+
+.gameover-buttons {
+    width: 100%;
+    flex-direction: column;
+}
+
+.gameover-button {
+    height: 55px;
+    margin: 8px 0;
+    background-color: rgba(180, 50, 50, 0.15);
+    border-width: 2px;
+    border-color: rgb(200, 80, 80);
+    border-radius: 5px;
+    color: rgb(255, 150, 150);
+    font-size: 20px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    transition-duration: 0.2s;
+}
+
+.gameover-button:hover {
+    background-color: rgba(200, 50, 50, 0.35);
+    border-color: rgb(255, 100, 100);
+    scale: 1.02;
+    color: rgb(255, 200, 200);
+}
+
+.gameover-button.primary {
+    background-color: rgba(220, 50, 50, 0.3);
+    border-color: rgb(255, 60, 60);
+    color: rgb(255, 255, 255);
+}
+
+.gameover-button.primary:hover {
+    background-color: rgba(220, 50, 50, 0.6);
+    border-color: rgb(255, 100, 100);
+}
+
+.victory-root {
+    flex-grow: 1;
+    background-color: rgb(5, 15, 30);
+    background-image: resource("StartupLogos/bg");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.victory-overlay {
+    flex-grow: 1;
+    background-color: rgba(0, 20, 10, 0.4);
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+.victory-panel {
+    width: 650px;
+    background-color: var(--panel-bg);
+    border-width: 3px;
+    border-color: rgb(255, 200, 50);
+    border-radius: 12px;
+    padding: 40px;
+    align-items: center;
+}
+
+.victory-icon {
+    font-size: 100px;
+    margin-bottom: 20px;
+    color: rgb(255, 215, 0);
+    text-shadow: 0 0 20px rgba(255, 200, 50, 0.5);
+}
+
+.victory-title {
+    font-size: 42px;
+    color: rgb(255, 200, 50);
+    -unity-font-style: bold;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.victory-subtitle {
+    font-size: 20px;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(255, 200, 50, 0.3);
+    width: 100%;
+    -unity-text-align: middle-center;
+}
+
+.rank-display {
+    width: 100%;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.rank-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.rank-grade {
+    font-size: 80px;
+    color: rgb(255, 200, 50);
+    -unity-font-style: bold;
+    margin-bottom: 10px;
+}
+
+.star-container {
+    flex-direction: row;
+}
+
+.stars {
+    font-size: 32px;
+    color: rgb(255, 200, 50);
+}
+
+.mission-stats-grid {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    width: 48%;
+    margin: 1%;
+    padding: 15px;
+    background-color: rgba(0, 40, 80, 0.5);
+    border-width: 1px;
+    border-color: rgba(0, 180, 255, 0.3);
+    border-radius: 8px;
+    align-items: center;
+}
+
+.stat-card-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.stat-card-value {
+    font-size: 28px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+}
+
+.rewards-box {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(50, 30, 0, 0.5);
+    border-width: 2px;
+    border-color: rgba(255, 200, 50, 0.3);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.rewards-title {
+    font-size: 16px;
+    color: rgb(255, 200, 50);
+    -unity-font-style: bold;
+    margin-bottom: 12px;
+    -unity-text-align: middle-center;
+}
+
+.reward-line {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.reward-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.reward-value {
+    font-size: 18px;
+    color: rgb(255, 200, 50);
+    -unity-font-style: bold;
+}
+
+.victory-buttons {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.victory-button {
+    height: 60px;
+    min-width: 180px;
+    margin: 0 10px;
+    background-color: rgba(0, 180, 255, 0.15);
+    border-width: 2px;
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-size: 20px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    transition-duration: 0.2s;
+}
+
+.victory-button:hover {
+    background-color: rgba(0, 180, 255, 0.35);
+    scale: 1.05;
+}
+
+.victory-button.primary {
+    background-color: rgba(50, 200, 100, 0.25);
+    border-color: rgb(100, 255, 100);
+    color: rgb(150, 255, 150);
+}
+
+.victory-button.primary:hover {
+    background-color: rgba(50, 200, 100, 0.5);
+    border-color: rgb(200, 255, 200);
+}
+
+.how-to-play-root {
+    flex-grow: 1;
+    background-color: rgb(5, 15, 30);
+    background-image: resource("StartupLogos/bg");
+    -unity-background-scale-mode: scale-and-crop;
+    display: none;
+}
+
+.how-to-play-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom-width: 2px;
+    border-bottom-color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.back-button {
+    height: 45px;
+    min-width: 120px;
+    padding: 0 25px;
+    background-color: rgba(0, 180, 255, 0.15);
+    border-width: 2px;
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-size: 18px;
+    -unity-font-style: bold;
+    transition-duration: 0.2s;
+}
+
+.back-button:hover {
+    background-color: rgba(0, 180, 255, 0.35);
+    scale: 1.02;
+}
+
+.reset-button {
+    height: 45px;
+    padding: 0 25px;
+    background-color: rgba(255, 100, 100, 0.15);
+    border-width: 2px;
+    border-color: rgb(255, 100, 100);
+    border-radius: 5px;
+    color: rgb(255, 100, 100);
+    font-size: 16px;
+    -unity-font-style: bold;
+    transition-duration: 0.2s;
+}
+
+.reset-button:hover {
+    background-color: rgba(255, 100, 100, 0.35);
+    scale: 1.02;
+}
+
+.page-title {
+    font-size: 32px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+    letter-spacing: 4px;
+}
+
+.how-to-play-container {
+    flex-grow: 1;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.sidebar-panel {
+    width: 250px;
+    background-color: rgba(0, 20, 40, 0.85);
+    border-right-width: 2px;
+    border-right-color: rgba(0, 180, 255, 0.3);
+    padding: 20px 15px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    overflow: hidden;
+}
+
+.sidebar-scroll {
+    flex-grow: 1;
+}
+
+.sidebar-title {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 15px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+}
+
+.sidebar-button {
+    height: 50px;
+    margin-bottom: 8px;
+    padding-left: 15px;
+    background-color: rgba(0, 40, 80, 0.4);
+    border-left-width: 4px;
+    border-left-color: transparent;
+    border-radius: 4px;
+    justify-content: center;
+    transition-duration: 0.2s;
+}
+
+.sidebar-button:hover {
+    background-color: rgba(0, 60, 100, 0.6);
+    border-left-color: rgba(0, 180, 255, 0.5);
+}
+
+.sidebar-button.active {
+    background-color: rgba(0, 180, 255, 0.2);
+    border-left-color: var(--primary-color);
+}
+
+.sidebar-button-text {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    -unity-font-style: bold;
+}
+
+.sidebar-button.active .sidebar-button-text {
+    color: var(--primary-color);
+}
+
+.content-panel {
+    flex-grow: 1;
+    padding: 30px 40px;
+    background-color: rgba(0, 10, 20, 0.5);
+}
+
+.how-to-play-root .back-button {
+    font-size: 22px;
+    height: 52px;
+}
+
+.how-to-play-root .reset-button {
+    font-size: 20px;
+    height: 52px;
+}
+
+.how-to-play-root .page-title {
+    font-size: 40px;
+}
+
+.how-to-play-root .sidebar-title {
+    font-size: 18px;
+}
+
+.how-to-play-root .sidebar-button {
+    height: 58px;
+}
+
+.how-to-play-root .sidebar-button-text {
+    font-size: 20px;
+}
+
+.how-to-play-root .section-title {
+    font-size: 40px;
+}
+
+.how-to-play-root .control-label {
+    font-size: 28px;
+}
+
+.how-to-play-root .control-value-label {
+    font-size: 26px;
+}
+
+.how-to-play-root .key-button {
+    font-size: 22px;
+    height: 50px;
+}
+
+.how-to-play-root .guide-subtitle {
+    font-size: 28px;
+}
+
+.how-to-play-root .guide-text {
+    font-size: 24px;
+}
+
+.how-to-play-root .guide-text.highlight {
+    font-size: 26px;
+}
+
+.how-to-play-root .tip-text {
+    font-size: 24px;
+}
+
+.how-to-play-root .rebind-hint {
+    font-size: 20px;
+}
+
+.how-to-play-root .character-name {
+    font-size: 28px;
+}
+
+.how-to-play-root .character-jet-label {
+    font-size: 13px;
+}
+
+.how-to-play-root .character-jet-name {
+    font-size: 20px;
+}
+
+.how-to-play-root .character-tag {
+    font-size: 14px;
+}
+
+.how-to-play-root .character-desc {
+    font-size: 20px;
+}
+
+.how-to-play-root .character-jet-reason {
+    font-size: 18px;
+}
+
+.content-scroll {
+    flex-grow: 1;
+}
+
+.controls-section,
+.guide-section,
+.tips-section {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: transparent;
+    border-width: 0;
+}
+
+.section-title {
+    font-size: 32px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
+.control-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 40, 80, 0.4);
+    border-radius: 8px;
+    border-left-width: 3px;
+    border-left-color: rgba(0, 180, 255, 0.3);
+}
+
+.control-row:hover {
+    background-color: rgba(0, 60, 120, 0.5);
+}
+
+.control-label {
+    font-size: 24px;
+    color: rgb(220, 230, 240);
+}
+
+.control-value-label {
+    font-size: 22px;
+    color: rgb(153, 153, 153);
+}
+
+.key-button {
+    min-width: 140px;
+    height: 44px;
+    font-size: 18px;
+    background-color: rgba(0, 100, 160, 0.4);
+    border-width: 2px;
+    border-color: rgba(0, 180, 255, 0.6);
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+}
+
+.key-button:hover {
+    background-color: var(--primary-color);
+    border-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.guide-subtitle {
+    font-size: 24px;
+    color: var(--accent-color);
+    -unity-font-style: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left-width: 4px;
+    border-left-color: var(--accent-color);
+}
+
+.guide-subtitle-row {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    border-left-width: 4px;
+    border-left-color: var(--accent-color);
+}
+
+.guide-subtitle-row .guide-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    border-left-width: 0;
+}
+
+.jet-icon-header {
+    width: 60px;
+    height: 36px;
+    margin-right: 15px;
+    background-color: rgba(0, 80, 140, 0.3);
+    border-radius: 4px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.guide-text {
+    font-size: 20px;
+    color: rgb(220, 220, 220);
+    margin-bottom: 10px;
+    padding-left: 15px;
+    white-space: normal;
+    -unity-paragraph-spacing: 28px;
+}
+
+.guide-text.highlight {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 100, 200, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+    border-left-width: 5px;
+    border-left-color: rgb(255, 215, 0);
+    margin: 20px 0;
+}
+
+.tip-text {
+    font-size: 20px;
+    color: rgb(200, 230, 255);
+    margin-bottom: 12px;
+    padding: 15px;
+    background-color: rgba(0, 50, 80, 0.4);
+    border-radius: 8px;
+}
+
+.character-card {
+    flex-direction: row;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: rgba(0, 30, 60, 0.55);
+    border-radius: 12px;
+    border-left-width: 5px;
+    border-left-color: var(--primary-color);
+}
+
+.character-portrait-container {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: rgba(0, 180, 255, 0.3);
+    overflow: hidden;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.char-info-container {
+    flex-grow: 1;
+}
+
+.character-header {
+    margin-bottom: 8px;
+}
+
+.character-name {
+    font-size: 24px;
+    color: var(--text-white);
+    -unity-font-style: bold;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.character-jet {
+    flex-direction: row;
+    align-items: center;
+}
+
+.character-jet-label {
+    font-size: 11px;
+    color: rgba(160, 200, 230, 0.9);
+    background-color: rgba(0, 60, 100, 0.4);
+    border-width: 1px;
+    border-color: rgba(0, 180, 255, 0.4);
+    border-radius: 10px;
+    padding: 2px 8px;
+    margin-right: 8px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}
+
+.character-jet-name {
+    font-size: 16px;
+    color: rgba(200, 230, 255, 0.95);
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}
+
+.jet-icon {
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+    background-color: rgba(0, 80, 140, 0.5);
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgba(0, 180, 255, 0.4);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.jet-icon-f15 {
+    background-image: resource("Hangar/f15_showcase");
+    background-color: transparent;
+    border-color: rgba(0, 180, 255, 0.7);
+}
+
+.jet-icon-su27 {
+    background-image: resource("Hangar/su27_showcase");
+    background-color: transparent;
+}
+
+.jet-icon-mig29 {
+    background-image: resource("Hangar/mig29_showcase");
+    background-color: transparent;
+}
+
+.jet-icon-rafale {
+    background-image: resource("Hangar/rafale_showcase");
+    background-color: transparent;
+}
+
+.jet-icon-mig21 {
+    background-image: resource("Hangar/mig21_showcase");
+    background-color: transparent;
+}
+
+.jet-icon-fa18 {
+    background-image: resource("Hangar/fa18e_showcase");
+    background-color: transparent;
+}
+
+.jet-icon-tornado {
+    background-image: resource("Hangar/tornado_showcase");
+    background-color: transparent;
+}
+
+.jet-icon-hawk200 {
+    background-image: resource("Hangar/hawk200_showcase");
+    background-color: transparent;
+}
+
+.jet-icon-typhoon {
+    background-image: resource("Hangar/typhoon_showcase");
+    background-color: transparent;
+}
+
+.jet-icon-placeholder {
+    background-color: rgba(60, 80, 100, 0.6);
+    border-color: rgba(150, 180, 200, 0.4);
+}
+
+.character-tags {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.character-tag {
+    font-size: 12px;
+    color: var(--primary-color);
+    background-color: rgba(0, 180, 255, 0.15);
+    border-width: 1px;
+    border-color: rgba(0, 180, 255, 0.6);
+    border-radius: 12px;
+    padding: 4px 10px;
+    margin-right: 8px;
+    margin-bottom: 6px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}
+
+.character-bio {
+    font-size: 18px;
+    color: rgb(220, 220, 220);
+    white-space: normal;
+}
+
+.character-desc {
+    font-size: 18px;
+    color: rgb(220, 220, 220);
+    white-space: normal;
+}
+
+.character-jet-reason {
+    font-size: 16px;
+    color: rgba(180, 220, 255, 0.9);
+    margin-top: 10px;
+    padding-left: 12px;
+    border-left-width: 3px;
+    border-left-color: rgba(0, 180, 255, 0.4);
+    white-space: normal;
+}
+
+.rebind-hint {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    -unity-font-style: italic;
+    margin-top: 30px;
+}
+
+.warning-row {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.rebind-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.rebind-dialog {
+    width: 600px;
+    padding: 50px;
+    background-color: rgba(10, 20, 30, 0.95);
+    border-width: 4px;
+    border-color: var(--primary-color);
+    border-radius: 20px;
+    align-items: center;
+}
+
+.rebind-prompt {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.rebind-action-name {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+    -unity-font-style: bold;
+}
+
+.story-root {
+    flex-grow: 1;
+    background-color: rgb(8, 12, 20);
+    background-image: resource("StartupLogos/bg");
+    -unity-background-scale-mode: scale-and-crop;
+    display: none;
+}
+
+.story-base-bg {
+    display: none;
+}
+
+.story-letterbox-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+}
+
+.story-letterbox-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+}
+
+.story-top-bar {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    right: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story-chapter-info {
+    padding: 8px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    border-left-width: 3px;
+    border-left-color: rgb(255, 200, 50);
+}
+
+.story-chapter-label {
+    font-size: 14px;
+    color: rgb(255, 200, 50);
+    -unity-font-style: bold;
+    letter-spacing: 4px;
+}
+
+.story-progress-container {
+    flex-direction: row;
+    align-items: center;
+}
+
+.story-progress-bar {
+    width: 200px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 2px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.story-progress-fill {
+    height: 100%;
+    width: 10%;
+    background-color: rgb(0, 180, 255);
+    border-radius: 2px;
+    transition-duration: 0.3s;
+}
+
+.page-number-label {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+}
+
+.story-split-container {
+    position: absolute;
+    top: 110px;
+    bottom: 90px;
+    left: 50px;
+    right: 50px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.story-image-section {
+    width: 45%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.story-image-frame {
+    width: 100%;
+    aspect-ratio: 1;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.story-image-border {
+    width: 95%;
+    height: 95%;
+    background-color: rgb(0, 0, 0);
+    border-width: 3px;
+    border-color: rgba(0, 180, 255, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.story-image {
+    width: 100%;
+    height: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.image-corner {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-color: rgb(255, 200, 50);
+}
+
+.image-corner-tl {
+    top: 0;
+    left: 0;
+    border-top-width: 3px;
+    border-left-width: 3px;
+}
+
+.image-corner-tr {
+    top: 0;
+    right: 0;
+    border-top-width: 3px;
+    border-right-width: 3px;
+}
+
+.image-corner-bl {
+    bottom: 0;
+    left: 0;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+}
+
+.image-corner-br {
+    bottom: 0;
+    right: 0;
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+}
+
+.story-text-section {
+    width: 55%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.story-title-container {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.story-title-decoration-left {
+    width: 50px;
+    height: 3px;
+    background-color: rgb(255, 200, 50);
+    margin-right: 20px;
+}
+
+.story-title {
+    font-size: 38px;
+    color: rgb(255, 220, 120);
+    -unity-font-style: bold;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.story-text-container {
+    max-height: 60%;
+    padding: 30px 35px;
+    background-color: rgba(0, 15, 30, 0.85);
+    border-radius: 8px;
+    border-left-width: 4px;
+    border-left-color: rgb(0, 180, 255);
+    border-top-width: 1px;
+    border-top-color: rgba(0, 180, 255, 0.2);
+    overflow: hidden;
+}
+
+.story-text {
+    font-size: 20px;
+    color: rgb(220, 230, 240);
+    white-space: normal;
+    -unity-paragraph-spacing: 10px;
+    letter-spacing: 0.3px;
+}
+
+.story-scroll-hint {
+    margin-top: 15px;
+    opacity: 0.4;
+    display: none;
+}
+
+.scroll-hint-text {
+    font-size: 12px;
+    color: rgb(150, 180, 200);
+    -unity-font-style: italic;
+}
+
+.story-navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.story-nav-center {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-nav-button {
+    height: 60px;
+    padding: 0 40px;
+    background-color: rgba(0, 20, 40, 0.85);
+    border-width: 2px;
+    border-color: rgba(0, 180, 255, 0.4);
+    border-radius: 6px;
+    color: rgb(200, 220, 255);
+    font-size: 20px;
+    -unity-font-style: bold;
+    transition-duration: 0.2s;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-nav-button:hover {
+    background-color: rgba(0, 100, 180, 0.6);
+    border-color: rgb(0, 180, 255);
+    scale: 1.03;
+}
+
+.nav-button-text {
+    font-size: 18px;
+    color: rgb(200, 220, 255);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+}
+
+.prev-button {
+    border-color: rgba(150, 150, 150, 0.4);
+    background-color: rgba(40, 40, 50, 0.8);
+}
+
+.prev-button .nav-button-text {
+    color: rgb(180, 180, 190);
+}
+
+.prev-button:hover {
+    border-color: rgba(200, 200, 200, 0.7);
+    background-color: rgba(80, 80, 90, 0.8);
+}
+
+.prev-button:hover .nav-button-text {
+    color: rgb(255, 255, 255);
+}
+
+.skip-button {
+    background-color: transparent;
+    border-color: rgba(255, 100, 100, 0.3);
+    color: rgb(255, 150, 150);
+    font-size: 18px;
+    height: 55px;
+    padding: 0 35px;
+}
+
+.skip-button:hover {
+    background-color: rgba(255, 50, 50, 0.2);
+    border-color: rgb(255, 100, 100);
+    color: rgb(255, 200, 200);
+}
+
+.next-button {
+    background-color: rgba(0, 120, 200, 0.6);
+    border-color: rgb(0, 180, 255);
+    border-width: 2px;
+}
+
+.next-button .nav-button-text {
+    color: rgb(200, 240, 255);
+}
+
+.next-button:hover {
+    background-color: rgba(0, 160, 255, 0.8);
+    border-color: rgb(100, 220, 255);
+}
+
+.next-button.start-mission-button {
+    background-color: rgba(255, 150, 0, 0.6);
+    border-color: rgb(255, 200, 50);
+    border-width: 3px;
+    padding: 0 50px;
+    height: 52px;
+}
+
+.next-button.start-mission-button .nav-button-text {
+    color: rgb(255, 240, 200);
+    font-size: 17px;
+}
+
+.next-button.start-mission-button:hover {
+    background-color: rgba(255, 180, 0, 0.8);
+    border-color: rgb(255, 220, 100);
+    scale: 1.05;
+}
+
+.continue-prompt {
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.continue-hint {
+    font-size: 16px;
+    color: rgba(255, 220, 100, 0.9);
+    -unity-font-style: italic;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.story-keyboard-hints {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard-hint-text {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 1px;
+}
+
+.save-data-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top-width: 2px;
+    border-top-color: rgba(0, 180, 255, 0.3);
+}
+
+.settings-description {
+    font-size: 14px;
+    color: rgba(200, 220, 240, 0.7);
+    margin-bottom: 15px;
+    -unity-font-style: italic;
+}
+
+.save-buttons-row {
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.save-data-button {
+    min-width: 180px;
+    height: 45px;
+    margin-right: 15px;
+    padding: 0 20px;
+    background-color: rgba(0, 150, 200, 0.3);
+    border-width: 2px;
+    border-color: rgb(0, 180, 255);
+    border-radius: 5px;
+    color: rgb(150, 220, 255);
+    font-size: 16px;
+    -unity-font-style: bold;
+    transition-duration: 0.2s;
+}
+
+.save-data-button:hover {
+    background-color: rgba(0, 200, 255, 0.5);
+    border-color: rgb(100, 220, 255);
+    scale: 1.02;
+}
+
+.save-path-label {
+    font-size: 12px;
+    color: rgba(150, 180, 200, 0.6);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    -unity-font-style: italic;
+}
+
+.danger-zone {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top-width: 1px;
+    border-top-color: rgba(255, 100, 100, 0.3);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.danger-label {
+    font-size: 16px;
+    color: rgb(255, 100, 100);
+    -unity-font-style: bold;
+    margin-bottom: 15px;
+}
+
+.danger-button {
+    min-width: 200px;
+    height: 45px;
+    padding: 0 25px;
+    background-color: rgba(200, 50, 50, 0.3);
+    border-width: 2px;
+    border-color: rgb(255, 80, 80);
+    border-radius: 5px;
+    color: rgb(255, 150, 150);
+    font-size: 14px;
+    -unity-font-style: bold;
+    transition-duration: 0.2s;
+}
+
+.danger-button:hover {
+    background-color: rgba(255, 50, 50, 0.5);
+    border-color: rgb(255, 120, 120);
+    color: rgb(255, 200, 200);
+}
+
+.victory-root {
+    flex-grow: 1;
+    display: none;
+}
+
+.game-over-root {
+    flex-grow: 1;
+    display: none;
+}
+
+.gameover-root {
+    flex-grow: 1;
+    display: none;
+}
+
+.result-widescreen-container {
+    flex-grow: 1;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 40px 60px;
+}
+
+.commander-section {
+    width: 35%;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(40, 10, 10, 0.6);
+    border-radius: 15px;
+    margin-right: 30px;
+    border-width: 2px;
+    border-color: rgba(200, 50, 50, 0.5);
+}
+
+.commander-section.victory {
+    background-color: rgba(10, 40, 20, 0.6);
+    border-color: rgba(50, 200, 100, 0.5);
+}
+
+.commander-portrait {
+    width: 280px;
+    height: 280px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border-width: 3px;
+    border-color: rgba(255, 255, 255, 0.2);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.commander-portrait.happy {
+    background-image: resource("Commander/commander_happy");
+    border-color: rgba(100, 255, 100, 0.5);
+}
+
+.commander-portrait.proud {
+    background-image: resource("Commander/commander_proud");
+    border-color: rgba(255, 200, 50, 0.5);
+}
+
+.commander-portrait.neutral {
+    background-image: resource("Commander/commander_neutral");
+    border-color: rgba(100, 180, 255, 0.5);
+}
+
+.commander-portrait.disappointed {
+    background-image: resource("Commander/commander_disappointed");
+    border-color: rgba(255, 180, 100, 0.5);
+}
+
+.commander-portrait.angry {
+    background-image: resource("Commander/commander_angry");
+    border-color: rgba(255, 80, 80, 0.5);
+}
+
+.commander-name {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.9);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.commander-dialogue {
+    font-size: 18px;
+    color: rgba(255, 200, 200, 0.9);
+    -unity-text-align: middle-center;
+    white-space: normal;
+    max-width: 280px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    border-left-width: 3px;
+    border-left-color: rgba(255, 80, 80, 0.6);
+}
+
+.commander-dialogue.victory {
+    color: rgba(200, 255, 200, 0.9);
+    border-left-color: rgba(80, 255, 80, 0.6);
+}
+
+.result-content-section {
+    flex-grow: 1;
+    padding: 30px 40px;
+    background-color: rgba(20, 10, 10, 0.7);
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: rgba(220, 50, 50, 0.5);
+}
+
+.result-content-section.victory {
+    background-color: rgba(10, 20, 10, 0.7);
+    border-color: rgba(255, 200, 50, 0.5);
+}
+
+.result-header {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.result-title-group {
+    margin-left: 20px;
+}
+
+.gameover-title-wide {
+    font-size: 42px;
+    color: rgb(255, 80, 80);
+    -unity-font-style: bold;
+    letter-spacing: 3px;
+}
+
+.gameover-subtitle-wide {
+    font-size: 18px;
+    color: rgba(255, 150, 150, 0.8);
+    letter-spacing: 2px;
+}
+
+.victory-icon-wide {
+    font-size: 80px;
+}
+
+.victory-title-wide {
+    font-size: 42px;
+    color: rgb(255, 200, 50);
+    -unity-font-style: bold;
+    letter-spacing: 3px;
+}
+
+.victory-subtitle-wide {
+    font-size: 20px;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.death-info-wide {
+    padding: 20px;
+    background-color: rgba(80, 20, 20, 0.4);
+    border-radius: 8px;
+    border-left-width: 4px;
+    border-left-color: rgb(220, 50, 50);
+    margin-bottom: 20px;
+}
+
+.rating-section {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.rating-box {
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    align-items: center;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.rating-box.victory {
+    border-color: rgba(255, 200, 50, 0.3);
+}
+
+.rating-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.rank-grade-wide {
+    font-size: 72px;
+    color: rgba(255, 150, 150, 0.9);
+    -unity-font-style: bold;
+}
+
+.rank-grade-wide.victory {
+    color: rgb(255, 200, 50);
+}
+
+.stars-wide {
+    font-size: 28px;
+    color: rgba(255, 200, 200, 0.8);
+}
+
+.stars-wide.victory {
+    color: rgb(255, 200, 50);
+}
+
+.stats-grid-wide {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.stat-item-wide {
+    width: 23%;
+    margin: 1%;
+    padding: 18px;
+    background-color: rgba(0, 40, 80, 0.4);
+    border-radius: 8px;
+    align-items: center;
+    border-width: 1px;
+    border-color: rgba(0, 180, 255, 0.3);
+}
+
+.stat-item-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.stat-item-value {
+    font-size: 28px;
+    color: var(--primary-color);
+    -unity-font-style: bold;
+}
+
+.rewards-section-wide {
+    padding: 20px;
+    background-color: rgba(60, 40, 0, 0.4);
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: rgba(255, 200, 50, 0.3);
+    margin-bottom: 25px;
+}
+
+.rewards-title-wide {
+    font-size: 16px;
+    color: rgb(255, 200, 50);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    -unity-text-align: middle-center;
+}
+
+.reward-item {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 20px;
+}
+
+.reward-value-wide {
+    font-size: 22px;
+    color: rgb(255, 200, 50);
+    -unity-font-style: bold;
+}
+
+.result-buttons-wide {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.result-button-wide {
+    height: 55px;
+    min-width: 180px;
+    margin: 0 15px;
+    background-color: rgba(80, 80, 80, 0.3);
+    border-width: 2px;
+    border-color: rgba(200, 200, 200, 0.5);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    -unity-font-style: bold;
+    transition-duration: 0.2s;
+}
+
+.result-button-wide:hover {
+    background-color: rgba(120, 120, 120, 0.5);
+    scale: 1.03;
+}
+
+.result-button-wide.primary {
+    background-color: rgba(200, 50, 50, 0.4);
+    border-color: rgb(255, 80, 80);
+    color: rgb(255, 200, 200);
+}
+
+.result-button-wide.primary:hover {
+    background-color: rgba(220, 80, 80, 0.6);
+}
+
+.result-button-wide.primary.victory {
+    background-color: rgba(50, 180, 80, 0.4);
+    border-color: rgb(100, 255, 100);
+    color: rgb(200, 255, 200);
+}
+
+.result-button-wide.primary.victory:hover {
+    background-color: rgba(80, 200, 100, 0.6);
+}
+
+.social-links-container {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-button {
+    height: 40px;
+    padding: 0 20px;
+    margin-left: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-width: 2px;
+    border-radius: 5px;
+    font-size: 16px;
+    -unity-font-style: bold;
+    transition-duration: 0.2s;
+}
+
+.social-button:hover {
+    scale: 1.05;
+}
+
+.github-button {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: rgb(200, 200, 200);
+}
+
+.github-button:hover {
+    background-color: rgba(100, 100, 100, 0.6);
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.youtube-button {
+    border-color: rgba(255, 80, 80, 0.5);
+    color: rgb(255, 150, 150);
+}
+
+.youtube-button:hover {
+    background-color: rgba(255, 50, 50, 0.4);
+    border-color: rgb(255, 100, 100);
+    color: rgb(255, 200, 200);
+}
+
+.menu-button-with-icon {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.button-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    -unity-background-scale-mode: scale-to-fit;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.button-text {
+    flex-grow: 1;
+    -unity-text-align: middle-left;
+}
+
+.icon-continue {
+    background-image: resource("UI/Icons/icon-continue");
+}
+
+.icon-new-game {
+    background-image: resource("UI/Icons/icon-new-game");
+}
+
+.icon-hangar {
+    background-image: resource("UI/Icons/icon-hangar");
+}
+
+.icon-pilot {
+    background-image: resource("UI/Icons/icon-pilot");
+}
+
+.icon-settings {
+    background-image: resource("UI/Icons/icon-settings");
+}
+
+.icon-how-to-play {
+    background-image: resource("UI/Icons/icon-how-to-play");
+}
+
+.icon-credits {
+    background-image: resource("UI/Icons/icon-credits");
+}
+
+.icon-exit {
+    background-image: resource("UI/Icons/icon-exit");
+}
+
+.icon-resume {
+    background-image: resource("UI/Icons/icon-resume");
+}
+
+.icon-restart {
+    background-image: resource("UI/Icons/icon-restart");
+}
+
+.icon-main-menu {
+    background-image: resource("UI/Icons/icon-main-menu");
+}
+
+.icon-victory {
+    width: 80px;
+    height: 80px;
+    background-image: resource("UI/Icons/icon-victory");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-gameover {
+    width: 80px;
+    height: 80px;
+    background-image: resource("UI/Icons/icon-gameover");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-retry {
+    background-image: resource("UI/Icons/icon-retry");
+}
+
+.icon-trophy {
+    width: 40px;
+    height: 40px;
+    background-image: resource("UI/Icons/icon-trophy");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-laurel-crown {
+    width: 40px;
+    height: 40px;
+    background-image: resource("UI/Icons/icon-laurel-crown");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-laurels-trophy {
+    width: 50px;
+    height: 50px;
+    background-image: resource("UI/Icons/icon-laurels-trophy");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-skull {
+    width: 40px;
+    height: 40px;
+    background-image: resource("UI/Icons/icon-skull");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-winged-emblem {
+    width: 40px;
+    height: 40px;
+    background-image: resource("UI/Icons/icon-winged-emblem");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-jet-fighter {
+    width: 40px;
+    height: 40px;
+    background-image: resource("UI/Icons/icon-jet-fighter");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-medal {
+    width: 40px;
+    height: 40px;
+    background-image: resource("UI/Icons/icon-medal");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-radar {
+    width: 40px;
+    height: 40px;
+    background-image: resource("UI/Icons/icon-radar");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-star-medal {
+    width: 40px;
+    height: 40px;
+    background-image: resource("UI/Icons/icon-star-medal");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-missile {
+    width: 40px;
+    height: 40px;
+    background-image: resource("UI/Icons/icon-missile");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-plane-pilot {
+    width: 40px;
+    height: 40px;
+    background-image: resource("UI/Icons/icon-plane-pilot");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-plane-wing {
+    width: 40px;
+    height: 40px;
+    background-image: resource("UI/Icons/icon-plane-wing");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-title-plane {
+    width: 40px;
+    height: 40px;
+    background-image: resource("UI/Icons/icon-title-plane");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.title-container-with-icons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title-text-group {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.title-icon-left {
+    scale: -1 1;
+}
+
+.title-icon-right {
+}
+
+.pause-title-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* ============================================= */
+/* FULLSCREEN MODEL PREVIEW STYLES */
+/* ============================================= */
+
+.fullscreen-toggle-button {
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+    width: 120px;
+    height: 50px;
+    background-color: rgba(0, 180, 255, 0.5);
+    border-width: 3px;
+    border-color: var(--primary-color);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    transition-duration: 0.2s;
+    /* Glow effect */
+    -unity-background-image-tint-color: rgba(0, 200, 255, 0.3);
+}
+
+.fullscreen-toggle-button:hover {
+    background-color: rgba(0, 180, 255, 0.8);
+    border-color: rgb(100, 220, 255);
+    scale: 1.08;
+    /* Brighter glow on hover */
+}
+
+.fullscreen-toggle-button:active {
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+}
+
+.fullscreen-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 5, 15, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-preview-container {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-3d-preview {
+    width: 90%;
+    height: 85%;
+    background-color: rgba(10, 20, 40, 0.5);
+    border-width: 2px;
+    border-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.fullscreen-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.fullscreen-hint {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 30px;
+}
+
+.close-fullscreen-button {
+    height: 45px;
+    min-width: 150px;
+    padding: 0 25px;
+    background-color: rgba(200, 50, 50, 0.3);
+    border-width: 2px;
+    border-color: rgb(200, 80, 80);
+    border-radius: 8px;
+    color: rgb(255, 150, 150);
+    font-size: 18px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    transition-duration: 0.2s;
+}
+
+.close-fullscreen-button:hover {
+    background-color: rgba(200, 50, 50, 0.6);
+    border-color: rgb(255, 100, 100);
+    color: rgb(255, 200, 200);
+    scale: 1.05;
+}
+
+.close-fullscreen-button:active {
+    background-color: rgb(200, 50, 50);
+    color: rgb(255, 255, 255);
+}
+
+/* ============================================= */
+/* HOW TO PLAY IMAGES */
+/* ============================================= */
+
+.htp-section-image {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    align-self: center;
+    -unity-background-scale-mode: scale-to-fit;
+    border-width: 2px;
+    border-color: rgba(0, 180, 255, 0.4);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.htp-image-tips {
+    background-image: resource('HowToPlay/htp-tips');
+}
+
+.htp-image-mission {
+    background-image: resource('HowToPlay/htp-mission');
+}
+
+.htp-image-hud {
+    background-image: resource('HowToPlay/htp-hud');
+}
+
+.htp-image-warnings {
+    background-image: resource('HowToPlay/htp-warnings');
+}
+
+.htp-image-combat {
+    background-image: resource('HowToPlay/htp-combat');
+}
+
+.htp-image-scoring {
+    background-image: resource('HowToPlay/htp-scoring');
+}
+
+.htp-image-features {
+    background-image: resource('HowToPlay/htp-features');
+}
+
+.htp-image-tactics {
+    background-image: resource('HowToPlay/htp-tactics');
+}
+
+.htp-image-characters {
+    background-image: resource('HowToPlay/htp-characters');
+}
+
+.htp-image-aircraft {
+    background-image: resource('HowToPlay/htp-aircraft');
+}
+
+.htp-image-future {
+    background-image: resource('HowToPlay/htp-future');
+}
+
+/* Character Portraits */
+.char-portrait {
+    width: 100%;
+    height: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.char-phoenix-lead {
+    background-image: resource('Characters/char_phoenix_lead');
+}
+
+.char-lt-one {
+    background-image: resource('Characters/char_lt_one');
+}
+
+.char-gloria {
+    background-image: resource('Characters/char_admiral_gloria');
+}
+
+.char-ark {
+    background-image: resource('Characters/char_director_ark');
+}
+
+.char-teacher {
+    background-image: resource('Characters/char_teacher_chan');
+}
+
+.char-donkey {
+    background-image: resource('Characters/char_col_donkey');
+}
+
+.char-tech {
+    background-image: resource('Characters/char_weapons_tech');
+}
+
+/* UI Icons */
+.button-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon-new-game { background-image: resource("UI/Icons/icon-new-game"); }
+.icon-pilot { background-image: resource("UI/Icons/icon-pilot"); }
+.icon-settings { background-image: resource("UI/Icons/icon-settings"); }
+.icon-how-to-play { background-image: resource("UI/Icons/icon-how-to-play"); }
+.icon-credits { background-image: resource("UI/Icons/icon-credits"); }
+.icon-exit { background-image: resource("UI/Icons/icon-exit"); }
+
+.icon-resume { background-image: resource("UI/Icons/icon-resume"); }
+.icon-restart { background-image: resource("UI/Icons/icon-restart"); }
+.icon-main-menu { background-image: resource("UI/Icons/icon-main-menu"); }
+
+.icon-radar { 
+    background-image: resource("UI/Icons/icon-radar"); 
+    width: 32px;
+    height: 32px;
+}
+
+.icon-title-plane { 
+    background-image: resource("UI/Icons/icon-title-plane"); 
+    width: 40px;
+    height: 40px;
+}
+
+.icon-jet-fighter { 
+    background-image: resource("UI/Icons/icon-jet-fighter"); 
+    width: 40px;
+    height: 40px;
+}
+
+/* How To Play Header Fixes */
+.how-to-play-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 180, 255, 0.3);
+}
+
+.reset-button {
+    font-size: 18px;
+    color: #ff4444;
+    border-color: rgba(255, 68, 68, 0.5);
+    background-color: rgba(50, 0, 0, 0.3);
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-right: 20px; /* Ensure not flush with edge */
+    -unity-font-style: bold;
+}
+
+.reset-button:hover {
+    background-color: rgba(255, 68, 68, 0.2);
+    color: white;
+}
+
+.credits-made-in-image {
+    width: 300px;
+    height: 80px;
+    background-image: resource("UI/Images/credits_made_in_brighton");
+    -unity-background-scale-mode: scale-to-fit;
+    margin-top: 10px;
+    align-self: center;
+}

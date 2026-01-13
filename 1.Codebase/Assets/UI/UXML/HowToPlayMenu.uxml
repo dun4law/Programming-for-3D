@@ -1,0 +1,852 @@
+﻿<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Style src="project://database/Assets/UI/USS/MenuStyles.uss" />
+    
+    <ui:VisualElement name="root" class="how-to-play-root">
+        <!-- Header -->
+        <ui:VisualElement class="how-to-play-header">
+            <ui:Button name="back-button" text="&lt; BACK" class="back-button" />
+            <ui:Label text="HOW TO PLAY" class="page-title" />
+            <ui:Button name="reset-button" text="RESET DEFAULTS" class="reset-button" />
+        </ui:VisualElement>
+        
+        <!-- New Split Layout -->
+        <ui:VisualElement class="how-to-play-container">
+            
+            <!-- Left Sidebar -->
+            <ui:VisualElement class="sidebar-panel">
+                <ui:Label text="CATEGORIES" class="sidebar-title" />
+
+                <ui:ScrollView class="sidebar-scroll">
+                    <ui:Button name="btn-controls" class="sidebar-button active">
+                        <ui:Label text="CONTROLS" class="sidebar-button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="btn-controller" class="sidebar-button">
+                        <ui:Label text="CONTROLLER" class="sidebar-button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="btn-tips" class="sidebar-button">
+                        <ui:Label text="QUICK TIPS" class="sidebar-button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="btn-mission" class="sidebar-button">
+                        <ui:Label text="MISSION" class="sidebar-button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="btn-characters" class="sidebar-button">
+                        <ui:Label text="CHARACTERS" class="sidebar-button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="btn-hud" class="sidebar-button">
+                        <ui:Label text="HUD" class="sidebar-button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="btn-warnings" class="sidebar-button">
+                        <ui:Label text="WARNINGS" class="sidebar-button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="btn-combat" class="sidebar-button">
+                        <ui:Label text="COMBAT" class="sidebar-button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="btn-scoring" class="sidebar-button">
+                        <ui:Label text="SCORING" class="sidebar-button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="btn-features" class="sidebar-button">
+                        <ui:Label text="FEATURES" class="sidebar-button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="btn-aircraft" class="sidebar-button">
+                        <ui:Label text="AIRCRAFT" class="sidebar-button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="btn-tactics" class="sidebar-button">
+                        <ui:Label text="AIR COMBAT" class="sidebar-button-text" />
+                    </ui:Button>                    <ui:Button name="btn-future" class="sidebar-button">
+                        <ui:Label text="FUTURE" class="sidebar-button-text" />
+                    </ui:Button>
+                </ui:ScrollView>
+            </ui:VisualElement>
+            
+            <!-- Right Content Area -->
+            <ui:VisualElement class="content-panel">
+                <ui:ScrollView class="content-scroll">
+                    
+                    <!-- 1. CONTROLS SECTION -->
+                    <ui:VisualElement name="section-controls" class="content-section">
+                        <ui:Label text="FLIGHT CONTROLS" class="section-title" />
+                        <ui:Label text="Tap the button to check the keyboard key" class="tip-text" style="color: rgba(200, 200, 200, 0.8); margin-bottom: 15px; -unity-text-align: middle-center; font-size: 14px;" />
+                        
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Throttle Up" class="control-label" />
+                            <ui:Button name="key-throttle-up" text="Shift" class="key-button" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Throttle Down" class="control-label" />
+                            <ui:Button name="key-throttle-down" text="Ctrl" class="key-button" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Pitch Up" class="control-label" />
+                            <ui:Button name="key-pitch-up" text="W" class="key-button" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Pitch Down" class="control-label" />
+                            <ui:Button name="key-pitch-down" text="S" class="key-button" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Roll Left" class="control-label" />
+                            <ui:Button name="key-roll-left" text="A" class="key-button" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Roll Right" class="control-label" />
+                            <ui:Button name="key-roll-right" text="D" class="key-button" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Yaw Left" class="control-label" />
+                            <ui:Button name="key-yaw-left" text="Q" class="key-button" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Yaw Right" class="control-label" />
+                            <ui:Button name="key-yaw-right" text="E" class="key-button" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Toggle Flaps" class="control-label" />
+                            <ui:Button name="key-flaps" text="F" class="key-button" />
+                        </ui:VisualElement>
+
+                        <ui:Label text="WEAPONS &amp; SYSTEMS" class="section-title" style="margin-top: 40px;" />
+
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Fire Missile" class="control-label" />
+                            <ui:Button name="key-fire-missile" text="Space" class="key-button" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Fire Cannon" class="control-label" />
+                            <ui:Button name="key-fire-cannon" text="Left Mouse" class="key-button" />
+                        </ui:VisualElement>
+                        
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Deploy Flares (Countermeasures)" class="control-label" />
+                            <ui:Button name="key-deploy-flares" text="X" class="key-button" />
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Toggle AI Autopilot" class="control-label" />
+                            <ui:Button name="key-toggle-ai" text="Tab" class="key-button" />
+                        </ui:VisualElement>
+
+                        <ui:Label text="CAMERA &amp; VIEW" class="section-title" style="margin-top: 40px;" />
+                        
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Look Around" class="control-label" />
+                            <ui:Label text="Mouse / Arrow Keys" class="control-value-label" style="color: #999;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <!-- 1.5 CONTROLLER & MOBILE SECTION -->
+                    <ui:VisualElement name="section-controller" class="content-section" style="display: none;">
+                        <ui:Label text="GAMEPAD CONTROLS" class="section-title" />
+                        <ui:Label text="The game supports standard Xbox and PlayStation controllers." class="guide-text highlight" />
+
+                        <ui:Label text="FLIGHT CONTROLS" class="guide-subtitle" />
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Throttle" class="control-label" />
+                            <ui:Label text="Left Trigger (Down) / Right Trigger (Up)" class="control-value-label" style="color: #999;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Pitch &amp; Roll" class="control-label" />
+                            <ui:Label text="Left Stick" class="control-value-label" style="color: #999;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Yaw" class="control-label" />
+                            <ui:Label text="Left/Right Bumpers" class="control-value-label" style="color: #999;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Camera" class="control-label" />
+                            <ui:Label text="Right Stick" class="control-value-label" style="color: #999;" />
+                        </ui:VisualElement>
+
+                        <ui:Label text="WEAPONS &amp; SYSTEMS" class="guide-subtitle" />
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Fire Missile" class="control-label" />
+                            <ui:Label text="A Button / X Button (PlayStation)" class="control-value-label" style="color: #999;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Fire Cannon" class="control-label" />
+                            <ui:Label text="X Button / Square Button (PlayStation)" class="control-value-label" style="color: #999;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Deploy Flares" class="control-label" />
+                            <ui:Label text="B Button / Circle Button (PlayStation)" class="control-value-label" style="color: #999;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Toggle AI Autopilot" class="control-label" />
+                            <ui:Label text="Y Button / Triangle Button (PlayStation)" class="control-value-label" style="color: #999;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Toggle Flaps" class="control-label" />
+                            <ui:Label text="D-Pad Down" class="control-value-label" style="color: #999;" />
+                        </ui:VisualElement>
+
+                        <ui:Label text="MOBILE CONTROLS" class="section-title" style="margin-top: 40px;" />
+                        <ui:Label text="FOR THE BEST EXPERIENCE, PLAY WITH KEYBOARD OR CONTROLLER!" class="guide-text" style="color: #FFD700; -unity-font-style: bold; margin-bottom: 10px;" />
+                        <ui:Label text="Mobile controls are very basic and only support limited actions. Throttle, yaw, flares, cannon, and other controls are not available on mobile." class="guide-text" style="color: #FF6B6B; margin-bottom: 15px;" />
+
+                        <ui:Label text="TOUCH CONTROLS" class="guide-subtitle" />
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Pitch &amp; Roll" class="control-label" />
+                            <ui:Label text="Drag/Swipe on Screen" class="control-value-label" style="color: #999;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Fire Missile" class="control-label" />
+                            <ui:Label text="Single Tap Screen" class="control-value-label" style="color: #999;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Toggle AI Autopilot" class="control-label" />
+                            <ui:Label text="Double Tap Screen" class="control-value-label" style="color: #999;" />
+                        </ui:VisualElement>
+
+                        <ui:Label text="GYROSCOPE CONTROLS" class="guide-subtitle" />
+                        <ui:VisualElement class="control-row">
+                            <ui:Label text="Roll Left/Right" class="control-label" />
+                            <ui:Label text="Tilt/Roll Your Device" class="control-value-label" style="color: #999;" />
+                        </ui:VisualElement>
+
+                        <ui:Label text="WHAT'S NOT AVAILABLE ON MOBILE" class="guide-subtitle" />
+                        <ui:Label text="Throttle control (speed is fixed or AI-controlled)" class="tip-text" style="color: #999;" />
+                        <ui:Label text="Yaw control (rudder)" class="tip-text" style="color: #999;" />
+                        <ui:Label text="Cannon/Gun fire" class="tip-text" style="color: #999;" />
+                        <ui:Label text="Flares/Countermeasures" class="tip-text" style="color: #999;" />
+                        <ui:Label text="Flaps toggle" class="tip-text" style="color: #999;" />
+                        <ui:Label text="Camera control" class="tip-text" style="color: #999;" />
+
+                        <ui:Label text="MOBILE TIPS" class="guide-subtitle" />
+                        <ui:Label text="Enable AI Autopilot (double tap) to let the AI handle throttle, combat, and evasion." class="tip-text" />
+                        <ui:Label text="Swipe up/down for pitch, left/right for roll." class="tip-text" />
+                        <ui:Label text="Tap to fire missiles when you see the LOCK indicator on enemies." class="tip-text" />
+                        <ui:Label text="The gyroscope calibrates when the game starts - hold your device level." class="tip-text" />
+                    </ui:VisualElement>
+
+                    <!-- 2. TIPS SECTION -->
+                    <ui:VisualElement name="section-tips" class="content-section" style="display: none;">
+                        <ui:Label text="QUICK TIPS" class="section-title" />
+                        <ui:VisualElement class="htp-section-image htp-image-tips" />
+                        <ui:Label text="BASIC FLIGHT" class="guide-subtitle" />
+                        <ui:Label text="Hold Shift to increase throttle, Ctrl to decrease" class="tip-text" />
+                        <ui:Label text="Use flaps (F) when landing at low speed to prevent stalling" class="tip-text" />
+                        <ui:Label text="Pull UP (S key) to climb, Push DOWN (W key) to dive" class="tip-text" />
+                        
+                        <ui:Label text="COMBAT TACTICS" class="guide-subtitle" />
+                        <ui:Label text="Lock onto enemies before firing missiles for higher hit chance" class="tip-text" />
+                        <ui:Label text="Lead your target when using cannons (aim ahead of them)" class="tip-text" />
+                        <ui:Label text="Use terrain (mountains) to break enemy radar line-of-sight" class="tip-text" />
+                        
+                        <ui:Label text="SURVIVAL" class="guide-subtitle" />
+                        <ui:Label text="Listen to RWR sounds - fast beeping means a missile is inbound!" class="tip-text" />
+                        <ui:Label text="Deploy Flares (X key) immediately when you hear missile warning!" class="tip-text" />
+                        <ui:Label text="Flares + hard turn = best evasion. Don't just fly straight!" class="tip-text" />
+                        <ui:Label text="Don't fly too high or you might stall in thin air" class="tip-text" />
+                    </ui:VisualElement>
+                    
+                    <!-- 3. MISSION SECTION -->
+                    <ui:VisualElement name="section-mission" class="content-section" style="display: none;">
+                        <ui:Label text="MISSION OBJECTIVES" class="section-title" />
+                        <ui:VisualElement class="htp-section-image htp-image-mission" />
+                        <ui:Label text="DEFEND THE AIRSPACE" class="guide-subtitle" />
+                        <ui:Label text="Hostile aircraft have entered the area. Your orders are to intercept and destroy all enemy bogies." class="guide-text" />
+                        
+                        <ui:Label text="WAVE ATTACKS" class="guide-subtitle" />
+                        <ui:Label text="Enemies arrive in waves. You must defeat all enemies in the current wave to trigger the next." class="guide-text" />
+                        <ui:Label text="Wave 1: Reconnaissance (Light Fighters)" class="guide-text" />
+                        <ui:Label text="Wave 2: Strike Group (Multiple Bogeys)" class="guide-text" />
+                        <ui:Label text="Wave 3: Air Superiority (Elite Aces)" class="guide-text" />
+                        
+                        <ui:Label text="FAIL CONDITIONS" class="guide-subtitle" />
+                        <ui:Label text="You fail the mission if:" class="guide-text" />
+                        <ui:Label text="- Your aircraft is destroyed (0% HP)" class="guide-text" />
+                        <ui:Label text="- You crash into the ground or ocean" class="guide-text" />
+                        <ui:Label text="- You leave the combat zone for too long" class="guide-text" />
+                    </ui:VisualElement>
+
+                    <!-- 3.5 CHARACTERS SECTION -->
+                    <ui:VisualElement name="section-characters" class="content-section" style="display: none;">
+                        <ui:VisualElement class="htp-section-image htp-image-characters" />
+                        <ui:Label text="CHARACTERS" class="section-title" />
+                        <ui:Label text="These are the voices shaping the mission. Know who they are, what they want, and why they act the way they do." class="guide-text highlight" />
+
+                        <ui:VisualElement class="character-card">
+                            <ui:VisualElement class="character-portrait-container">
+                                <ui:VisualElement class="char-portrait char-phoenix-lead" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="char-info-container">
+                                <ui:VisualElement class="character-header">
+                                    <ui:Label text="PHOENIX LEAD (YOU)" class="character-name" />
+                                    <ui:VisualElement class="character-jet">
+                                        <ui:Label text="FAVORITE JET" class="character-jet-label" />
+                                        <ui:VisualElement class="jet-icon jet-icon-f15" />
+                                        <ui:Label text="F-15C EAGLE" class="character-jet-name" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement class="character-tags">
+                                    <ui:Label text="PERSONAL" class="character-tag" />
+                                    <ui:Label text="MBTI: INFJ" class="character-tag" />
+                                </ui:VisualElement>
+                                <ui:Label text="Silent, professional, and deadly. You are the tip of the spear in Operation Antigravity. Your background is classified, but your skills in the cockpit are undeniable." class="character-desc" />
+                                <ui:Label text="Acts with calm focus, cutting through noise to make hard calls. Protective, disciplined, and mission-first, they value results over speeches. Morally good, but willing to be ruthless when lives are at risk." class="character-desc" />
+                                <ui:Label text="Why this jet: The F-15C is relentless and direct, matching a protector who values clean, decisive outcomes over empty theater." class="character-jet-reason" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="character-card">
+                            <ui:VisualElement class="character-portrait-container">
+                                <ui:VisualElement class="char-portrait char-lt-one" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="char-info-container">
+                                <ui:VisualElement class="character-header">
+                                    <ui:Label text="LIEUTENANT ONE (PHOENIX TWO)" class="character-name" />
+                                    <ui:VisualElement class="character-jet">
+                                        <ui:Label text="FAVORITE JET" class="character-jet-label" />
+                                        <ui:VisualElement class="jet-icon jet-icon-su27" />
+                                        <ui:Label text="SU-27 FLANKER" class="character-jet-name" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement class="character-tags">
+                                    <ui:Label text="PERSONAL" class="character-tag" />
+                                    <ui:Label text="MBTI: ISFJ" class="character-tag" />
+                                </ui:VisualElement>
+                                <ui:Label text="Your loyal wingman. He follows your lead without question, providing cover and support during the most intense dogfights. Reliable and always ready for the next sortie." class="character-desc" />
+                                <ui:Label text="Quiet and methodical, he backs you without drama, reads the fight early, and covers blind spots. Loyal and competent to the core, he avoids politics; his ethics stay steady." class="character-desc" />
+                                <ui:Label text="Why this jet: The Su-27 rewards calm, disciplined control?erfect for a stoic wingman who stays steady and shields the formation." class="character-jet-reason" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="character-card">
+                            <ui:VisualElement class="character-portrait-container">
+                                <ui:VisualElement class="char-portrait char-gloria" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="char-info-container">
+                                <ui:VisualElement class="character-header">
+                                    <ui:Label text="FLEET ADMIRAL GLORIA" class="character-name" />
+                                    <ui:VisualElement class="character-jet">
+                                        <ui:Label text="FAVORITE JET" class="character-jet-label" />
+                                        <ui:VisualElement class="jet-icon jet-icon-rafale" />
+                                        <ui:Label text="DASSAULT RAFALE" class="character-jet-name" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement class="character-tags">
+                                    <ui:Label text="PERSONAL" class="character-tag" />
+                                    <ui:Label text="MBTI: INFJ" class="character-tag" />
+                                </ui:VisualElement>
+                                <ui:Label text="The supreme commander of the operation. She is known for her 'toxic positivity' and manipulative leadership style. She demands perfection and views any failure as a personal betrayal." class="character-desc" />
+                                <ui:Label text="She leads with polished charm and emotional pressure, framing obedience as positivity. Decisions serve her image first, outcomes second. Capable but manipulative, she is morally compromised and dangerous when challenged." class="character-desc" />
+                                <ui:Label text="Why this jet: The Rafale is polished and adaptable, just like a commander who performs charm while controlling every angle." class="character-jet-reason" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="character-card">
+                            <ui:VisualElement class="character-portrait-container">
+                                <ui:VisualElement class="char-portrait char-ark" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="char-info-container">
+                                <ui:VisualElement class="character-header">
+                                    <ui:Label text="DIRECTOR ARK" class="character-name" />
+                                    <ui:VisualElement class="character-jet">
+                                        <ui:Label text="FAVORITE JET" class="character-jet-label" />
+                                        <ui:VisualElement class="jet-icon jet-icon-mig21" />
+                                        <ui:Label text="MIG-21 FISHBED" class="character-jet-name" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement class="character-tags">
+                                    <ui:Label text="PERSONAL" class="character-tag" />
+                                    <ui:Label text="MBTI: INTJ" class="character-tag" />
+                                </ui:VisualElement>
+                                <ui:Label text="The head of intelligence. Ark is calculating and secretive, often providing missions with cryptic objectives. He values data above all else, even human lives." class="character-desc" />
+                                <ui:Label text="A cold, analytical planner who trusts data over people, he issues rigid directives and withholds context. Brilliant at systems, poor at empathy; his methods are effective but ethically gray and isolating." class="character-desc" />
+                                <ui:Label text="Why this jet: The MiG-21 is simple, fast, and unforgiving?deal for a controller who values rigid execution and tight margins." class="character-jet-reason" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="character-card">
+                            <ui:VisualElement class="character-portrait-container">
+                                <ui:VisualElement class="char-portrait char-teacher" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="char-info-container">
+                                <ui:VisualElement class="character-header">
+                                    <ui:Label text="TEACHER CHAN" class="character-name" />
+                                    <ui:VisualElement class="character-jet">
+                                        <ui:Label text="FAVORITE JET" class="character-jet-label" />
+                                        <ui:VisualElement class="jet-icon jet-icon-fa18" />
+                                        <ui:Label text="F/A-18E SUPER HORNET" class="character-jet-name" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement class="character-tags">
+                                    <ui:Label text="PERSONAL" class="character-tag" />
+                                    <ui:Label text="MBTI: ESFJ" class="character-tag" />
+                                </ui:VisualElement>
+                                <ui:Label text="A civilian broadcast journalist who finds herself caught in the middle of the conflict. She tries to find the truth behind the propaganda, often putting herself in danger." class="character-desc" />
+                                <ui:Label text="On air she is soothing and poised, choosing careful words to prevent panic. Off air she seeks truth and helps where she can. Well-intentioned, but sometimes complicit in a polished narrative." class="character-desc" />
+                                <ui:Label text="Why this jet: The Super Hornet is balanced and crowd-pleasing, mirroring an idol who smooths over tension and keeps things looking stable." class="character-jet-reason" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="character-card">
+                            <ui:VisualElement class="character-portrait-container">
+                                <ui:VisualElement class="char-portrait char-donkey" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="char-info-container">
+                                <ui:VisualElement class="character-header">
+                                    <ui:Label text="COLONEL DONKEY" class="character-name" />
+                                    <ui:VisualElement class="character-jet">
+                                        <ui:Label text="FAVORITE JET" class="character-jet-label" />
+                                        <ui:VisualElement class="jet-icon jet-icon-tornado" />
+                                        <ui:Label text="PANAVIA TORNADO" class="character-jet-name" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement class="character-tags">
+                                    <ui:Label text="PERSONAL" class="character-tag" />
+                                    <ui:Label text="MBTI: ESTP" class="character-tag" />
+                                </ui:VisualElement>
+                                <ui:Label text="A veteran ground commander in charge of fortress defenses. He is loud, aggressive, and highly protective of his troops, often clashing with Gloria's high-level strategy." class="character-desc" />
+                                <ui:Label text="He acts like a showman, loud and bold, always performing for cameras. Beneath the bluster he cares about his troops, but his ego can cloud judgment. Good heart, messy execution." class="character-desc" />
+                                <ui:Label text="Why this jet: The Tornado is loud and theatrical, fitting a showman who loves spectacle and bold, public-facing power." class="character-jet-reason" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="character-card">
+                            <ui:VisualElement class="character-portrait-container">
+                                <ui:VisualElement class="char-portrait char-tech" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="char-info-container">
+                                <ui:VisualElement class="character-header">
+                                    <ui:Label text="WEAPONS TECH" class="character-name" />
+                                    <ui:VisualElement class="character-jet">
+                                        <ui:Label text="FAVORITE JET" class="character-jet-label" />
+                                        <ui:VisualElement class="jet-icon jet-icon-hawk200" />
+                                        <ui:Label text="HAWK 200" class="character-jet-name" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement class="character-tags">
+                                    <ui:Label text="PERSONAL" class="character-tag" />
+                                    <ui:Label text="MBTI: ISTP" class="character-tag" />
+                                </ui:VisualElement>
+                                <ui:Label text="The unsung hero on the ground. She ensures your aircraft is armed and ready for every sortie, often working under extreme pressure to keep the fleet flying." class="character-desc" />
+                                <ui:Label text="Hands-on and practical, she solves problems fast and keeps the squadron flying. She speaks plainly, trusts evidence, and values safety over pageantry. Dependable and morally solid, the quiet backbone of the hangar." class="character-desc" />
+                                <ui:Label text="Why this jet: The Hawk 200 is straightforward and efficient, the kind of machine a practical tech trusts over flashy promises." class="character-jet-reason" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <!-- 4. HUD SECTION -->
+                    <ui:VisualElement name="section-hud" class="content-section" style="display: none;">
+                        <ui:Label text="HEAD-UP DISPLAY (HUD)" class="section-title" />
+                        <ui:VisualElement class="htp-section-image htp-image-hud" />
+                        <ui:Label text="The HUD projects vital flight data onto your canopy glass." class="guide-text" />
+                        
+                        <ui:Label text="FLIGHT DATA" class="guide-subtitle" />
+                        <ui:Label text="Speed Tape (Left): Current airspeed in Knots" class="guide-text" />
+                        <ui:Label text="Altitude Tape (Right): Current altitude in Feet" class="guide-text" />
+                        <ui:Label text="Heading Tape (Top): Compass direction (0-360)" class="guide-text" />
+                        <ui:Label text="Pitch Ladder (Center): Shows nose angle relative to horizon" class="guide-text" />
+                        
+                        <ui:Label text="WEAPON SYMBOLOGY" class="guide-subtitle" />
+                        <ui:Label text="Crosshair: Where your nose is pointing (for cannons)" class="guide-text" />
+                        <ui:Label text="Target Box: Highlights currently locked enemy" class="guide-text" />
+                        <ui:Label text="Missile Count: Number of missiles remaining" class="guide-text" />
+                        <ui:Label text="Flare Count: Countermeasures remaining" class="guide-text" />
+                    </ui:VisualElement>
+
+                    <!-- 5. WARNINGS SECTION -->
+                    <ui:VisualElement name="section-warnings" class="content-section" style="display: none;">
+                        <ui:Label text="WARNING SYSTEMS (RWR)" class="section-title" />
+                        <ui:VisualElement class="htp-section-image htp-image-warnings" />
+                        <ui:Label text="Your Radar Warning Receiver (RWR) saves your life. Listen to it!" class="guide-text highlight" />
+                        
+                        <ui:Label text="WARNING TYPES" class="guide-subtitle" />
+                        <ui:VisualElement class="warning-row" style="flex-direction: row; margin-bottom: 5px;">
+                            <ui:Label text="ORANGE" style="color: rgb(255, 165, 0); width: 100px; -unity-font-style: bold; font-size: 20px;" />
+                            <ui:Label text="MISSILE LOCK" style="color: rgb(255, 165, 0); flex-grow: 1; font-size: 20px;" />
+                        </ui:VisualElement>
+                        <ui:Label text="Enemy radar has locked onto you. Prepare to evade." class="guide-text" />
+                        
+                        <ui:VisualElement class="warning-row" style="flex-direction: row; margin-top: 15px; margin-bottom: 5px;">
+                            <ui:Label text="RED" style="color: rgb(255, 50, 0); width: 100px; -unity-font-style: bold; font-size: 20px;" />
+                            <ui:Label text="MISSILES INCOMING!" style="color: rgb(255, 50, 0); flex-grow: 1; font-size: 20px;" />
+                        </ui:VisualElement>
+                        <ui:Label text="Missile launch detected! Press X to deploy flares immediately!" class="guide-text" />
+                        <ui:Label text="Combine flares with a hard turn for maximum evasion effectiveness." class="guide-text" />
+
+                        <ui:Label text="HOW FLARES WORK" class="guide-subtitle" />
+                        <ui:Label text="Flares are heat decoys that distract heat-seeking missiles." class="guide-text" />
+                        <ui:Label text="When deployed, missiles may lock onto the flares instead of you." class="guide-text" />
+                        <ui:Label text="Timing is critical - deploy when you hear the missile warning tone!" class="guide-text" />
+
+                        <ui:Label text="FLARE SYSTEM SPECS" class="guide-subtitle" />
+                        <ui:Label text="Default Amount: 30 flares" class="guide-text" />
+                        <ui:Label text="Cooldown: 0.5 seconds between deployments" class="guide-text" />
+                        <ui:Label text="Burst Fire: Deploys 2 flares per press" class="guide-text" />
+                        
+                        <ui:Label text="LOW HEALTH" class="guide-subtitle" />
+                        <ui:Label text="Screen pulses red when health is below 30%" class="guide-text" />
+                        <ui:Label text="Visual vignette effect intensifies as damage increases" class="guide-text" />
+                    </ui:VisualElement>
+
+                    <!-- 6. COMBAT SECTION -->
+                    <ui:VisualElement name="section-combat" class="content-section" style="display: none;">
+                        <ui:Label text="COMBAT GUIDE" class="section-title" />
+                        <ui:VisualElement class="htp-section-image htp-image-combat" />
+                        
+                        <ui:Label text="MISSILE SYSTEM" class="guide-subtitle" />
+                        <ui:Label text="1. TARGET: Get enemy in your sights (targeting box)" class="guide-text" />
+                        <ui:Label text="2. TRACK: Keep them in view for about 1-2 seconds" class="guide-text" />
+                        <ui:Label text="3. LOCK: Wait for solid LOCK indicator + Beep tone" class="guide-text" />
+                        <ui:Label text="4. FIRE: Press SPACE to launch. Hit chance increases with closer range." class="guide-text" />
+                        
+                        <ui:Label text="DAMAGE &amp; HITS" class="guide-subtitle" />
+                        <ui:Label text="Missiles: Explode on impact or proximity. ~100 damage." class="guide-text" />
+                        <ui:Label text="Cannons: Rapid fire, low damage per hit. ~10 damage." class="guide-text" />
+                        <ui:Label text="XP Award: You get +10 XP for every successful missile hit." class="guide-text" />
+                        <ui:Label text="Smoke: Trails from your jet at less than 50% Health." class="guide-text" />
+                        
+                        <ui:Label text="EVASIVE MANEUVERS" class="guide-subtitle" />
+                        <ui:Label text="Missiles predict your movement. Change direction unpredictably!" class="guide-text" />
+                        <ui:Label text="Press X to deploy flares when you hear the missile warning." class="guide-text" />
+                        <ui:Label text="Deploy flares + Break hard turn = Best survival chance." class="guide-text" />
+                        <ui:Label text="Use terrain (mountains) to break radar lock." class="guide-text" />
+                    </ui:VisualElement>
+
+                    <!-- 7. SCORING SECTION -->
+                    <ui:VisualElement name="section-scoring" class="content-section" style="display: none;">
+                        <ui:Label text="SCORING &amp; RANKING" class="section-title" />
+                        <ui:VisualElement class="htp-section-image htp-image-scoring" />
+                        <ui:Label text="Your mission performance is graded from S to C." class="guide-text" />
+                        
+                        <ui:Label text="SCORING CRITERIA" class="guide-subtitle" />
+                        <ui:Label text="Kills: +10 Points each (The most important factor)" class="guide-text" />
+                        <ui:Label text="Accuracy: Up to +30 Points (Dont waste shots!)" class="guide-text" />
+                        <ui:Label text="Time: +30 Points for under 5 mins, +15 for under 10 mins" class="guide-text" />
+                        
+                        <ui:Label text="RANKS" class="guide-subtitle" />
+                        <ui:VisualElement style="flex-direction: row; justify-content: flex-start; margin-top: 15px;">
+                            <ui:Label text="S: 80+ Pts" style="color: #FFD700; -unity-font-style: bold; font-size: 24px; margin-right: 30px;" />
+                            <ui:Label text="A: 60+ Pts" style="color: #C0C0C0; -unity-font-style: bold; font-size: 24px; margin-right: 30px;" />
+                            <ui:Label text="B: 40+ Pts" style="color: #CD7F32; -unity-font-style: bold; font-size: 24px; margin-right: 30px;" />
+                            <ui:Label text="C: Under 40 Pts" style="color: #A0A0A0; font-size: 24px;" />
+                        </ui:VisualElement>
+                        
+                        <ui:Label text="WINNING" class="guide-subtitle" />
+                        <ui:Label text="You must destroy ALL enemy aircraft to complete the mission." class="guide-text" />
+                        <ui:Label text="You only have ONE LIFE. Fly carefully." class="guide-text" />
+                    </ui:VisualElement>
+
+                    <!-- 8. FEATURES SECTION -->
+                    <ui:VisualElement name="section-features" class="content-section" style="display: none;">
+                        <ui:Label text="GAME FEATURES" class="section-title" />
+                        <ui:VisualElement class="htp-section-image htp-image-features" />
+
+                        <ui:Label text="G-FORCE EFFECTS" class="guide-subtitle" />
+                        <ui:Label text="High-G maneuvers cause screen to darken/redden" class="guide-text" />
+                        <ui:Label text="Positive G (pulling up): screen turns gray/black (blackout)" class="guide-text" />
+                        <ui:Label text="Negative G (pushing down): screen turns red (redout)" class="guide-text" />
+                        <ui:Label text="Extreme G-force can cause G-LOC (loss of consciousness)" class="guide-text" />
+                        <ui:Label text="Audio cues: Heavy breathing and heartbeat at high G" class="guide-text" />
+
+                        <ui:Label text="AI AUTOPILOT" class="guide-subtitle" />
+                        <ui:Label text="Press TAB to enable/disable AI control." class="guide-text" />
+                        <ui:Label text="AI will automatically fly, engage enemies, and evade attacks." class="guide-text" />
+                        <ui:Label text="You can still fire weapons manually while AI flies." class="guide-text" />
+                        <ui:Label text="Great for learning combat tactics by watching the AI." class="guide-text" />
+
+                        <ui:Label text="COUNTERMEASURES SYSTEM" class="guide-subtitle" />
+                        <ui:Label text="Flares: Heat decoys that distract IR-guided missiles" class="guide-text" />
+                        <ui:Label text="Deploy (X key) when you hear missile warning tone" class="guide-text" />
+                        <ui:Label text="Limited supply (30 flares) - use wisely!" class="guide-text" />
+                        <ui:Label text="Combine with hard turns for best evasion" class="guide-text" />
+
+                        <ui:Label text="THREAT WARNING SYSTEM (RWR)" class="guide-subtitle" />
+                        <ui:Label text="Orange Warning: Enemy radar lock detected" class="guide-text" />
+                        <ui:Label text="Red Warning: Missile inbound - evade immediately!" class="guide-text" />
+                        <ui:Label text="Audio cues change based on threat severity" class="guide-text" />
+
+                        <ui:Label text="STALL WARNING SYSTEM" class="guide-subtitle" />
+                        <ui:Label text="Yellow Warning: Approaching stall speed" class="guide-text" />
+                        <ui:Label text="Audio: 'STALL STALL' voice warning" class="guide-text" />
+                        <ui:Label text="Recovery: Push nose down and increase throttle" class="guide-text" />
+
+                        <ui:Label text="AIRCRAFT HANGAR" class="guide-subtitle" />
+                        <ui:Label text="Select from 9 different fighter aircraft before missions" class="guide-text" />
+                        <ui:Label text="Interactive 3D preview - drag to rotate the aircraft model" class="guide-text" />
+                        <ui:Label text="View detailed stats: Speed, Agility, Armor, Firepower" class="guide-text" />
+                        <ui:Label text="Set a default aircraft for quick mission starts" class="guide-text" />
+                        <ui:Label text="Each aircraft has unique performance characteristics" class="guide-text" />
+
+                        <ui:Label text="PILOT PROFILE &amp; STATS" class="guide-subtitle" />
+                        <ui:Label text="Track your career statistics across all missions" class="guide-text" />
+                        <ui:Label text="Total kills, missions flown, flight time logged" class="guide-text" />
+                        <ui:Label text="Per-aircraft statistics: kills, sorties, accuracy" class="guide-text" />
+                        <ui:Label text="Best mission rank achieved (S/A/B/C)" class="guide-text" />
+                        <ui:Label text="Custom pilot callsign that appears in-game" class="guide-text" />
+
+                        <ui:Label text="SAVE &amp; LOAD SYSTEM" class="guide-subtitle" />
+                        <ui:Label text="All progress is automatically saved to disk" class="guide-text" />
+                        <ui:Label text="Export your save data to backup or share" class="guide-text" />
+                        <ui:Label text="Import save data to restore your progress" class="guide-text" />
+                        <ui:Label text="Reset progress option if you want to start fresh" class="guide-text" />
+
+                        <ui:Label text="KEY REBINDING" class="guide-subtitle" />
+                        <ui:Label text="Customize all flight and combat controls" class="guide-text" />
+                        <ui:Label text="Click any key button in Controls to rebind it" class="guide-text" />
+                        <ui:Label text="Press RESET DEFAULTS to restore original bindings" class="guide-text" />
+                        <ui:Label text="Bindings are saved between sessions" class="guide-text" />
+
+                        <ui:Label text="SETTINGS MENU" class="guide-subtitle" />
+                        <ui:Label text="Graphics: Resolution, quality presets, V-Sync, fullscreen" class="guide-text" />
+                        <ui:Label text="Audio: Master, music, SFX, and voice volume sliders" class="guide-text" />
+                        <ui:Label text="Gameplay: Sensitivity, HUD options, difficulty settings" class="guide-text" />
+                        <ui:Label text="All settings persist between game sessions" class="guide-text" />
+
+                        <ui:Label text="PHYSICS SYSTEM" class="guide-subtitle" />
+                        <ui:Label text="Aerodynamics: Lift and drag are simulated realistically" class="guide-text" />
+                        <ui:Label text="Gravity: Affects speed in dives and climbs" class="guide-text" />
+                        <ui:Label text="Stalls: Flying too slow causes loss of control" class="guide-text" />
+                        <ui:Label text="G-Limits: Aircraft has realistic turn rate limits" class="guide-text" />
+                        <ui:Label text="Flaps: Deploy for extra lift at low speeds" class="guide-text" />
+
+                        <ui:Label text="DAMAGE SYSTEM" class="guide-subtitle" />
+                        <ui:Label text="Health bar shows remaining aircraft integrity" class="guide-text" />
+                        <ui:Label text="Smoke trails appear when below 50% health" class="guide-text" />
+                        <ui:Label text="Screen pulses red at critical health (below 30%)" class="guide-text" />
+                        <ui:Label text="Aircraft destroyed at 0% health or ground collision" class="guide-text" />
+
+                        <ui:Label text="MISSION BOUNDARY SYSTEM" class="guide-subtitle" />
+                        <ui:Label text="Combat zone keeps the action contained" class="guide-text" />
+                        <ui:Label text="Warning appears when approaching boundary" class="guide-text" />
+                        <ui:Label text="10-second countdown to return to combat zone" class="guide-text" />
+                        <ui:Label text="Mission fails if you leave the zone for too long" class="guide-text" />
+
+                        <ui:Label text="STORY INTRO" class="guide-subtitle" />
+                        <ui:Label text="New players see an immersive story briefing" class="guide-text" />
+                        <ui:Label text="Sets the stage for the Hong Kong air defense scenario" class="guide-text" />
+                        <ui:Label text="Can be skipped or replayed from settings" class="guide-text" />
+
+                        <ui:Label text="AUDIO FEEDBACK" class="guide-subtitle" />
+                        <ui:Label text="Engine sounds change with throttle position" class="guide-text" />
+                        <ui:Label text="Radio callouts: 'Fox Two', 'Splash', 'Enemy Down'" class="guide-text" />
+                        <ui:Label text="Warning tones for various threat levels" class="guide-text" />
+                        <ui:Label text="Dynamic music that responds to combat intensity" class="guide-text" />
+                        <ui:Label text="UI sounds: Button hover, click, menu open/close" class="guide-text" />
+
+                        <ui:Label text="VICTORY &amp; GAME OVER SCREENS" class="guide-subtitle" />
+                        <ui:Label text="Detailed mission debrief with stats breakdown" class="guide-text" />
+                        <ui:Label text="Performance rating from S (best) to C" class="guide-text" />
+                        <ui:Label text="XP rewards based on kills, accuracy, and time" class="guide-text" />
+                        <ui:Label text="Options to retry, return to hangar, or main menu" class="guide-text" />
+
+                        <ui:Label text="LOADING SCREEN" class="guide-subtitle" />
+                        <ui:Label text="Dynamic tips displayed while loading" class="guide-text" />
+                        <ui:Label text="Progress bar shows loading status" class="guide-text" />
+                        <ui:Label text="Smooth transition into gameplay" class="guide-text" />
+                    </ui:VisualElement>
+
+                    <!-- 9. AIRCRAFT SECTION -->
+                    <ui:VisualElement name="section-aircraft" class="content-section" style="display: none;">
+                        <ui:VisualElement class="htp-section-image htp-image-aircraft" />
+                        <ui:Label text="AIRCRAFT OVERVIEW" class="section-title" />
+                        <ui:Label text="Each jet has a distinct balance of speed, agility, armor, and weapons. Pick the one that fits your style." class="guide-text highlight" />
+
+                        <ui:VisualElement class="guide-subtitle-row">
+                            <ui:VisualElement class="jet-icon-header jet-icon-f15" />
+                            <ui:Label text="F-15C EAGLE" class="guide-subtitle" />
+                        </ui:VisualElement>
+                        <ui:Label text="Air superiority fighter with top speed and long-range missiles. Best for high-altitude intercepts and fast kills." class="guide-text" />
+
+                        <ui:VisualElement class="guide-subtitle-row">
+                            <ui:VisualElement class="jet-icon-header jet-icon-su27" />
+                            <ui:Label text="Su-27 FLANKER" class="guide-subtitle" />
+                        </ui:VisualElement>
+                        <ui:Label text="Supermaneuverable dogfighter with strong energy retention. Shines in close-range turning fights." class="guide-text" />
+
+                        <ui:VisualElement class="guide-subtitle-row">
+                            <ui:VisualElement class="jet-icon-header jet-icon-mig29" />
+                            <ui:Label text="MiG-29 FULCRUM" class="guide-subtitle" />
+                        </ui:VisualElement>
+                        <ui:Label text="Agile multirole fighter built for quick reaction and knife-fight engagements. Balanced across all stats." class="guide-text" />
+
+                        <ui:VisualElement class="guide-subtitle-row">
+                            <ui:VisualElement class="jet-icon-header jet-icon-fa18" />
+                            <ui:Label text="F/A-18E SUPER HORNET" class="guide-subtitle" />
+                        </ui:VisualElement>
+                        <ui:Label text="Carrier-capable multirole jet with reliable handling and strong all-around weapons. Great for flexible play." class="guide-text" />
+
+                        <ui:VisualElement class="guide-subtitle-row">
+                            <ui:VisualElement class="jet-icon-header jet-icon-hawk200" />
+                            <ui:Label text="HAWK 200" class="guide-subtitle" />
+                        </ui:VisualElement>
+                        <ui:Label text="Light combat aircraft with low cost and tight handling. Ideal for precision strikes and quick turns." class="guide-text" />
+
+                        <ui:VisualElement class="guide-subtitle-row">
+                            <ui:VisualElement class="jet-icon-header jet-icon-mig21" />
+                            <ui:Label text="MiG-21 FISHBED" class="guide-subtitle" />
+                        </ui:VisualElement>
+                        <ui:Label text="Classic interceptor built for raw speed and fast climbs. Hit hard, then disengage before the fight slows." class="guide-text" />
+
+                        <ui:VisualElement class="guide-subtitle-row">
+                            <ui:VisualElement class="jet-icon-header jet-icon-tornado" />
+                            <ui:Label text="PANAVIA TORNADO" class="guide-subtitle" />
+                        </ui:VisualElement>
+                        <ui:Label text="Variable-sweep multirole platform with heavy strike potential. Strong at high-speed passes and standoff attacks." class="guide-text" />
+
+                        <ui:VisualElement class="guide-subtitle-row">
+                            <ui:VisualElement class="jet-icon-header jet-icon-rafale" />
+                            <ui:Label text="DASSAULT RAFALE" class="guide-subtitle" />
+                        </ui:VisualElement>
+                        <ui:Label text="Omnirole fighter with excellent agility and advanced missiles. Dominates in mixed air-to-air fights." class="guide-text" />
+
+                        <ui:VisualElement class="guide-subtitle-row">
+                            <ui:VisualElement class="jet-icon-header jet-icon-typhoon" />
+                            <ui:Label text="EUROFIGHTER TYPHOON" class="guide-subtitle" />
+                        </ui:VisualElement>
+                        <ui:Label text="High-thrust air superiority jet with rapid climb and sharp turn rate. Great for aggressive dogfights." class="guide-text" />
+                    </ui:VisualElement>
+
+                    <!-- 10. AIR COMBAT TACTICS SECTION -->
+                    <ui:VisualElement name="section-tactics" class="content-section" style="display: none;">
+                        <ui:Label text="AIR COMBAT BASICS" class="section-title" />
+                        <ui:VisualElement class="htp-section-image htp-image-tactics" />
+                        <ui:Label text="Master these fundamentals to become an ace pilot." class="guide-text highlight" />
+
+                        <ui:Label text="BASIC FLIGHT MANEUVERS (BFM)" class="guide-subtitle" />
+                        <ui:Label text="Understanding how to maneuver is the foundation of air combat." class="guide-text" />
+
+                        <ui:Label text="ENERGY MANAGEMENT" class="guide-subtitle" />
+                        <ui:Label text="Speed = Life. Never let your speed drop too low in combat." class="guide-text" />
+                        <ui:Label text="Altitude can be traded for speed (dive) or vice versa (climb)" class="guide-text" />
+                        <ui:Label text="High-G turns bleed speed rapidly - use them wisely" class="guide-text" />
+                        <ui:Label text="Maintain 350+ knots for safe maneuvering" class="guide-text" />
+
+                        <ui:Label text="HOW TO TURN FASTER" class="guide-subtitle" />
+                        <ui:Label text="1. Roll your aircraft to put lift vector toward target (A/D keys)" class="guide-text" />
+                        <ui:Label text="2. Pull back on stick (S key) to turn in that direction" class="guide-text" />
+                        <ui:Label text="3. This is called 'Roll + Pull' - the fastest way to turn" class="guide-text" />
+                        <ui:Label text="TIP: Never use yaw (Q/E) as primary turn method - too slow!" class="guide-text" />
+
+                        <ui:Label text="ONE-CIRCLE vs TWO-CIRCLE FIGHTS" class="guide-subtitle" />
+                        <ui:Label text="ONE-CIRCLE (Nose-to-Nose):" class="guide-text" />
+                        <ui:Label text="  - Both aircraft turn in SAME direction" class="guide-text" />
+                        <ui:Label text="  - Favors aircraft with tighter turn radius" class="guide-text" />
+                        <ui:Label text="  - Use when you can out-turn the enemy" class="guide-text" />
+                        <ui:Label text="TWO-CIRCLE (Nose-to-Tail):" class="guide-text" />
+                        <ui:Label text="  - Aircraft turn in OPPOSITE directions" class="guide-text" />
+                        <ui:Label text="  - Creates separation, then merge again" class="guide-text" />
+                        <ui:Label text="  - Use when enemy has better turn rate" class="guide-text" />
+
+                        <ui:Label text="OFFENSIVE MANEUVERS" class="guide-subtitle" />
+                        <ui:Label text="Lead Turn: Start turning before the merge to get behind faster" class="guide-text" />
+                        <ui:Label text="Lag Pursuit: Point behind enemy to close distance" class="guide-text" />
+                        <ui:Label text="Lead Pursuit: Point ahead of enemy to cut them off" class="guide-text" />
+                        <ui:Label text="High Yo-Yo: Climb to slow down and prevent overshoot" class="guide-text" />
+
+                        <ui:Label text="DEFENSIVE MANEUVERS" class="guide-subtitle" />
+                        <ui:Label text="Break Turn: Maximum G turn away from attacker" class="guide-text" />
+                        <ui:Label text="Barrel Roll: Roll over attacker to force overshoot" class="guide-text" />
+                        <ui:Label text="Split-S: Roll inverted and pull to reverse direction" class="guide-text" />
+                        <ui:Label text="Jink: Unpredictable S-turns to throw off aim" class="guide-text" />
+
+                        <ui:Label text="MISSILE EVASION" class="guide-subtitle" />
+                        <ui:Label text="1. Deploy flares (X) immediately when warned" class="guide-text" />
+                        <ui:Label text="2. Turn PERPENDICULAR to missile (90 degree turn)" class="guide-text" />
+                        <ui:Label text="3. Pull maximum G (6-9G turn)" class="guide-text" />
+                        <ui:Label text="4. Use terrain to break line of sight if possible" class="guide-text" />
+                        <ui:Label text="5. Multiple flares may be needed for persistent missiles" class="guide-text" />
+
+                        <ui:Label text="SITUATIONAL AWARENESS" class="guide-subtitle" />
+                        <ui:Label text="Always know where ALL enemies are, not just your target" class="guide-text" />
+                        <ui:Label text="Check your six (behind you) frequently" class="guide-text" />
+                        <ui:Label text="Listen to RWR warnings - they save your life!" class="guide-text" />
+                        <ui:Label text="Don't tunnel vision on one enemy when others are around" class="guide-text" />
+                    </ui:VisualElement>
+
+                    <!-- 10. FUTURE FEATURES SECTION -->
+                    <ui:VisualElement name="section-future" class="content-section" style="display: none;">
+                        <ui:VisualElement class="htp-section-image htp-image-future" />
+                        <ui:Label text="FUTURE UPDATES" class="section-title" />
+                        <ui:Label text="These are features that could be added with more development time. This game was created as part of an academic project with limited time, but here's what could be expanded!" class="guide-text highlight" />
+
+
+                        <ui:Label text="EXPANDED AIRCRAFT ROSTER" class="guide-subtitle" />
+                        <ui:Label text="Cold War Era: MiG-17 Fresco, F-86 Sabre, MiG-19 Farmer, F-100 Super Sabre" class="guide-text" />
+                        <ui:Label text="3rd Generation: MiG-23 Flogger, F-4 Phantom II, Mirage III, Su-15 Flagon" class="guide-text" />
+                        <ui:Label text="4th Generation: F-14 Tomcat, F-16 Fighting Falcon, MiG-31 Foxhound, Su-33 Flanker-D" class="guide-text" />
+                        <ui:Label text="4.5 Generation: Gripen E/F, Su-35 Flanker-E, F-15EX Eagle II" class="guide-text" />
+                        <ui:Label text="5th Generation: F-22 Raptor, F-35 Lightning II, Su-57 Felon, J-20 Mighty Dragon" class="guide-text" />
+
+                        <ui:Label text="AIRCRAFT-SPECIFIC SYSTEMS (EXPANSION)" class="guide-subtitle" />
+                        <ui:Label text="Different cockpit layouts and HUD designs per aircraft" class="guide-text" />
+                        <ui:Label text="More detailed flight models per aircraft" class="guide-text" />
+                        <ui:Label text="Aircraft-specific weapon loadouts and hardpoint configurations" class="guide-text" />
+
+                        <ui:Label text="NATIONALITY-BASED VOICE WARNINGS" class="guide-subtitle" />
+                        <ui:Label text="Russian aircraft (MiG-21, MiG-29, Su-27): Russian voice warnings" class="guide-text" />
+                        <ui:Label text="American aircraft (F-15, F-16, F-18): English (US) voice warnings" class="guide-text" />
+                        <ui:Label text="European aircraft (Typhoon, Rafale, Tornado): English (UK) or native language" class="guide-text" />
+                        <ui:Label text="Authentic BITCHING BETTY vs RITA warning systems" class="guide-text" />
+
+                        <ui:Label text="WEAPON LOADOUT SELECTION" class="guide-subtitle" />
+                        <ui:Label text="Pre-mission loadout screen to customize your weapons" class="guide-text" />
+                        <ui:Label text="Choose between: AIM-9 Sidewinder (IR) vs AIM-120 AMRAAM (Radar)" class="guide-text" />
+                        <ui:Label text="Balance between short-range dogfight missiles and BVR missiles" class="guide-text" />
+                        <ui:Label text="Different bomb and rocket loadouts for ground attack missions" class="guide-text" />
+                        <ui:Label text="Weight affects flight performance - heavier loadouts = slower turns" class="guide-text" />
+
+
+                        <ui:Label text="ENEMY AIRCRAFT SELECTION" class="guide-subtitle" />
+                        <ui:Label text="Choose which enemy aircraft types to face in missions" class="guide-text" />
+                        <ui:Label text="Historical matchups: F-15 vs MiG-29, F-14 vs MiG-25" class="guide-text" />
+                        <ui:Label text="Difficulty scaling based on enemy aircraft generation" class="guide-text" />
+                        <ui:Label text="Boss enemies: Ace pilots with unique aircraft and tactics" class="guide-text" />
+
+                        <ui:Label text="CAMPAIGN MODE" class="guide-subtitle" />
+                        <ui:Label text="Multi-mission story campaign with branching paths" class="guide-text" />
+                        <ui:Label text="Wingman system: Command AI allies in combat" class="guide-text" />
+                        <ui:Label text="Ground attack missions: Strike enemy bases and convoys" class="guide-text" />
+                        <ui:Label text="Escort missions: Protect friendly bombers and transports" class="guide-text" />
+                        <ui:Label text="Carrier operations: Takeoff and landing on aircraft carriers" class="guide-text" />
+
+                        <ui:Label text="MULTIPLAYER" class="guide-subtitle" />
+                        <ui:Label text="1v1 Dogfight: Classic head-to-head combat" class="guide-text" />
+                        <ui:Label text="Team Deathmatch: 4v4 or 8v8 aerial battles" class="guide-text" />
+                        <ui:Label text="Co-op Campaign: Play story missions with friends" class="guide-text" />
+                        <ui:Label text="Leaderboards and ranked matchmaking" class="guide-text" />
+
+                        <ui:Label text="VISUAL ENHANCEMENTS" class="guide-subtitle" />
+                        <ui:Label text="Day/Night cycle with night vision and thermal imaging" class="guide-text" />
+                        <ui:Label text="Improved particle effects: Contrails, explosions, flares" class="guide-text" />
+                        <ui:Label text="Cockpit view with functional instruments" class="guide-text" />
+                        <ui:Label text="Aircraft damage modeling: Visible battle damage" class="guide-text" />
+                    </ui:VisualElement>
+
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        
+        <!-- Rebind Overlay (hidden by default) -->
+        <ui:VisualElement name="rebind-overlay" class="rebind-overlay">
+            <ui:VisualElement class="rebind-dialog">
+                <ui:Label text="Press any key..." class="rebind-prompt" />
+                <ui:Label name="rebind-action-name" text="" class="rebind-action-name" />
+                <ui:Button name="cancel-rebind" text="CANCEL" class="cancel-rebind-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        
+    </ui:VisualElement>
+</ui:UXML>
+

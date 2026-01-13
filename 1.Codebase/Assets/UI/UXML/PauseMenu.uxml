@@ -1,0 +1,50 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Style src="project://database/Assets/UI/USS/MenuStyles.uss" />
+    
+    <ui:VisualElement name="root" class="pause-menu-root">
+        <ui:VisualElement name="overlay" class="pause-overlay">
+            
+            <ui:VisualElement name="pause-panel" class="pause-panel">
+                
+                <!-- Title -->
+                <ui:VisualElement class="pause-title-container">
+                    <ui:VisualElement class="icon-radar" />
+                    <ui:VisualElement class="icon-title-plane title-icon-left" />
+                    <ui:Label name="pause-title" text="GAME PAUSED" class="pause-title" />
+                    <ui:VisualElement class="icon-title-plane title-icon-right" />
+                    <ui:VisualElement class="icon-radar" />
+                </ui:VisualElement>
+                
+                <!-- Pause Menu Buttons -->
+                <ui:VisualElement class="menu-buttons-container">
+
+                    <ui:Button name="resume-button" class="menu-button primary-button menu-button-with-icon">
+                        <ui:VisualElement class="button-icon icon-resume" />
+                        <ui:Label text="RESUME" class="button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="restart-button" class="menu-button menu-button-with-icon">
+                        <ui:VisualElement class="button-icon icon-restart" />
+                        <ui:Label text="RESTART MISSION" class="button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="settings-button" class="menu-button menu-button-with-icon">
+                        <ui:VisualElement class="button-icon icon-settings" />
+                        <ui:Label text="SETTINGS" class="button-text" />
+                    </ui:Button>
+
+                    <ui:Button name="main-menu-button" class="menu-button exit-button menu-button-with-icon">
+                        <ui:VisualElement class="button-icon icon-main-menu" />
+                        <ui:Label text="MAIN MENU" class="button-text" />
+                    </ui:Button>
+
+                </ui:VisualElement>
+                
+                <!-- Hint -->
+                <ui:Label name="pause-hint" text="Press ESC to resume" class="pause-hint" />
+                
+            </ui:VisualElement>
+            
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

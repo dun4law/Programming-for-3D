@@ -1,0 +1,1290 @@
+fileFormatVersion: 2
+guid: 679171001a605e346bf184e09b69b6e3
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: us_480gal_fpu_11_drop_tank_83_0Mat
+    second: {fileID: 2100000, guid: 306753f681feb964c8dcfe66c53e83e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: us_480gal_fpu_11_drop_tank_92_0Mat
+    second: {fileID: 2100000, guid: b9f5bad6fa2779c4a82079b1cf8f8286, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: us_480gal_fpu_11_drop_tank_93_0Mat
+    second: {fileID: 2100000, guid: 4b111791a7e80524d90a27eeb8af50fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: us_480gal_fpu_11_drop_tank_94_0Mat
+    second: {fileID: 2100000, guid: 62b8c6d3dda065d479c8b2de16ce0123, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: us_480gal_fpu_11_drop_tank_95_0Mat
+    second: {fileID: 2100000, guid: f3e514e69f7d0ea428833d7a824d5375, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: us_aim_120c_missile_74_0Mat
+    second: {fileID: 2100000, guid: 515f1c56acddc394499eb942abcd0892, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: us_aim_120c_missile_82_0Mat
+    second: {fileID: 2100000, guid: e7586a64e6f20c745967dbc137c86751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: us_aim_9m_sidewinder_16_0Mat
+    second: {fileID: 2100000, guid: edc3a7f9f00db864baa5080e822c174b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: us_aim_9m_sidewinder_16_1Mat
+    second: {fileID: 2100000, guid: 138082f9365a6dc4e9abc68dda0d01bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: us_aim_9m_sidewinder_22_0Mat
+    second: {fileID: 2100000, guid: 97477c1f45989704aa5683cdd536f905, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: us_aim_9m_sidewinder_22_1Mat
+    second: {fileID: 2100000, guid: e5d9a41b2cea01e458e9168f5fa024a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#adapter_fuel_76_0Mat
+    second: {fileID: 2100000, guid: 09a978fdb45105a4ea4dac4d1a2a56fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#airbrake_l_89_0Mat
+    second: {fileID: 2100000, guid: e39a306005f782947b0f3675c990a8f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#airbrake_r_88_0Mat
+    second: {fileID: 2100000, guid: 30907d42d6253fb469618f05536dd149, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#blister1_79_0Mat
+    second: {fileID: 2100000, guid: c6a0587970b2bc0439c46a8f7cd6a0ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#blister1_79_1Mat
+    second: {fileID: 2100000, guid: 1965bdf3ae0bfdc40a1feb1239442151, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#blister1_79_2Mat
+    second: {fileID: 2100000, guid: 8042963b0a30269438f3106bc4655219, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#blister2_7_0Mat
+    second: {fileID: 2100000, guid: 47edad4e6c1a65747b87f40fc4f7bfd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#blister3_8_0Mat
+    second: {fileID: 2100000, guid: 96f347b6ae113d24e90e1a64618d1c42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#elevator0_110_0Mat
+    second: {fileID: 2100000, guid: 7cbdd9ad80ff6854ea2e4ddd2423ee45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#elevator1_111_0Mat
+    second: {fileID: 2100000, guid: 06f80b31d128295468087366374e75b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#flap1_l_101_0Mat
+    second: {fileID: 2100000, guid: fcda810c59eb2e64aa8b5948a902cbf3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#flap1_r_102_0Mat
+    second: {fileID: 2100000, guid: b4babc934dfa1c34d87e890795b982d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#flap_l_104_0Mat
+    second: {fileID: 2100000, guid: 161de80b0fd29514491e10413be095ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#flap_r_107_0Mat
+    second: {fileID: 2100000, guid: 6398919977eac5e45b272154f1e0d775, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#flaperon1_l_12_0Mat
+    second: {fileID: 2100000, guid: 2914a262bf1a50344b4b92c2566acc92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#flaperon1_r_19_0Mat
+    second: {fileID: 2100000, guid: e1cdfb445b82a9348821a6197bf7c23e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#flaperon2_l_14_0Mat
+    second: {fileID: 2100000, guid: bac4153d8c9584e48bc923c503ea9b2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#flaperon2_r_20_0Mat
+    second: {fileID: 2100000, guid: 12d033b318859ec489bfd7b71a8cf07a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#flaperon3_l_105_0Mat
+    second: {fileID: 2100000, guid: 4114b10f88980294087c6fb154b2f999, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#flaperon3_r_108_0Mat
+    second: {fileID: 2100000, guid: 6d6556a70607444449cae94cfbd66b2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#flaperon_l_13_0Mat
+    second: {fileID: 2100000, guid: 036c3449bd440674b8a752317513e787, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#flaperon_r_18_0Mat
+    second: {fileID: 2100000, guid: 49e3840bf609887438e322944f3da725, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#fuse_99_0Mat
+    second: {fileID: 2100000, guid: ca62b7c4c28a12a4880fecf4b818162f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#fuse_99_10Mat
+    second: {fileID: 2100000, guid: 0dcda430cf5dfe14691c632371328f53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#fuse_99_11Mat
+    second: {fileID: 2100000, guid: 6ec7dda4c2a5c584ebcee2d6f28d6d20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#fuse_99_12Mat
+    second: {fileID: 2100000, guid: c7a83d7df576fe54f9d7354dd2c07eee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#fuse_99_1Mat
+    second: {fileID: 2100000, guid: adad35a11864d2946a784178227c707c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#fuse_99_2Mat
+    second: {fileID: 2100000, guid: 780ea1f85bccc904799a8428b72e32f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#fuse_99_3Mat
+    second: {fileID: 2100000, guid: fb0ad665566f13742b1e319ce6d028f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#fuse_99_4Mat
+    second: {fileID: 2100000, guid: 96ab5879ff56d5e43a486a0ae414ebf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#fuse_99_5Mat
+    second: {fileID: 2100000, guid: c2c552a20ddfc5e49a3ccfff3fa622de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#fuse_99_6Mat
+    second: {fileID: 2100000, guid: 713c488247e84614fa47db3525e41264, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#fuse_99_7Mat
+    second: {fileID: 2100000, guid: e112ef2871509b64b8ec42ab5eafb3e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#fuse_99_8Mat
+    second: {fileID: 2100000, guid: ab25033bf00e44c428e1f718eda1f667, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#fuse_99_9Mat
+    second: {fileID: 2100000, guid: 320e52a6f743b964392c2e60b8e52848, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c10_178_0Mat
+    second: {fileID: 2100000, guid: 00658bd78d1bf914f8388537a6489239, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c11_181_0Mat
+    second: {fileID: 2100000, guid: dc9cddd737a6fc64684810eb7a9c9bdb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c11_181_1Mat
+    second: {fileID: 2100000, guid: 039ad29ea9b73d345af0f5f05b53a1d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c12_179_0Mat
+    second: {fileID: 2100000, guid: c05d2833ef710444b86cf310246d91c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c13_194_0Mat
+    second: {fileID: 2100000, guid: 403a25ad30573d146944d10aabda1b2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c14_189_0Mat
+    second: {fileID: 2100000, guid: 10c565237ff10404796d503edb5e6db9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c15_195_0Mat
+    second: {fileID: 2100000, guid: 0fef2b60ad4acdb4fbc738f908f1c3cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c16_193_0Mat
+    second: {fileID: 2100000, guid: f5bdae88a89dd9a4fa665678c41816eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c17_196_0Mat
+    second: {fileID: 2100000, guid: edff8467a09e93747a4cf82d1249eb5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c18_180_0Mat
+    second: {fileID: 2100000, guid: 2ef70b88dbd98e146bbc628d569edf93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c19_197_0Mat
+    second: {fileID: 2100000, guid: d1b64fd1a7510ff43a52c33432978326, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c1_188_0Mat
+    second: {fileID: 2100000, guid: 4f6b65d437479bd459191c3663278639, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c20_190_0Mat
+    second: {fileID: 2100000, guid: 272c935961e87264e9e5c34f3c9be7bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c21_198_0Mat
+    second: {fileID: 2100000, guid: f93a2cdac916e0d4eb106a4c9f14ecf4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c22_191_0Mat
+    second: {fileID: 2100000, guid: e50369ae0e598a741b8215379fba5f67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c23_199_0Mat
+    second: {fileID: 2100000, guid: e780f310e3533ca4e94f6595311399e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c24_192_0Mat
+    second: {fileID: 2100000, guid: 174db38b459adc14e99adaf67ad5f857, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c2_187_0Mat
+    second: {fileID: 2100000, guid: d9740ce679a40234b812543e06fc58fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c3_177_0Mat
+    second: {fileID: 2100000, guid: eaf3f5682c7b9714c898fc16377ca5eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c3_177_1Mat
+    second: {fileID: 2100000, guid: 66e695d3499a20f44a11bba45a23c2ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c3_177_2Mat
+    second: {fileID: 2100000, guid: d2e5523ea96d4624d93955ae098dec3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c3_177_3Mat
+    second: {fileID: 2100000, guid: cc1254efd5fcaa54995fe228cc935324, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c3_177_4Mat
+    second: {fileID: 2100000, guid: 5b9fb9bfca96706449ad8088e2033fc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c4_184_0Mat
+    second: {fileID: 2100000, guid: 257b02ab200e47c4689cde7263407caf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c5_176_0Mat
+    second: {fileID: 2100000, guid: ba40fbd9132c9d442b50f933d4d022dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c6_200_0Mat
+    second: {fileID: 2100000, guid: 82978175c97b19e4d99f5ba81dbad585, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c7_183_0Mat
+    second: {fileID: 2100000, guid: 18e30bc41ad951d4f87805d3857afb45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c9_182_0Mat
+    second: {fileID: 2100000, guid: 9da596a2bca565b4f8e4b25fb59ef819, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_c_185_0Mat
+    second: {fileID: 2100000, guid: 80b1b44be65464c47a2ddbea50241b49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l10_134_0Mat
+    second: {fileID: 2100000, guid: bbb1acc1fd583db43a491c0e9258cbac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l11_135_0Mat
+    second: {fileID: 2100000, guid: 7bd7d76db4139f349aeb0a2f7023c5e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l12_136_0Mat
+    second: {fileID: 2100000, guid: e1728f22fdb069441ac076d9ffbdaf9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l13_137_0Mat
+    second: {fileID: 2100000, guid: f4bde101e0698ce4f95c5d8795b970fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l14_138_0Mat
+    second: {fileID: 2100000, guid: 285451cfe342a5248abc0e781ee920f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l15_139_0Mat
+    second: {fileID: 2100000, guid: 6f7d9c840a40d284fb5192d45ad651d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l16_140_0Mat
+    second: {fileID: 2100000, guid: 6466e4fd9877c7440b2944c9a4168790, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l17_141_0Mat
+    second: {fileID: 2100000, guid: bc4ef94878ed4ea49a124fdd37792e65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l18_123_0Mat
+    second: {fileID: 2100000, guid: f47242ec9ebbbaf4fafa2cd3d1da3795, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l19_117_0Mat
+    second: {fileID: 2100000, guid: 9c7bbc9ac61866840b6191953dbdb492, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l1_124_0Mat
+    second: {fileID: 2100000, guid: 4f87f36e1aa91064d8eadf632ebd08d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l20_119_0Mat
+    second: {fileID: 2100000, guid: a42a4a7c059ecce44905e57bc9ad6807, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l21_118_0Mat
+    second: {fileID: 2100000, guid: ad7ebc21dea214d49bed70d34a696026, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l22_142_0Mat
+    second: {fileID: 2100000, guid: 356423a34ab5b3b428aa8badfc28af82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l23_116_0Mat
+    second: {fileID: 2100000, guid: 5253367a25a6b584491c21e5b49cee9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l24_143_0Mat
+    second: {fileID: 2100000, guid: 408776264346d634984ad813fe4a75fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l25_121_0Mat
+    second: {fileID: 2100000, guid: f329e9f549e0eea4a9a695b890923c7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l26_120_0Mat
+    second: {fileID: 2100000, guid: 7705a18ad2c46b040a849092f132ab2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l27_144_0Mat
+    second: {fileID: 2100000, guid: 5180ba9bf7450be488d7b3cc34be6072, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l28_145_0Mat
+    second: {fileID: 2100000, guid: 8878c0e09212a4942b0e69197f820ce4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l2_122_0Mat
+    second: {fileID: 2100000, guid: 952e191575ba062438f2205507dadfbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l3_127_0Mat
+    second: {fileID: 2100000, guid: 23193cafeaa2a2d4183c411cccaf4ec3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l3_127_1Mat
+    second: {fileID: 2100000, guid: 57134cc9a776aa4448295cc48fcd2b6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l4_128_0Mat
+    second: {fileID: 2100000, guid: 777c2cf6b85edfc419e276227fc12f2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l5_129_0Mat
+    second: {fileID: 2100000, guid: 853342055812e8e4bb8a32a66650fa00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l6_130_0Mat
+    second: {fileID: 2100000, guid: c7a4f0ea497f81c42a2dd007a05510ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l7_131_0Mat
+    second: {fileID: 2100000, guid: b88c2dba4f222e043afe88a33967dfa9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l8_132_0Mat
+    second: {fileID: 2100000, guid: fef1bf012f95433418f34f31f4ed79fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l9_133_0Mat
+    second: {fileID: 2100000, guid: 799fb24511aa3634bbbc5dc4494f05fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_l_125_0Mat
+    second: {fileID: 2100000, guid: 72a3e9cead069f74788d78859d70b5d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r10_164_0Mat
+    second: {fileID: 2100000, guid: b2661a13af31bd6498cbc7c4dba15e60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r11_165_0Mat
+    second: {fileID: 2100000, guid: ed2693e9a718eb841b0f1cbe81d72137, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r12_166_0Mat
+    second: {fileID: 2100000, guid: b2b0098ffa0dd01408397bf9426d4cd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r13_167_0Mat
+    second: {fileID: 2100000, guid: fe5358cfc406df84080d056b7c121eb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r14_168_0Mat
+    second: {fileID: 2100000, guid: 01f6266d61af6dc4c83bbe48a0479d9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r15_169_0Mat
+    second: {fileID: 2100000, guid: b1b01dc80c1e82348935c790280240d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r16_170_0Mat
+    second: {fileID: 2100000, guid: bd3639bcd94d4c94e819f9ab9c2fa35a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r17_171_0Mat
+    second: {fileID: 2100000, guid: 11dbf6d58c7342c4090ee6a0315b0495, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r18_153_0Mat
+    second: {fileID: 2100000, guid: 89f050cf93f4fc44489f5ca9c39a4c6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r19_148_0Mat
+    second: {fileID: 2100000, guid: fc49a28abf442e840b3b30c8e03b9bc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r1_154_0Mat
+    second: {fileID: 2100000, guid: b9116165f96887442bcf57abb7f68201, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r20_150_0Mat
+    second: {fileID: 2100000, guid: b5be2fea3d9a6b74aa978257494a0ee3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r21_149_0Mat
+    second: {fileID: 2100000, guid: 3c8fbc31d0eba0342a0c2485eea7344a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r22_172_0Mat
+    second: {fileID: 2100000, guid: 895621cdaec25b3408dcbcfb72f91142, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r23_147_0Mat
+    second: {fileID: 2100000, guid: 4a5cd135a4a7d2b4dbfedddeb9c950c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r24_173_0Mat
+    second: {fileID: 2100000, guid: 50dc862d2484c57439200c37d6d0efd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r25_152_0Mat
+    second: {fileID: 2100000, guid: e8c784cf9f7e1a740bf2548e05c42053, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r26_151_0Mat
+    second: {fileID: 2100000, guid: 2dbec530ec275d74c91b7ad9676319cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r27_174_0Mat
+    second: {fileID: 2100000, guid: 26d3497448e66244493c0941a55cad5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r28_175_0Mat
+    second: {fileID: 2100000, guid: 61d403fb774353749a674ef6307cd86c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r2_146_0Mat
+    second: {fileID: 2100000, guid: c3323c3b47facb14d9d9db2136cc26de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r3_157_0Mat
+    second: {fileID: 2100000, guid: 177490e0ff556b44d9b653ba00bb3a8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r3_157_1Mat
+    second: {fileID: 2100000, guid: f6537bd97bc81ee46a1df9898dde4ddf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r4_158_0Mat
+    second: {fileID: 2100000, guid: 67481f2fdf2ed1d4e886ac75c5fea751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r5_159_0Mat
+    second: {fileID: 2100000, guid: dfc04c0a69b22564baa545bf6ff1b68f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r6_160_0Mat
+    second: {fileID: 2100000, guid: f7d60a83a86e7924e884278d35c8b488, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r7_161_0Mat
+    second: {fileID: 2100000, guid: 77ae01db3566fcd449886b0c76bbc3f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r8_162_0Mat
+    second: {fileID: 2100000, guid: de1dd5249f482014896216bbb74f3376, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r9_163_0Mat
+    second: {fileID: 2100000, guid: 4de6d1c406ec5644fbc3f5828f8afd22, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gear_r_155_0Mat
+    second: {fileID: 2100000, guid: e386a8ff874ede942a22b03a56e7f535, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#gun_10_0Mat
+    second: {fileID: 2100000, guid: a0f1ef5aecacf65468e4859fec8a29a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#hook1_115_0Mat
+    second: {fileID: 2100000, guid: a744473847b738b409e4a2989fbc36a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#hook_114_0Mat
+    second: {fileID: 2100000, guid: e77ae792f10ed274dac36b25f6fe7cdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#lau_116_1_77_0Mat
+    second: {fileID: 2100000, guid: 807cedfae4d85c849b0bbecbc3ef7b9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#lau_116_1_aim_120_adapter_73_0Mat
+    second: {fileID: 2100000, guid: c9f8232e38bb7ef4fb9929326465183d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#lau_116_1_cap_71_0Mat
+    second: {fileID: 2100000, guid: 54c1d10813cdb104faeb93359e13cb51, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#lau_116_1_lift_72_0Mat
+    second: {fileID: 2100000, guid: 98b5009410713be4697c2d3573e80bf5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#lau_116_2_78_0Mat
+    second: {fileID: 2100000, guid: 8e7753290085e134f82115671bdf4dab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#lau_116_2_aim_120_adapter_81_0Mat
+    second: {fileID: 2100000, guid: 51136314ae3490a418a5ba209a0519c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#lau_116_2_cap_75_0Mat
+    second: {fileID: 2100000, guid: a76e12e40e5d08f4181b304079cbf819, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#lau_116_2_lift_80_0Mat
+    second: {fileID: 2100000, guid: fde0b6157c76a9141aa707cf7e37e17d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#lau_127ea_launcher_1_15_0Mat
+    second: {fileID: 2100000, guid: e8380e16d701d984ab45f840c461931d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#lau_127ea_launcher_4_21_0Mat
+    second: {fileID: 2100000, guid: 5678f1b86c07da44ea91a24b21cb0305, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_10_62_0Mat
+    second: {fileID: 2100000, guid: 00d6834ea7e3c034aa34cca01e4f12a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_11_61_0Mat
+    second: {fileID: 2100000, guid: 34d714bf01e43db418e4aa05bcf36a68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_12_60_0Mat
+    second: {fileID: 2100000, guid: 3973fb6ef15c1654a80657c53abe5117, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_13_42_0Mat
+    second: {fileID: 2100000, guid: c545b172d81316c4eb66820cdcbc555a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_14_43_0Mat
+    second: {fileID: 2100000, guid: 80f3a06dfaa869946bc1fc1a2c0d30f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_15_44_0Mat
+    second: {fileID: 2100000, guid: 942887b0866f47548932610ebbb4e66b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_16_45_0Mat
+    second: {fileID: 2100000, guid: 6aa0dc0950088df41a4886df9bffb3f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_17_46_0Mat
+    second: {fileID: 2100000, guid: 6153861eb2584804fa93e100fd4c4cde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_18_47_0Mat
+    second: {fileID: 2100000, guid: a2ebce76372ac814ebc8523e1d4f5fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_19_36_0Mat
+    second: {fileID: 2100000, guid: 3471c70aed9a9d04e90de25a5dce8650, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_1_70_0Mat
+    second: {fileID: 2100000, guid: b6a50e09e7e39ad42b7460d01b66020f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_20_37_0Mat
+    second: {fileID: 2100000, guid: cdf3514035257a5428d8ee6c3ee20123, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_21_38_0Mat
+    second: {fileID: 2100000, guid: a42be799d35c374489217ed8439175f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_22_39_0Mat
+    second: {fileID: 2100000, guid: bacb1a96d469bb140b059b222e2dfc1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_23_40_0Mat
+    second: {fileID: 2100000, guid: 20dde99dcda50324e9fbbaac5e8b3f00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_24_41_0Mat
+    second: {fileID: 2100000, guid: b7c5dfbf5e4bafa4aac77256e3bbedff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_2_69_0Mat
+    second: {fileID: 2100000, guid: 7f372d9f16198654983bd295d1876227, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_3_68_0Mat
+    second: {fileID: 2100000, guid: 2bac202fb898dfc4e998ea0fc21355ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_4_67_0Mat
+    second: {fileID: 2100000, guid: d217a504b8348934983b0634ac67d4d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_5_66_0Mat
+    second: {fileID: 2100000, guid: 4fdb6ebe43ac0c1498e25348cf374de2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_6_59_0Mat
+    second: {fileID: 2100000, guid: ccc8011912a84774fbc6a73c65b81930, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_7_65_0Mat
+    second: {fileID: 2100000, guid: 2043800493ba82b4caa6d9bcf10b55ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_8_64_0Mat
+    second: {fileID: 2100000, guid: 9726d4306d0b7db4dad9f8565aa01d77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle1_9_63_0Mat
+    second: {fileID: 2100000, guid: 21ab2bc08a35178439dd87cd951da608, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_10_56_0Mat
+    second: {fileID: 2100000, guid: 61473af8a6488b146b3d8eed413a462d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_11_57_0Mat
+    second: {fileID: 2100000, guid: 593e3e42f6732e2478c2ce5652ff2f97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_12_58_0Mat
+    second: {fileID: 2100000, guid: f04dacd60f4d9fe44be2d52580185413, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_13_30_0Mat
+    second: {fileID: 2100000, guid: fca5207683de4b545979dc1906ab3596, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_14_29_0Mat
+    second: {fileID: 2100000, guid: e4344ff73f0f1ad43b4ee63fbe713479, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_15_28_0Mat
+    second: {fileID: 2100000, guid: 2ca5c5f44ec02284cb40a4a5ef293791, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_16_27_0Mat
+    second: {fileID: 2100000, guid: 2b662ec54a8de2a43b3d229b1bbc4821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_17_26_0Mat
+    second: {fileID: 2100000, guid: 3583c4232046c7146a3bbc73450f7894, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_18_25_0Mat
+    second: {fileID: 2100000, guid: 0b8f95860f29e25498c1057093e2cdd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_19_24_0Mat
+    second: {fileID: 2100000, guid: f4851225a40f5e64695da8bc85b6ea85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_1_100_0Mat
+    second: {fileID: 2100000, guid: c9fd51485f1565d42b787b288942d15c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_20_35_0Mat
+    second: {fileID: 2100000, guid: 5d7186d4a2693a6499e5e40b90ce9007, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_21_33_0Mat
+    second: {fileID: 2100000, guid: b21daa3c7fe1b924aa4250f9e82f7d7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_22_34_0Mat
+    second: {fileID: 2100000, guid: b4129ce40cf9eeb4bb9b556d5af6803d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_23_32_0Mat
+    second: {fileID: 2100000, guid: b13ce629b20af4e4d851bfa14a5c28c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_24_31_0Mat
+    second: {fileID: 2100000, guid: 3ee49bcb1c7d32d4db4af8c917a0811d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_2_48_0Mat
+    second: {fileID: 2100000, guid: 0abf6295794aca4479c8cd78000e6c90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_3_49_0Mat
+    second: {fileID: 2100000, guid: ed6d8d4c3b39de74aaa2678d05bd2b00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_4_50_0Mat
+    second: {fileID: 2100000, guid: 50f9afaac0603764684b0173d4004c6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_5_51_0Mat
+    second: {fileID: 2100000, guid: a524d27d932984d418e10384296a8397, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_6_52_0Mat
+    second: {fileID: 2100000, guid: d81205013bab5314492fc3bd1dd51e58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_7_53_0Mat
+    second: {fileID: 2100000, guid: e6b42455f8a547542bd2dedeea323581, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_8_54_0Mat
+    second: {fileID: 2100000, guid: 0fe738a5114a0674898ef8e091546fec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#nozzle2_9_55_0Mat
+    second: {fileID: 2100000, guid: 5b06bfa916b1a364782c6c1df9ba3d2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#optic2_gun_97_0Mat
+    second: {fileID: 2100000, guid: 5d49342f993bbf949b68948ec6e6a8fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#optic2_turret_96_0Mat
+    second: {fileID: 2100000, guid: 1025c12d0dff5bf4f8f98b10848a377e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#pylon2_84_0Mat
+    second: {fileID: 2100000, guid: 281dc0379bb7eb9488c35002d47c2135, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#pylon2_84_1Mat
+    second: {fileID: 2100000, guid: 97b6cbd99f554da49908c77b9dfdffde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#pylon3_85_0Mat
+    second: {fileID: 2100000, guid: 7d8d97e5f5c38ce499d92596bf5d222a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#pylon3_85_1Mat
+    second: {fileID: 2100000, guid: d2f92cfd3a75ebc48916aa15d882ba19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#pylon4_86_0Mat
+    second: {fileID: 2100000, guid: 8d78a450e3553bd4483f97fade1d2ec3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#pylon4_86_1Mat
+    second: {fileID: 2100000, guid: 6a0dab8b178e8c7438cabf95873be844, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#pylon5_87_0Mat
+    second: {fileID: 2100000, guid: 64e017a78b959f34f871d955cd45b6d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#pylon5_87_1Mat
+    second: {fileID: 2100000, guid: c3d2709bf97c20e478323c1f98d2535a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#pylon_central_3_0Mat
+    second: {fileID: 2100000, guid: 8a4c3a99aa4672041b9ab218423d47c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#pylon_central_3_1Mat
+    second: {fileID: 2100000, guid: e69cfb3d5b9c47145997e062e57ced96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#radiator1_1_91_0Mat
+    second: {fileID: 2100000, guid: 93b96a3a339503c4bab18bc57a980f59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#radiator2_1_90_0Mat
+    second: {fileID: 2100000, guid: 186b200340e0d5847b828f0f062a2c55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#refueling1_1_0Mat
+    second: {fileID: 2100000, guid: 44ae5563538bc7d40a4c56bfc343fd4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#refueling2_2_0Mat
+    second: {fileID: 2100000, guid: 8873ce48fb19c644e9f15ea8fb522d6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#refueling3_5_0Mat
+    second: {fileID: 2100000, guid: b2670087ff0868849ac0f911a6483767, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#refueling4_6_0Mat
+    second: {fileID: 2100000, guid: 4f372f0aec512c24f97c6d73543f0d73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#rudder0_112_0Mat
+    second: {fileID: 2100000, guid: 275f2ceae4692fc4b84a858d39413540, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#rudder1_113_0Mat
+    second: {fileID: 2100000, guid: 06faf658e99d4ac4db14c4485cfd61c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#seat_01_98_0Mat
+    second: {fileID: 2100000, guid: 823e25ee3ecb39f4b8cd686d121a33b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#seat_01_rod_9_0Mat
+    second: {fileID: 2100000, guid: 23460d9d8ab6c14468eedbd8c232c6ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#tail_109_0Mat
+    second: {fileID: 2100000, guid: 31d6f2593e952564ab2825ae8dabe7b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wheel_c_186_0Mat
+    second: {fileID: 2100000, guid: b904aecc878ac5a4a9c6ca0f68dd9a8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wheel_l_126_0Mat
+    second: {fileID: 2100000, guid: bf49ebbbbc7096440b3c59baa8ef4597, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wheel_r_156_0Mat
+    second: {fileID: 2100000, guid: 5dcd57424e3c73c41baf582944d7453d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wing_l1_11_0Mat
+    second: {fileID: 2100000, guid: 467479a93457da545b24de67c3177f5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wing_l1_11_1Mat
+    second: {fileID: 2100000, guid: 709a11f4cad1e8d4faa8d29529377f38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wing_l1_11_2Mat
+    second: {fileID: 2100000, guid: c11ee1db0e0571740bab69b92bf11b78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wing_l1_11_3Mat
+    second: {fileID: 2100000, guid: 13bf6fb1ab055f2409bb696fda7b9b93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wing_l2_4_0Mat
+    second: {fileID: 2100000, guid: 4f0147980eed1354e93a896d934d7650, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wing_l_103_0Mat
+    second: {fileID: 2100000, guid: b2857b95378c3b24c99ab904cf26930c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wing_l_103_1Mat
+    second: {fileID: 2100000, guid: 01c87a10570420a46ada327074ff8385, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wing_r1_17_0Mat
+    second: {fileID: 2100000, guid: 36238ce828ab8864da2807e91074e2bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wing_r1_17_1Mat
+    second: {fileID: 2100000, guid: f88c94f840b00c24aaf9eddabaa22716, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wing_r1_17_2Mat
+    second: {fileID: 2100000, guid: 194dfa1ba9bc2b44fbcad95cde26992d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wing_r1_17_3Mat
+    second: {fileID: 2100000, guid: 6a9adb4a04dfc31459197b7d726cf043, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wing_r2_23_0Mat
+    second: {fileID: 2100000, guid: f2f7ce0fd277be443ac26f97bb3ac06a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wing_r_106_0Mat
+    second: {fileID: 2100000, guid: 4e29a2e7a6005e14d924e4ffd9fe2b53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vehicle#wing_r_106_1Mat
+    second: {fileID: 2100000, guid: 3db84c7feb892e34a86f76d3a32f2ee7, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

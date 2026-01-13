@@ -1,0 +1,186 @@
+# Unity .gitattributes
+# Ensures consistent line endings and proper handling of Unity files
+# Auto detect text files and normalize line endings to LF
+* text=auto eol=lf
+# Explicitly declare text files
+*.cs text diff=csharp
+*.txt text
+*.md text
+*.json text
+*.xml text
+*.yaml text
+*.yml text
+*.sh text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+# Unity YAML files should use LF
+*.meta text eol=lf
+*.unity text eol=lf merge=unityyamlmerge
+*.prefab text eol=lf merge=unityyamlmerge
+*.asset text eol=lf merge=unityyamlmerge
+*.mat text eol=lf merge=unityyamlmerge
+*.controller text eol=lf merge=unityyamlmerge
+*.anim text eol=lf merge=unityyamlmerge
+*.overrideController text eol=lf merge=unityyamlmerge
+*.physicMaterial text eol=lf merge=unityyamlmerge
+*.physicsMaterial2D text eol=lf merge=unityyamlmerge
+*.guiskin text eol=lf merge=unityyamlmerge
+*.fontsettings text eol=lf merge=unityyamlmerge
+*.mask text eol=lf merge=unityyamlmerge
+*.brush text eol=lf merge=unityyamlmerge
+*.flare text eol=lf merge=unityyamlmerge
+*.playable text eol=lf merge=unityyamlmerge
+*.signal text eol=lf merge=unityyamlmerge
+*.preset text eol=lf merge=unityyamlmerge
+*.renderTexture text eol=lf merge=unityyamlmerge
+*.giparams text eol=lf merge=unityyamlmerge
+*.lighting text eol=lf merge=unityyamlmerge
+*.mixer text eol=lf merge=unityyamlmerge
+*.shadervariants text eol=lf merge=unityyamlmerge
+*.terrainlayer text eol=lf merge=unityyamlmerge
+# Unity scene files
+*.unity merge=unityyamlmerge eol=lf
+# Shader files
+*.shader text
+*.cginc text
+*.hlsl text
+*.compute text
+# Documentation
+*.pdf binary
+# Image files (binary, but PNG/JPG handled by LFS below)
+*.gif binary
+*.bmp binary
+*.tga binary
+*.tif binary
+*.tiff binary
+*.iff binary
+*.pict binary
+*.dds binary
+*.xcf binary
+*.psd binary
+*.ai binary
+*.exr binary
+*.hdr binary
+# Audio files
+*.mp3 binary
+*.wav binary
+*.ogg binary
+*.aiff binary
+*.aif binary
+*.mod binary
+*.it binary
+*.s3m binary
+*.xm binary
+# Video files
+*.mov binary
+*.avi binary
+*.mp4 binary
+*.mpg binary
+*.mpeg binary
+# 3D model files (OBJ handled specially below)
+*.fbx binary
+*.max binary
+*.blend binary
+*.dae text
+*.mb binary
+*.ma binary
+*.3ds binary
+*.dfx binary
+*.c4d binary
+*.lwo binary
+*.lwo2 binary
+*.abc binary
+*.3dm binary
+*.bin binary
+*.glb binary
+*.gltf text
+# Unity package files
+*.unitypackage binary
+# Font files
+*.ttf binary
+*.otf binary
+# Build files
+*.dll binary
+*.so binary
+*.dylib binary
+*.exe binary
+*.app binary
+*.apk binary
+*.aab binary
+# Compressed files
+*.zip binary
+*.7z binary
+*.gz binary
+*.rar binary
+*.tar binary
+# Special Unity files
+*.asmdef text eol=lf
+*.asmref text eol=lf
+*.rsp text eol=lf
+CHANGELOG* text
+CONTRIBUTING* text
+COPYING* text
+COPYRIGHT* text
+INSTALL* text
+LICENSE* text
+NEWS* text
+README* text
+TODO* text
+# Git files
+.gitattributes text
+.gitignore text
+.gitconfig text
+# CI/CD files
+.travis.yml text
+appveyor.yml text
+.gitlab-ci.yml text
+# Linguist overrides for GitHub language statistics
+# Mark generated files
+*.meta linguist-generated=true
+*.asset linguist-generated=true
+*.prefab linguist-generated=true
+# Mark documentation
+*.md linguist-documentation=true
+# Mark Unity-specific formats
+*.shader linguist-detectable=false
+*.cginc linguist-detectable=false
+*.hlsl linguist-detectable=false
+*.compute linguist-detectable=false
+# Mark C# properly
+*.cs linguist-language=C#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Git LFS
+# Files larger than 100MB found in repo
+*.dylib filter=lfs diff=lfs merge=lfs -text
+*.resS filter=lfs diff=lfs merge=lfs -text
+*.ress filter=lfs diff=lfs merge=lfs -text
+*.index filter=lfs diff=lfs merge=lfs -text
+# Common large binary files (preemptive)
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.so filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.7z filter=lfs diff=lfs merge=lfs -text
+*.tar filter=lfs diff=lfs merge=lfs -text
+*.rar filter=lfs diff=lfs merge=lfs -text
+*.gz filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.unitypackage filter=lfs diff=lfs merge=lfs -text
+# Explicitly exclude PNG from LFS
+*.png binary
+# 1.Codebase Specific LFS rules
+1.Codebase/Assets/Scenes/Main/LightingData.asset filter=lfs diff=lfs merge=lfs -text
+1.Codebase/Assets/Scenes/Main/ReflectionProbe-0.exr filter=lfs diff=lfs merge=lfs -text
+1.Codebase/Assets/Terrain.asset filter=lfs diff=lfs merge=lfs -text
+"2.V1.0 Built Game/V1.0 Web Build/Build/*.br" filter=lfs diff=lfs merge=lfs -text
+*.data filter=lfs diff=lfs merge=lfs -text
+*.data.br filter=lfs diff=lfs merge=lfs -text
+*.wasm filter=lfs diff=lfs merge=lfs -text
+*.wasm.br filter=lfs diff=lfs merge=lfs -text
+*.unityweb filter=lfs diff=lfs merge=lfs -text
+*.unityweb.br filter=lfs diff=lfs merge=lfs -text
+*.ress filter=lfs diff=lfs merge=lfs -text
