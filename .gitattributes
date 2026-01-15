@@ -135,6 +135,8 @@ TODO* text
 appveyor.yml text
 .gitlab-ci.yml text
 # Linguist overrides for GitHub language statistics
+# Exclude built artifacts from language stats
+"2.V1.0 Built Game/**" linguist-vendored=true
 # Mark generated files
 *.meta linguist-generated=true
 *.asset linguist-generated=true
