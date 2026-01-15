@@ -26,7 +26,7 @@ Pre-built versions of Artificial Smiles: Guardian 1 are available on the [Releas
 ### Supported Platforms
 
 * **Windows:** Download Windows x86 build
-* **Linux:** Download Linux ARM64 build
+* **Linux:** Download Linux X64 build
 * **Web:** Play directly in browser (WebGL)
 
 ## How to Play
